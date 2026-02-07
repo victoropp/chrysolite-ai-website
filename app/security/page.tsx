@@ -88,7 +88,7 @@ const securityPractices = [
 
 export default function SecurityPage() {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
@@ -101,14 +101,14 @@ export default function SecurityPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-2xl mb-8 shadow-lg shadow-chrysolite/30">
-              <Shield size={40} className="text-white" />
+              <Shield size={40} className="text-surface-900 dark:text-white" />
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
               Enterprise-Grade Security You Can Trust
             </h1>
 
-            <p className="text-xl text-surface-300 mb-8 leading-relaxed">
+            <p className="text-xl text-surface-600 dark:text-surface-300 mb-8 leading-relaxed">
               Your business data is protected with bank-level security, compliance certifications,
               and industry-leading practices. Security is not an afterthought—it's built into everything we do.
             </p>
@@ -120,10 +120,10 @@ export default function SecurityPage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Comprehensive Security Features
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               Multi-layered security protecting your data at every level.
             </p>
           </div>
@@ -132,13 +132,13 @@ export default function SecurityPage() {
             {securityFeatures.map((feature) => (
               <div
                 key={feature.title}
-                className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300"
+                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300"
               >
                 <div className="w-14 h-14 bg-chrysolite-500/20 rounded-xl flex items-center justify-center mb-6">
                   <feature.icon size={28} className="text-chrysolite-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
-                <p className="text-surface-400 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-3">{feature.title}</h3>
+                <p className="text-surface-600 dark:text-surface-400 leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -149,10 +149,10 @@ export default function SecurityPage() {
       <section className="py-24 bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Compliance Certifications
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               Independently audited and certified to meet the highest industry standards.
             </p>
           </div>
@@ -161,13 +161,13 @@ export default function SecurityPage() {
             {certifications.map((cert) => (
               <div
                 key={cert.name}
-                className="bg-surface-900/50 border border-surface-800 rounded-2xl p-6 text-center hover:border-chrysolite-500/30 transition-all"
+                className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-6 text-center hover:border-chrysolite-500/30 transition-all"
               >
                 <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle2 size={24} className="text-blue-400" />
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">{cert.name}</h3>
-                <p className="text-surface-400 text-sm mb-3">{cert.description}</p>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2">{cert.name}</h3>
+                <p className="text-surface-600 dark:text-surface-400 text-sm mb-3">{cert.description}</p>
                 <span className="inline-flex items-center gap-1 text-blue-400 text-xs font-medium">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                   {cert.status}
@@ -183,10 +183,10 @@ export default function SecurityPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
                 Our Security Commitment
               </h2>
-              <p className="text-lg text-surface-400 mb-8">
+              <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
                 Security is a continuous process, not a one-time effort. We maintain strict security
                 practices and constantly monitor for emerging threats.
               </p>
@@ -197,42 +197,42 @@ export default function SecurityPage() {
                     <div className="w-6 h-6 rounded-full bg-chrysolite-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <CheckCircle2 size={16} className="text-chrysolite-400" />
                     </div>
-                    <span className="text-surface-300">{practice}</span>
+                    <span className="text-surface-600 dark:text-surface-300">{practice}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-8 shadow-2xl">
-                <h3 className="text-white font-semibold mb-6">Security Stats</h3>
+              <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-8 shadow-2xl">
+                <h3 className="text-surface-900 dark:text-white font-semibold mb-6">Security Stats</h3>
                 <div className="space-y-6">
                   <div>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-surface-400">Uptime SLA</span>
+                      <span className="text-surface-600 dark:text-surface-400">Uptime SLA</span>
                       <span className="text-chrysolite-400 font-bold">99.9%</span>
                     </div>
-                    <div className="h-2 bg-surface-800 rounded-full overflow-hidden">
+                    <div className="h-2 bg-surface-100 dark:bg-surface-800 rounded-full overflow-hidden">
                       <div className="h-full bg-gradient-to-r from-chrysolite-500 to-gold-400 w-[99.9%]"></div>
                     </div>
                   </div>
 
                   <div>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-surface-400">Data Encryption</span>
+                      <span className="text-surface-600 dark:text-surface-400">Data Encryption</span>
                       <span className="text-chrysolite-400 font-bold">100%</span>
                     </div>
-                    <div className="h-2 bg-surface-800 rounded-full overflow-hidden">
+                    <div className="h-2 bg-surface-100 dark:bg-surface-800 rounded-full overflow-hidden">
                       <div className="h-full bg-gradient-to-r from-chrysolite-500 to-gold-400 w-full"></div>
                     </div>
                   </div>
 
                   <div>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-surface-400">Security Incidents (Last Year)</span>
+                      <span className="text-surface-600 dark:text-surface-400">Security Incidents (Last Year)</span>
                       <span className="text-green-400 font-bold">0</span>
                     </div>
-                    <div className="h-2 bg-surface-800 rounded-full overflow-hidden">
+                    <div className="h-2 bg-surface-100 dark:bg-surface-800 rounded-full overflow-hidden">
                       <div className="h-full bg-gradient-to-r from-green-500 to-emerald-500 w-0"></div>
                     </div>
                   </div>
@@ -242,8 +242,8 @@ export default function SecurityPage() {
                   <div className="flex items-start gap-3">
                     <AlertCircle size={20} className="text-chrysolite-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white font-medium mb-1">Vulnerability Disclosure</p>
-                      <p className="text-surface-400 text-sm">
+                      <p className="text-surface-900 dark:text-white font-medium mb-1">Vulnerability Disclosure</p>
+                      <p className="text-surface-600 dark:text-surface-400 text-sm">
                         Found a security issue? We have a responsible disclosure program.
                         Contact: security@chrysoliteai.com
                       </p>
@@ -259,26 +259,26 @@ export default function SecurityPage() {
       {/* CTA Section */}
       <section className="py-24 bg-surface-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-12 shadow-2xl">
+          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-12 shadow-2xl">
             <Shield size={48} className="text-chrysolite-400 mx-auto mb-6" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
               Your Data is Safe With Us
             </h2>
-            <p className="text-lg text-surface-400 mb-8">
+            <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
               Start your free trial with confidence. Enterprise-grade security included in every plan.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="https://app.chrysoliteai.com/register"
-                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
               >
                 Start Free Trial
                 <ArrowRight size={20} />
               </Link>
               <Link
                 href="/compliance"
-                className="w-full sm:w-auto bg-surface-800 hover:bg-surface-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-700 hover:border-chrysolite-500/50"
+                className="w-full sm:w-auto bg-surface-100 dark:bg-surface-800 hover:bg-surface-700 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
               >
                 View Compliance Details
               </Link>

@@ -29,7 +29,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-surface-950 via-surface-900 to-surface-950">
+    <section className="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-white via-surface-50 to-white dark:from-surface-950 dark:via-surface-900 dark:to-surface-950">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,rgba(255,255,255,0.05),transparent)] opacity-30"></div>
 
@@ -45,10 +45,10 @@ export default function HowItWorks() {
           <div className="inline-block bg-gold-400/10 border border-gold-400/30 rounded-full px-4 py-2 mb-4">
             <span className="text-sm font-medium text-gold-400">Simple Process</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-surface-900 dark:text-white mb-4">
             Get Started in <span className="gradient-text-gold">3 Easy Steps</span>
           </h2>
-          <p className="text-xl text-surface-300 max-w-3xl mx-auto">
+          <p className="text-xl text-surface-600 dark:text-surface-300 max-w-3xl mx-auto">
             From signup to full operation in minutes, not months
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function HowItWorks() {
                 )}
               >
                 {/* Card */}
-                <div className="relative bg-surface-900/50 backdrop-blur-xl border border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300 group">
+                <div className="relative bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-xl border border-surface-200 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300 group">
                   {/* Gradient Glow on Hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-chrysolite-500/0 to-gold-400/0 group-hover:from-chrysolite-500/5 group-hover:to-gold-400/5 rounded-2xl transition-all duration-300"></div>
 
@@ -90,19 +90,19 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-chrysolite-400 transition-colors">
+                    <h3 className="text-2xl font-bold text-surface-900 dark:text-white mb-3 group-hover:text-chrysolite-400 transition-colors">
                       {step.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-surface-300 mb-6 leading-relaxed">
+                    <p className="text-surface-600 dark:text-surface-300 mb-6 leading-relaxed">
                       {step.description}
                     </p>
 
                     {/* Features */}
                     <ul className="space-y-2">
                       {step.features.map((feature) => (
-                        <li key={feature} className="flex items-center gap-2 text-sm text-surface-400">
+                        <li key={feature} className="flex items-center gap-2 text-sm text-surface-600 dark:text-surface-400">
                           <div className="w-1.5 h-1.5 bg-chrysolite-500 rounded-full"></div>
                           <span>{feature}</span>
                         </li>

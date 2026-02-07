@@ -99,7 +99,7 @@ const team = [
 
 export default function AboutPage() {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
@@ -111,10 +111,10 @@ export default function AboutPage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
               Building the Future of Business Software
             </h1>
-            <p className="text-xl text-surface-300 mb-8 leading-relaxed">
+            <p className="text-xl text-surface-600 dark:text-surface-300 mb-8 leading-relaxed">
               We're on a mission to empower businesses across Africa with AI-powered ERP solutions
               that are simple, powerful, and built for modern operations.
             </p>
@@ -127,10 +127,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
                 Our Story
               </h2>
-              <div className="space-y-4 text-surface-300 leading-relaxed">
+              <div className="space-y-4 text-surface-600 dark:text-surface-300 leading-relaxed">
                 <p>
                   Chrysolite AI was born from a simple observation: businesses across Africa were being held back
                   by outdated, expensive, and overly complex ERP systems that weren't built for their needs.
@@ -154,15 +154,15 @@ export default function AboutPage() {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-8 shadow-2xl">
+              <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-8 shadow-2xl">
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-chrysolite-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
                       <Target size={24} className="text-chrysolite-400" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold mb-2">Our Mission</h3>
-                      <p className="text-surface-400 text-sm">
+                      <h3 className="text-surface-900 dark:text-white font-semibold mb-2">Our Mission</h3>
+                      <p className="text-surface-600 dark:text-surface-400 text-sm">
                         Democratize enterprise-grade business software by making it accessible,
                         affordable, and AI-powered for businesses of all sizes.
                       </p>
@@ -174,8 +174,8 @@ export default function AboutPage() {
                       <Eye size={24} className="text-chrysolite-400" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold mb-2">Our Vision</h3>
-                      <p className="text-surface-400 text-sm">
+                      <h3 className="text-surface-900 dark:text-white font-semibold mb-2">Our Vision</h3>
+                      <p className="text-surface-600 dark:text-surface-400 text-sm">
                         Become the leading AI-powered ERP platform across Africa, empowering
                         businesses to compete globally with world-class technology.
                       </p>
@@ -187,8 +187,8 @@ export default function AboutPage() {
                       <Heart size={24} className="text-chrysolite-400" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold mb-2">Our Commitment</h3>
-                      <p className="text-surface-400 text-sm">
+                      <h3 className="text-surface-900 dark:text-white font-semibold mb-2">Our Commitment</h3>
+                      <p className="text-surface-600 dark:text-surface-400 text-sm">
                         Relentless focus on customer success, continuous innovation, and building
                         technology that creates real value for businesses.
                       </p>
@@ -205,10 +205,10 @@ export default function AboutPage() {
       <section className="py-24 bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Our Core Values
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               The principles that guide everything we build and every decision we make.
             </p>
           </div>
@@ -217,13 +217,13 @@ export default function AboutPage() {
             {values.map((value) => (
               <div
                 key={value.title}
-                className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-8 text-center hover:border-chrysolite-500/30 transition-all group"
+                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-8 text-center hover:border-chrysolite-500/30 transition-all group"
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-chrysolite-500/20 to-gold-400/20 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                   <value.icon size={32} className="text-chrysolite-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3">{value.title}</h3>
-                <p className="text-surface-400 text-sm leading-relaxed">{value.description}</p>
+                <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-3">{value.title}</h3>
+                <p className="text-surface-600 dark:text-surface-400 text-sm leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
@@ -234,10 +234,10 @@ export default function AboutPage() {
       <section className="py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Our Journey
             </h2>
-            <p className="text-lg text-surface-400">
+            <p className="text-lg text-surface-600 dark:text-surface-400">
               Key milestones in our mission to transform business software.
             </p>
           </div>
@@ -250,18 +250,18 @@ export default function AboutPage() {
               >
                 {/* Timeline Line */}
                 {index !== milestones.length - 1 && (
-                  <div className="absolute left-6 top-16 bottom-0 w-0.5 bg-surface-800 group-hover:bg-chrysolite-500/30 transition-colors" />
+                  <div className="absolute left-6 top-16 bottom-0 w-0.5 bg-surface-100 dark:bg-surface-800 group-hover:bg-chrysolite-500/30 transition-colors" />
                 )}
 
                 {/* Year Badge */}
                 <div className="w-12 h-12 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-chrysolite/30 relative z-10">
-                  <span className="text-white font-bold text-sm">{milestone.year.slice(2)}</span>
+                  <span className="text-surface-900 dark:text-white font-bold text-sm">{milestone.year.slice(2)}</span>
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 bg-surface-900/50 border border-surface-800 rounded-2xl p-6 group-hover:border-chrysolite-500/30 transition-all">
-                  <h3 className="text-xl font-semibold text-white mb-2">{milestone.title}</h3>
-                  <p className="text-surface-400 leading-relaxed">{milestone.description}</p>
+                <div className="flex-1 bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-6 group-hover:border-chrysolite-500/30 transition-all">
+                  <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-2">{milestone.title}</h3>
+                  <p className="text-surface-600 dark:text-surface-400 leading-relaxed">{milestone.description}</p>
                 </div>
               </div>
             ))}
@@ -273,10 +273,10 @@ export default function AboutPage() {
       <section className="py-24 bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Meet Our Team
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               The talented people building the future of enterprise software.
             </p>
           </div>
@@ -285,20 +285,20 @@ export default function AboutPage() {
             {team.map((member) => (
               <div
                 key={member.name}
-                className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-6 text-center hover:border-chrysolite-500/30 transition-all group"
+                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-6 text-center hover:border-chrysolite-500/30 transition-all group"
               >
                 <div className="w-24 h-24 bg-gradient-to-br from-surface-800 to-surface-700 rounded-full flex items-center justify-center text-4xl mx-auto mb-4 group-hover:scale-110 transition-transform">
                   {member.image}
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-1">{member.name}</h3>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-1">{member.name}</h3>
                 <div className="text-chrysolite-400 text-sm font-medium mb-3">{member.role}</div>
-                <p className="text-surface-400 text-sm leading-relaxed">{member.bio}</p>
+                <p className="text-surface-600 dark:text-surface-400 text-sm leading-relaxed">{member.bio}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-surface-400 mb-4">Want to join our team?</p>
+            <p className="text-surface-600 dark:text-surface-400 mb-4">Want to join our team?</p>
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 text-chrysolite-400 hover:text-chrysolite-300 font-medium transition-colors"
@@ -313,26 +313,26 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-12 shadow-2xl">
+          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-12 shadow-2xl">
             <Globe size={48} className="text-chrysolite-400 mx-auto mb-6" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
               Join Us on This Journey
             </h2>
-            <p className="text-lg text-surface-400 mb-8">
+            <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
               Be part of the future of business software. Start your free trial today.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="https://app.chrysoliteai.com/register"
-                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
               >
                 Start Free Trial
                 <ArrowRight size={20} />
               </Link>
               <Link
                 href="/contact"
-                className="w-full sm:w-auto bg-surface-800 hover:bg-surface-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-700 hover:border-chrysolite-500/50"
+                className="w-full sm:w-auto bg-surface-100 dark:bg-surface-800 hover:bg-surface-700 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
               >
                 Contact Us
               </Link>

@@ -85,7 +85,7 @@ const complianceAreas = [
 
 export default function CompliancePage() {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
 
       <section className="relative pt-32 pb-20">
@@ -97,14 +97,14 @@ export default function CompliancePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-2xl mb-8 shadow-lg shadow-chrysolite/30">
-              <ShieldCheck size={40} className="text-white" />
+              <ShieldCheck size={40} className="text-surface-900 dark:text-white" />
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
               Compliance & Certifications
             </h1>
 
-            <p className="text-xl text-surface-300 mb-8 leading-relaxed">
+            <p className="text-xl text-surface-600 dark:text-surface-300 mb-8 leading-relaxed">
               Independently audited and certified to meet the highest industry standards for
               security, privacy, and data protection.
             </p>
@@ -116,10 +116,10 @@ export default function CompliancePage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Our Certifications
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               Third-party audited certifications demonstrating our commitment to security and compliance.
             </p>
           </div>
@@ -128,11 +128,11 @@ export default function CompliancePage() {
             {certifications.map((cert) => (
               <div
                 key={cert.name}
-                className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all"
+                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-white mb-2">{cert.name}</h3>
+                    <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-2">{cert.name}</h3>
                     <p className="text-chrysolite-400 text-sm font-medium mb-3">{cert.description}</p>
                   </div>
                   <div className="flex items-center gap-2 px-3 py-1 bg-blue-500/20 rounded-full flex-shrink-0">
@@ -140,7 +140,7 @@ export default function CompliancePage() {
                     <span className="text-blue-400 text-xs font-medium">{cert.status}</span>
                   </div>
                 </div>
-                <p className="text-surface-400 text-sm leading-relaxed mb-4">{cert.details}</p>
+                <p className="text-surface-600 dark:text-surface-400 text-sm leading-relaxed mb-4">{cert.details}</p>
                 <p className="text-surface-500 text-xs">Compliance Year: {cert.year}</p>
               </div>
             ))}
@@ -152,10 +152,10 @@ export default function CompliancePage() {
       <section className="py-24 bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Comprehensive Compliance
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               We maintain compliance across multiple areas to protect your business.
             </p>
           </div>
@@ -164,14 +164,14 @@ export default function CompliancePage() {
             {complianceAreas.map((area) => (
               <div
                 key={area.title}
-                className="bg-surface-900/50 border border-surface-800 rounded-2xl p-8"
+                className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8"
               >
-                <h3 className="text-xl font-semibold text-white mb-6">{area.title}</h3>
+                <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-6">{area.title}</h3>
                 <ul className="space-y-3">
                   {area.items.map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <CheckCircle2 size={20} className="text-chrysolite-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-surface-300 text-sm">{item}</span>
+                      <span className="text-surface-600 dark:text-surface-300 text-sm">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -184,37 +184,37 @@ export default function CompliancePage() {
       {/* Audit & Reporting */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-12 shadow-2xl">
-            <h2 className="text-3xl font-bold text-white mb-6 text-center">Audit & Transparency</h2>
+          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-12 shadow-2xl">
+            <h2 className="text-3xl font-bold text-surface-900 dark:text-white mb-6 text-center">Audit & Transparency</h2>
 
-            <div className="space-y-6 text-surface-300 leading-relaxed">
+            <div className="space-y-6 text-surface-600 dark:text-surface-300 leading-relaxed">
               <p>
                 We undergo regular independent audits to verify our compliance with industry standards.
                 Our security and compliance posture is continuously monitored and improved.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 pt-6">
-                <div className="bg-surface-950/50 rounded-xl p-6 border border-surface-800">
-                  <h3 className="text-white font-semibold mb-3">Annual Audits</h3>
-                  <p className="text-surface-400 text-sm">
+                <div className="bg-white dark:bg-surface-950/50 rounded-xl p-6 border border-surface-300 dark:border-surface-800">
+                  <h3 className="text-surface-900 dark:text-white font-semibold mb-3">Annual Audits</h3>
+                  <p className="text-surface-600 dark:text-surface-400 text-sm">
                     Independent third-party audits of our security controls, processes, and compliance.
                   </p>
                 </div>
-                <div className="bg-surface-950/50 rounded-xl p-6 border border-surface-800">
-                  <h3 className="text-white font-semibold mb-3">Continuous Monitoring</h3>
-                  <p className="text-surface-400 text-sm">
+                <div className="bg-white dark:bg-surface-950/50 rounded-xl p-6 border border-surface-300 dark:border-surface-800">
+                  <h3 className="text-surface-900 dark:text-white font-semibold mb-3">Continuous Monitoring</h3>
+                  <p className="text-surface-600 dark:text-surface-400 text-sm">
                     Automated compliance monitoring and security scanning across our infrastructure.
                   </p>
                 </div>
-                <div className="bg-surface-950/50 rounded-xl p-6 border border-surface-800">
-                  <h3 className="text-white font-semibold mb-3">Penetration Testing</h3>
-                  <p className="text-surface-400 text-sm">
+                <div className="bg-white dark:bg-surface-950/50 rounded-xl p-6 border border-surface-300 dark:border-surface-800">
+                  <h3 className="text-surface-900 dark:text-white font-semibold mb-3">Penetration Testing</h3>
+                  <p className="text-surface-600 dark:text-surface-400 text-sm">
                     Quarterly penetration testing by certified security professionals.
                   </p>
                 </div>
-                <div className="bg-surface-950/50 rounded-xl p-6 border border-surface-800">
-                  <h3 className="text-white font-semibold mb-3">Compliance Reports</h3>
-                  <p className="text-surface-400 text-sm">
+                <div className="bg-white dark:bg-surface-950/50 rounded-xl p-6 border border-surface-300 dark:border-surface-800">
+                  <h3 className="text-surface-900 dark:text-white font-semibold mb-3">Compliance Reports</h3>
+                  <p className="text-surface-600 dark:text-surface-400 text-sm">
                     SOC 2 reports available to enterprise customers under NDA.
                   </p>
                 </div>
@@ -227,24 +227,24 @@ export default function CompliancePage() {
       {/* CTA Section */}
       <section className="py-24 bg-surface-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
             Questions About Compliance?
           </h2>
-          <p className="text-lg text-surface-400 mb-8">
+          <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
             Our security and compliance team is here to answer your questions.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
               >
               Contact Compliance Team
               <ArrowRight size={20} />
             </Link>
             <Link
               href="/security"
-              className="w-full sm:w-auto bg-surface-800 hover:bg-surface-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-700 hover:border-chrysolite-500/50"
+              className="w-full sm:w-auto bg-surface-100 dark:bg-surface-800 hover:bg-surface-700 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
             >
               View Security Details
             </Link>

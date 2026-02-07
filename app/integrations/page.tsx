@@ -128,7 +128,7 @@ const benefits = [
 
 export default function IntegrationsPage() {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
@@ -141,14 +141,14 @@ export default function IntegrationsPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-2xl mb-8 shadow-lg shadow-chrysolite/30">
-              <Plug size={40} className="text-white" />
+              <Plug size={40} className="text-surface-900 dark:text-white" />
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
               Connect Everything You Use
             </h1>
 
-            <p className="text-xl text-surface-300 mb-8 leading-relaxed">
+            <p className="text-xl text-surface-600 dark:text-surface-300 mb-8 leading-relaxed">
               Chrysolite AI integrates seamlessly with the tools you already love.
               Connect payment gateways, banks, accounting software, and more—all in one place.
             </p>
@@ -156,14 +156,14 @@ export default function IntegrationsPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="https://app.chrysoliteai.com/register"
-                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
               >
                 Start Free Trial
                 <ArrowRight size={20} />
               </Link>
               <Link
                 href="/contact"
-                className="w-full sm:w-auto bg-surface-900 hover:bg-surface-800 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-700 hover:border-chrysolite-500/50"
+                className="w-full sm:w-auto bg-surface-50 dark:bg-surface-900 hover:bg-surface-100 dark:bg-surface-800 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
               >
                 Request Integration
               </Link>
@@ -176,10 +176,10 @@ export default function IntegrationsPage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Popular Integrations
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               Connect with hundreds of tools across different categories.
             </p>
           </div>
@@ -188,17 +188,17 @@ export default function IntegrationsPage() {
             {integrationCategories.map((category) => (
               <div
                 key={category.category}
-                className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300"
+                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300"
               >
                 <div className={`w-14 h-14 bg-gradient-to-br ${category.color} rounded-xl flex items-center justify-center mb-6`}>
-                  <category.icon size={28} className="text-white" />
+                  <category.icon size={28} className="text-surface-900 dark:text-white" />
                 </div>
 
-                <h3 className="text-xl font-semibold text-white mb-4">{category.category}</h3>
+                <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-4">{category.category}</h3>
 
                 <ul className="space-y-2">
                   {category.integrations.map((integration) => (
-                    <li key={integration} className="flex items-center gap-2 text-surface-400 text-sm">
+                    <li key={integration} className="flex items-center gap-2 text-surface-600 dark:text-surface-400 text-sm">
                       <Check size={16} className="text-chrysolite-400 flex-shrink-0" />
                       {integration}
                     </li>
@@ -215,10 +215,10 @@ export default function IntegrationsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
                 Integration Made Simple
               </h2>
-              <p className="text-lg text-surface-400 mb-8">
+              <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
                 Connect your favorite tools in minutes with our pre-built integrations.
                 No coding required—just authenticate and start syncing data.
               </p>
@@ -229,47 +229,47 @@ export default function IntegrationsPage() {
                     <div className="w-6 h-6 rounded-full bg-chrysolite-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check size={16} className="text-chrysolite-400" />
                     </div>
-                    <span className="text-surface-300">{benefit}</span>
+                    <span className="text-surface-600 dark:text-surface-300">{benefit}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-8 shadow-2xl">
-                <h3 className="text-white font-semibold mb-6">Custom Integrations</h3>
-                <p className="text-surface-400 mb-6">
+              <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-8 shadow-2xl">
+                <h3 className="text-surface-900 dark:text-white font-semibold mb-6">Custom Integrations</h3>
+                <p className="text-surface-600 dark:text-surface-400 mb-6">
                   Need a custom integration? Our powerful REST API and webhooks make it easy
                   to build exactly what you need.
                 </p>
 
                 <div className="space-y-4">
-                  <div className="bg-surface-950/50 rounded-xl p-4 border border-surface-800">
+                  <div className="bg-white dark:bg-surface-950/50 rounded-xl p-4 border border-surface-300 dark:border-surface-800">
                     <div className="flex items-center gap-3 mb-2">
                       <Zap size={20} className="text-chrysolite-400" />
-                      <span className="text-white font-medium">REST API</span>
+                      <span className="text-surface-900 dark:text-white font-medium">REST API</span>
                     </div>
-                    <p className="text-surface-400 text-sm">
+                    <p className="text-surface-600 dark:text-surface-400 text-sm">
                       Full access to all ERP data and operations via RESTful endpoints.
                     </p>
                   </div>
 
-                  <div className="bg-surface-950/50 rounded-xl p-4 border border-surface-800">
+                  <div className="bg-white dark:bg-surface-950/50 rounded-xl p-4 border border-surface-300 dark:border-surface-800">
                     <div className="flex items-center gap-3 mb-2">
                       <Zap size={20} className="text-chrysolite-400" />
-                      <span className="text-white font-medium">Webhooks</span>
+                      <span className="text-surface-900 dark:text-white font-medium">Webhooks</span>
                     </div>
-                    <p className="text-surface-400 text-sm">
+                    <p className="text-surface-600 dark:text-surface-400 text-sm">
                       Real-time event notifications sent to your endpoints.
                     </p>
                   </div>
 
-                  <div className="bg-surface-950/50 rounded-xl p-4 border border-surface-800">
+                  <div className="bg-white dark:bg-surface-950/50 rounded-xl p-4 border border-surface-300 dark:border-surface-800">
                     <div className="flex items-center gap-3 mb-2">
                       <Zap size={20} className="text-chrysolite-400" />
-                      <span className="text-white font-medium">OAuth 2.0</span>
+                      <span className="text-surface-900 dark:text-white font-medium">OAuth 2.0</span>
                     </div>
-                    <p className="text-surface-400 text-sm">
+                    <p className="text-surface-600 dark:text-surface-400 text-sm">
                       Secure authentication for third-party integrations.
                     </p>
                   </div>
@@ -291,11 +291,11 @@ export default function IntegrationsPage() {
       {/* CTA Section */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-12 shadow-2xl">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-12 shadow-2xl">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
               Ready to Connect Your Tools?
             </h2>
-            <p className="text-lg text-surface-400 mb-8">
+            <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
               Start integrating with your favorite apps today. All integrations included
               in every plan.
             </p>
@@ -303,14 +303,14 @@ export default function IntegrationsPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="https://app.chrysoliteai.com/register"
-                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
               >
                 Start Free Trial
                 <ArrowRight size={20} />
               </Link>
               <Link
                 href="/contact"
-                className="w-full sm:w-auto bg-surface-800 hover:bg-surface-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-700 hover:border-chrysolite-500/50"
+                className="w-full sm:w-auto bg-surface-100 dark:bg-surface-800 hover:bg-surface-700 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
               >
                 Talk to Sales
               </Link>

@@ -56,7 +56,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="relative bg-surface-950 border-t border-surface-900">
+    <footer className="relative bg-surface-50 dark:bg-surface-950 border-t border-surface-200 dark:border-surface-900">
       {/* Background Decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-chrysolite-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
@@ -73,19 +73,19 @@ export default function Footer() {
               <div className="w-10 h-10 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-chrysolite-500/30 transition-shadow">
                 <span className="text-white font-bold text-xl">C</span>
               </div>
-              <span className="text-xl font-bold text-white group-hover:text-chrysolite-400 transition-colors">
+              <span className="text-xl font-bold text-surface-900 dark:text-white group-hover:text-chrysolite-400 transition-colors">
                 Chrysolite AI
               </span>
             </Link>
 
             {/* Tagline */}
-            <p className="text-surface-400 mb-6 leading-relaxed">
+            <p className="text-surface-600 dark:text-surface-400 mb-6 leading-relaxed">
               The AI-powered ERP platform that transforms how businesses operate.
               Automate, optimize, and scale with confidence.
             </p>
 
             {/* Contact Info */}
-            <div className="space-y-3 text-sm text-surface-400">
+            <div className="space-y-3 text-sm text-surface-600 dark:text-surface-400">
               <div className="flex items-start gap-2">
                 <MapPin size={16} className="mt-0.5 flex-shrink-0 text-chrysolite-400" />
                 <span>London, United Kingdom</span>
@@ -109,13 +109,13 @@ export default function Footer() {
 
           {/* Product Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Product</h3>
+            <h3 className="text-surface-900 dark:text-white font-semibold mb-4">Product</h3>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-surface-400 hover:text-chrysolite-400 transition-colors text-sm"
+                    className="text-surface-600 dark:text-surface-400 hover:text-chrysolite-400 transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -126,13 +126,13 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Company</h3>
+            <h3 className="text-surface-900 dark:text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-surface-400 hover:text-chrysolite-400 transition-colors text-sm"
+                    className="text-surface-600 dark:text-surface-400 hover:text-chrysolite-400 transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -143,13 +143,13 @@ export default function Footer() {
 
           {/* Resources Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Resources</h3>
+            <h3 className="text-surface-900 dark:text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-surface-400 hover:text-chrysolite-400 transition-colors text-sm"
+                    className="text-surface-600 dark:text-surface-400 hover:text-chrysolite-400 transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -160,13 +160,13 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Legal</h3>
+            <h3 className="text-surface-900 dark:text-white font-semibold mb-4">Legal</h3>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-surface-400 hover:text-chrysolite-400 transition-colors text-sm"
+                    className="text-surface-600 dark:text-surface-400 hover:text-chrysolite-400 transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -177,11 +177,11 @@ export default function Footer() {
         </div>
 
         {/* Newsletter Section */}
-        <div className="py-8 border-t border-surface-900">
+        <div className="py-8 border-t border-surface-200 dark:border-surface-900">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
-              <h3 className="text-white font-semibold mb-2">Stay Updated</h3>
-              <p className="text-surface-400 text-sm">
+              <h3 className="text-surface-900 dark:text-white font-semibold mb-2">Stay Updated</h3>
+              <p className="text-surface-600 dark:text-surface-400 text-sm">
                 Get the latest product updates and industry insights
               </p>
             </div>
@@ -189,7 +189,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 md:w-64 px-4 py-3 bg-surface-900 border border-surface-800 rounded-xl text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors"
+                className="flex-1 md:w-64 px-4 py-3 bg-white dark:bg-surface-900 border border-surface-300 dark:border-surface-800 rounded-xl text-surface-900 dark:text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors"
               />
               <button className="px-6 py-3 bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/30 hover:shadow-chrysolite/50">
                 Subscribe
@@ -199,7 +199,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-8 border-t border-surface-900">
+        <div className="py-8 border-t border-surface-200 dark:border-surface-900">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Copyright */}
             <div className="text-surface-500 text-sm text-center md:text-left">
@@ -214,7 +214,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 flex items-center justify-center bg-surface-900 border border-surface-800 rounded-lg text-surface-400 hover:text-chrysolite-400 hover:border-chrysolite-500/30 transition-all duration-200"
+                  className="w-10 h-10 flex items-center justify-center bg-surface-100 dark:bg-surface-900 border border-surface-300 dark:border-surface-800 rounded-lg text-surface-600 dark:text-surface-400 hover:text-chrysolite-400 hover:border-chrysolite-500/30 transition-all duration-200"
                   aria-label={social.label}
                 >
                   <social.icon size={18} />
@@ -228,12 +228,12 @@ export default function Footer() {
                 <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                 SOC 2 Compliant
               </span>
-              <span className="text-surface-700">|</span>
+              <span className="text-surface-400 dark:text-surface-700">|</span>
               <span className="flex items-center gap-1">
                 <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                 GDPR Compliant
               </span>
-              <span className="text-surface-700">|</span>
+              <span className="text-surface-400 dark:text-surface-700">|</span>
               <span className="flex items-center gap-1">
                 <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                 ISO 27001 Compliant

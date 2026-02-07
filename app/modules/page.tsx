@@ -152,7 +152,7 @@ const modules = [
 
 export default function ModulesPage() {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
@@ -165,14 +165,14 @@ export default function ModulesPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-2xl mb-8 shadow-lg shadow-chrysolite/30">
-              <Zap size={40} className="text-white" />
+              <Zap size={40} className="text-surface-900 dark:text-white" />
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
               Complete ERP Module Suite
             </h1>
 
-            <p className="text-xl text-surface-300 mb-8 leading-relaxed">
+            <p className="text-xl text-surface-600 dark:text-surface-300 mb-8 leading-relaxed">
               A comprehensive set of integrated modules covering every aspect of your business.
               From finance to operations, everything works together seamlessly.
             </p>
@@ -188,9 +188,9 @@ export default function ModulesPage() {
               <div key={category.category}>
                 <div className="flex items-center gap-4 mb-8">
                   <div className={`w-14 h-14 bg-gradient-to-br ${category.color} rounded-xl flex items-center justify-center`}>
-                    <category.icon size={28} className="text-white" />
+                    <category.icon size={28} className="text-surface-900 dark:text-white" />
                   </div>
-                  <h2 className="text-3xl font-bold text-white">{category.category}</h2>
+                  <h2 className="text-3xl font-bold text-surface-900 dark:text-white">{category.category}</h2>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -198,12 +198,12 @@ export default function ModulesPage() {
                     <Link
                       key={item.title}
                       href={item.href}
-                      className="group bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-6 hover:border-chrysolite-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-chrysolite/10"
+                      className="group bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-6 hover:border-chrysolite-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-chrysolite/10"
                     >
-                      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-chrysolite-400 transition-colors">
+                      <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2 group-hover:text-chrysolite-400 transition-colors">
                         {item.title}
                       </h3>
-                      <p className="text-surface-400 text-sm leading-relaxed mb-3">
+                      <p className="text-surface-600 dark:text-surface-400 text-sm leading-relaxed mb-3">
                         {item.description}
                       </p>
                       <div className="flex items-center gap-2 text-chrysolite-400 text-sm font-medium group-hover:gap-3 transition-all">
@@ -223,42 +223,42 @@ export default function ModulesPage() {
       <section className="py-24 bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Seamlessly Integrated
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               All modules share the same database and user interface, ensuring data consistency
               and a unified experience across your entire organization.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-surface-900/50 border border-surface-800 rounded-2xl p-8 text-center">
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8 text-center">
               <div className="w-16 h-16 bg-chrysolite-500/20 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <Zap size={32} className="text-chrysolite-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Real-Time Sync</h3>
-              <p className="text-surface-400">
+              <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-3">Real-Time Sync</h3>
+              <p className="text-surface-600 dark:text-surface-400">
                 Data flows instantly between modules. No delays, no duplicate entries, no errors.
               </p>
             </div>
 
-            <div className="bg-surface-900/50 border border-surface-800 rounded-2xl p-8 text-center">
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8 text-center">
               <div className="w-16 h-16 bg-chrysolite-500/20 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <Brain size={32} className="text-chrysolite-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">AI Everywhere</h3>
-              <p className="text-surface-400">
+              <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-3">AI Everywhere</h3>
+              <p className="text-surface-600 dark:text-surface-400">
                 Our AI assistant understands data across all modules for intelligent insights.
               </p>
             </div>
 
-            <div className="bg-surface-900/50 border border-surface-800 rounded-2xl p-8 text-center">
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8 text-center">
               <div className="w-16 h-16 bg-chrysolite-500/20 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <BarChart3 size={32} className="text-chrysolite-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Unified Reporting</h3>
-              <p className="text-surface-400">
+              <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-3">Unified Reporting</h3>
+              <p className="text-surface-600 dark:text-surface-400">
                 Create reports that span multiple modules with a single, consistent interface.
               </p>
             </div>
@@ -269,11 +269,11 @@ export default function ModulesPage() {
       {/* CTA Section */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-12 shadow-2xl">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-12 shadow-2xl">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
               Start with What You Need, Scale as You Grow
             </h2>
-            <p className="text-lg text-surface-400 mb-8">
+            <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
               Enable only the modules you need today. Add more as your business evolves.
               All modules are included in every plan.
             </p>
@@ -281,14 +281,14 @@ export default function ModulesPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="https://app.chrysoliteai.com/register"
-                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
               >
                 Start Free Trial
                 <ArrowRight size={20} />
               </Link>
               <Link
                 href="/pricing"
-                className="w-full sm:w-auto bg-surface-800 hover:bg-surface-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-700 hover:border-chrysolite-500/50"
+                className="w-full sm:w-auto bg-surface-100 dark:bg-surface-800 hover:bg-surface-700 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
               >
                 View Pricing
               </Link>

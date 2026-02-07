@@ -140,7 +140,7 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
@@ -151,10 +151,10 @@ export default function ContactPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
             Let's Talk About Your Business
           </h1>
-          <p className="text-xl text-surface-300 max-w-3xl mx-auto">
+          <p className="text-xl text-surface-600 dark:text-surface-300 max-w-3xl mx-auto">
             Have questions about Chrysolite AI? Want to schedule a demo? Our team is here to help.
           </p>
         </div>
@@ -166,16 +166,16 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-8">
+              <div className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-8">
                 {isSubmitted ? (
                   <div className="text-center py-12">
                     <div className="w-20 h-20 bg-chrysolite-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                       <CheckCircle size={40} className="text-chrysolite-400" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-4">
+                    <h3 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">
                       Thank You!
                     </h3>
-                    <p className="text-surface-400 mb-8">
+                    <p className="text-surface-600 dark:text-surface-400 mb-8">
                       We've received your message and will get back to you within 24 hours.
                     </p>
                     <button
@@ -189,7 +189,7 @@ export default function ContactPage() {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+                        <label htmlFor="name" className="block text-sm font-medium text-surface-900 dark:text-white mb-2">
                           Full Name *
                         </label>
                         <input
@@ -209,7 +209,7 @@ export default function ContactPage() {
                       </div>
 
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+                        <label htmlFor="email" className="block text-sm font-medium text-surface-900 dark:text-white mb-2">
                           Email Address *
                         </label>
                         <input
@@ -231,7 +231,7 @@ export default function ContactPage() {
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div>
-                        <label htmlFor="company" className="block text-sm font-medium text-white mb-2">
+                        <label htmlFor="company" className="block text-sm font-medium text-surface-900 dark:text-white mb-2">
                           Company Name *
                         </label>
                         <input
@@ -251,7 +251,7 @@ export default function ContactPage() {
                       </div>
 
                       <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
+                        <label htmlFor="phone" className="block text-sm font-medium text-surface-900 dark:text-white mb-2">
                           Phone Number
                         </label>
                         <input
@@ -260,14 +260,14 @@ export default function ContactPage() {
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 bg-surface-950 border border-surface-800 rounded-xl text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors"
+                          className="w-full px-4 py-3 bg-white dark:bg-surface-950 border border-surface-300 dark:border-surface-800 rounded-xl text-surface-900 dark:text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors"
                           placeholder="+44 7442 852675"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">
+                      <label htmlFor="subject" className="block text-sm font-medium text-surface-900 dark:text-white mb-2">
                         Subject *
                       </label>
                       <select
@@ -275,7 +275,7 @@ export default function ContactPage() {
                         name="subject"
                         value={formData.subject}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-surface-950 border border-surface-800 rounded-xl text-white focus:outline-none focus:border-chrysolite-500/50 transition-colors"
+                        className="w-full px-4 py-3 bg-white dark:bg-surface-950 border border-surface-300 dark:border-surface-800 rounded-xl text-surface-900 dark:text-white focus:outline-none focus:border-chrysolite-500/50 transition-colors"
                       >
                         <option value="sales">Sales Inquiry</option>
                         <option value="support">Technical Support</option>
@@ -285,7 +285,7 @@ export default function ContactPage() {
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
+                      <label htmlFor="message" className="block text-sm font-medium text-surface-900 dark:text-white mb-2">
                         Message *
                       </label>
                       <textarea
@@ -307,7 +307,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 disabled:from-surface-700 disabled:to-surface-700 disabled:cursor-not-allowed text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 flex items-center justify-center gap-2"
+                      className="w-full bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 disabled:from-surface-700 disabled:to-surface-700 disabled:cursor-not-allowed text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? (
                         <>Processing...</>
@@ -328,23 +328,23 @@ export default function ContactPage() {
               {contactInfo.map((info) => (
                 <div
                   key={info.label}
-                  className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-6 hover:border-chrysolite-500/30 transition-all"
+                  className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-6 hover:border-chrysolite-500/30 transition-all"
                 >
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-chrysolite-500/20 to-gold-400/20 rounded-xl flex items-center justify-center flex-shrink-0">
                       <info.icon size={24} className="text-chrysolite-400" />
                     </div>
                     <div>
-                      <div className="text-surface-400 text-sm mb-1">{info.label}</div>
+                      <div className="text-surface-600 dark:text-surface-400 text-sm mb-1">{info.label}</div>
                       {info.href ? (
                         <a
                           href={info.href}
-                          className="text-white font-medium hover:text-chrysolite-400 transition-colors"
+                          className="text-surface-900 dark:text-white font-medium hover:text-chrysolite-400 transition-colors"
                         >
                           {info.value}
                         </a>
                       ) : (
-                        <div className="text-white font-medium">{info.value}</div>
+                        <div className="text-surface-900 dark:text-white font-medium">{info.value}</div>
                       )}
                     </div>
                   </div>
@@ -352,11 +352,11 @@ export default function ContactPage() {
               ))}
 
               {/* Map Placeholder */}
-              <div className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-6">
-                <div className="aspect-video bg-surface-950 rounded-xl flex items-center justify-center border border-surface-800">
+              <div className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-6">
+                <div className="aspect-video bg-white dark:bg-surface-950 rounded-xl flex items-center justify-center border border-surface-300 dark:border-surface-800">
                   <MapPin size={32} className="text-surface-600" />
                 </div>
-                <p className="text-sm text-surface-400 mt-4 text-center">
+                <p className="text-sm text-surface-600 dark:text-surface-400 mt-4 text-center">
                   Map integration coming soon
                 </p>
               </div>
@@ -369,10 +369,10 @@ export default function ContactPage() {
       <section className="py-24 bg-surface-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-surface-400">
+            <p className="text-lg text-surface-600 dark:text-surface-400">
               Quick answers to common questions.
             </p>
           </div>
@@ -381,13 +381,13 @@ export default function ContactPage() {
             {faqs.map((faq) => (
               <div
                 key={faq.question}
-                className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-6 hover:border-chrysolite-500/30 transition-all"
+                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-6 hover:border-chrysolite-500/30 transition-all"
               >
                 <div className="flex items-start gap-3">
                   <HelpCircle size={24} className="text-chrysolite-400 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-2">{faq.question}</h3>
-                    <p className="text-surface-400 leading-relaxed">{faq.answer}</p>
+                    <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2">{faq.question}</h3>
+                    <p className="text-surface-600 dark:text-surface-400 leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
               </div>
@@ -395,7 +395,7 @@ export default function ContactPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-surface-400 mb-4">
+            <p className="text-surface-600 dark:text-surface-400 mb-4">
               Still have questions?
             </p>
             <Link

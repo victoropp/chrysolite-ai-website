@@ -11,7 +11,7 @@ import Navigation from '@/components/Navigation'
 
 export default function Home() {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
       <Hero />
       <Features />

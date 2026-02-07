@@ -108,7 +108,7 @@ const benefits = [
 
 export default function FeaturesOverviewPage() {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
@@ -120,24 +120,24 @@ export default function FeaturesOverviewPage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
               Everything You Need to Run Your Business
             </h1>
-            <p className="text-xl text-surface-300 mb-8 leading-relaxed">
+            <p className="text-xl text-surface-600 dark:text-surface-300 mb-8 leading-relaxed">
               A complete, integrated ERP solution with all the features modern businesses need.
               From accounting to AI automation, manage everything from one powerful platform.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="https://app.chrysoliteai.com/register"
-                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
               >
                 Start Free Trial
                 <ArrowRight size={20} />
               </Link>
               <Link
                 href="/contact"
-                className="w-full sm:w-auto bg-surface-900 hover:bg-surface-800 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-700 hover:border-chrysolite-500/50"
+                className="w-full sm:w-auto bg-surface-50 dark:bg-surface-900 hover:bg-surface-100 dark:bg-surface-800 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
               >
                 Book a Demo
               </Link>
@@ -150,10 +150,10 @@ export default function FeaturesOverviewPage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Comprehensive Feature Set
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               Explore all the powerful modules that make up the Chrysolite AI ERP platform.
             </p>
           </div>
@@ -163,15 +163,15 @@ export default function FeaturesOverviewPage() {
               <Link
                 key={feature.title}
                 href={feature.href}
-                className="group bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-chrysolite/10"
+                className="group bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-chrysolite/10"
               >
                 <div className={`w-14 h-14 bg-gradient-to-br ${feature.color} bg-opacity-20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                  <feature.icon size={28} className="text-white" />
+                  <feature.icon size={28} className="text-surface-900 dark:text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-chrysolite-400 transition-colors">
+                <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-3 group-hover:text-chrysolite-400 transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-surface-400 leading-relaxed mb-4">
+                <p className="text-surface-600 dark:text-surface-400 leading-relaxed mb-4">
                   {feature.description}
                 </p>
                 <div className="flex items-center gap-2 text-chrysolite-400 font-medium text-sm group-hover:gap-3 transition-all">
@@ -189,10 +189,10 @@ export default function FeaturesOverviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
                 Built for Modern Businesses
               </h2>
-              <p className="text-lg text-surface-400 mb-8">
+              <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
                 Chrysolite AI ERP is designed to scale with your business, offering enterprise-grade
                 features with the simplicity and flexibility that growing companies need.
               </p>
@@ -203,31 +203,31 @@ export default function FeaturesOverviewPage() {
                     <div className="w-6 h-6 rounded-full bg-chrysolite-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Check size={16} className="text-chrysolite-400" />
                     </div>
-                    <span className="text-surface-300">{benefit}</span>
+                    <span className="text-surface-600 dark:text-surface-300">{benefit}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-8 shadow-2xl">
-                <h3 className="text-white font-semibold mb-6">Why Choose Chrysolite AI?</h3>
+              <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-8 shadow-2xl">
+                <h3 className="text-surface-900 dark:text-white font-semibold mb-6">Why Choose Chrysolite AI?</h3>
                 <div className="space-y-6">
                   <div>
                     <div className="text-4xl font-bold text-chrysolite-400 mb-2">10+</div>
-                    <p className="text-surface-400">Integrated modules working seamlessly together</p>
+                    <p className="text-surface-600 dark:text-surface-400">Integrated modules working seamlessly together</p>
                   </div>
                   <div>
                     <div className="text-4xl font-bold text-chrysolite-400 mb-2">99.9%</div>
-                    <p className="text-surface-400">Uptime SLA with enterprise-grade reliability</p>
+                    <p className="text-surface-600 dark:text-surface-400">Uptime SLA with enterprise-grade reliability</p>
                   </div>
                   <div>
                     <div className="text-4xl font-bold text-chrysolite-400 mb-2">24/7</div>
-                    <p className="text-surface-400">AI assistant available around the clock</p>
+                    <p className="text-surface-600 dark:text-surface-400">AI assistant available around the clock</p>
                   </div>
                   <div>
                     <div className="text-4xl font-bold text-chrysolite-400 mb-2">100%</div>
-                    <p className="text-surface-400">Cloud-based with automatic updates</p>
+                    <p className="text-surface-600 dark:text-surface-400">Cloud-based with automatic updates</p>
                   </div>
                 </div>
               </div>
@@ -239,11 +239,11 @@ export default function FeaturesOverviewPage() {
       {/* CTA Section */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-12 shadow-2xl">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-12 shadow-2xl">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
               Ready to Transform Your Business?
             </h2>
-            <p className="text-lg text-surface-400 mb-8">
+            <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
               Join hundreds of businesses already running on Chrysolite AI ERP.
               Start your free trial today, no credit card required.
             </p>
@@ -251,14 +251,14 @@ export default function FeaturesOverviewPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="https://app.chrysoliteai.com/register"
-                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
               >
                 Start Free Trial
                 <ArrowRight size={20} />
               </Link>
               <Link
                 href="/contact"
-                className="w-full sm:w-auto bg-surface-800 hover:bg-surface-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-700 hover:border-chrysolite-500/50"
+                className="w-full sm:w-auto bg-surface-100 dark:bg-surface-800 hover:bg-surface-700 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
               >
                 Contact Sales
               </Link>

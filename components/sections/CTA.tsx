@@ -7,7 +7,7 @@ export default function CTA() {
   return (
     <section className="relative py-24 lg:py-32 overflow-hidden">
       {/* Animated Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-surface-950 via-surface-900 to-surface-950">
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-surface-50 to-white dark:from-surface-950 dark:via-surface-900 dark:to-surface-950">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-[800px] h-[800px] bg-chrysolite-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gold-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
@@ -32,14 +32,14 @@ export default function CTA() {
           </div>
 
           {/* Headline */}
-          <h2 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up animation-delay-100">
+          <h2 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-surface-900 dark:text-white mb-6 leading-tight animate-fade-in-up animation-delay-100">
             Start Your Journey to
             <br />
             <span className="gradient-text">Smarter Operations</span>
           </h2>
 
           {/* Subheadline */}
-          <p className="text-xl lg:text-2xl text-surface-300 mb-12 leading-relaxed animate-fade-in-up animation-delay-200">
+          <p className="text-xl lg:text-2xl text-surface-600 dark:text-surface-300 mb-12 leading-relaxed animate-fade-in-up animation-delay-200">
             Join hundreds of businesses using Chrysolite AI to automate workflows,
             gain insights, and scale with confidence.
           </p>
@@ -48,7 +48,7 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in-up animation-delay-300">
             <Link
               href="https://app.chrysoliteai.com/register"
-              className="group relative bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-bold px-10 py-5 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/50 hover:shadow-chrysolite/70 hover:scale-105 flex items-center gap-3 text-lg overflow-hidden"
+              className="group relative bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-bold px-10 py-5 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/50 hover:shadow-chrysolite/70 hover:scale-105 flex items-center gap-3 text-lg overflow-hidden"
             >
               <span className="relative z-10">Start Free Trial</span>
               <ArrowRight size={24} className="relative z-10 group-hover:translate-x-1 transition-transform" />
@@ -59,7 +59,7 @@ export default function CTA() {
 
             <Link
               href="/contact"
-              className="group bg-surface-800/50 backdrop-blur-xl hover:bg-surface-800 text-white font-bold px-10 py-5 rounded-xl transition-all duration-200 border-2 border-surface-700 hover:border-gold-400/50 flex items-center gap-3 text-lg"
+              className="group bg-surface-100/50 dark:bg-surface-800/50 backdrop-blur-xl hover:bg-surface-100 dark:bg-surface-800 text-surface-900 dark:text-white font-bold px-10 py-5 rounded-xl transition-all duration-200 border-2 border-surface-300 dark:border-surface-700 hover:border-gold-400/50 flex items-center gap-3 text-lg"
             >
               <Calendar size={24} className="group-hover:text-gold-400 transition-colors" />
               <span>Book a Demo</span>
@@ -67,7 +67,7 @@ export default function CTA() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap items-center justify-center gap-8 text-surface-400 text-sm animate-fade-in-up animation-delay-400">
+          <div className="flex flex-wrap items-center justify-center gap-8 text-surface-600 dark:text-surface-400 text-sm animate-fade-in-up animation-delay-400">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span>14-day free trial</span>
@@ -84,17 +84,17 @@ export default function CTA() {
 
           {/* Feature Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 animate-fade-in-up animation-delay-500">
-            <div className="bg-surface-900/50 backdrop-blur-xl border border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
               <div className="text-3xl font-bold gradient-text mb-2">5 min</div>
-              <div className="text-sm text-surface-400">Setup time</div>
+              <div className="text-sm text-surface-600 dark:text-surface-400">Setup time</div>
             </div>
-            <div className="bg-surface-900/50 backdrop-blur-xl border border-surface-800 rounded-xl p-6 hover:border-gold-400/30 transition-all duration-300">
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-gold-400/30 transition-all duration-300">
               <div className="text-3xl font-bold gradient-text-gold mb-2">24/7</div>
-              <div className="text-sm text-surface-400">Expert support</div>
+              <div className="text-sm text-surface-600 dark:text-surface-400">Expert support</div>
             </div>
-            <div className="bg-surface-900/50 backdrop-blur-xl border border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
               <div className="text-3xl font-bold gradient-text mb-2">99.9%</div>
-              <div className="text-sm text-surface-400">Uptime guarantee</div>
+              <div className="text-sm text-surface-600 dark:text-surface-400">Uptime guarantee</div>
             </div>
           </div>
 
@@ -113,7 +113,7 @@ export default function CTA() {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               ))}
-              <span className="text-surface-400 text-sm ml-2">4.9/5 average rating</span>
+              <span className="text-surface-600 dark:text-surface-400 text-sm ml-2">4.9/5 average rating</span>
             </div>
           </div>
         </div>

@@ -300,13 +300,13 @@ EU Representative:
 
 export default function DataProtectionPage() {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 text-sm text-surface-400 mb-6">
+          <div className="flex items-center gap-2 text-sm text-surface-600 dark:text-surface-400 mb-6">
             <Link href="/" className="hover:text-chrysolite-400 transition-colors">
               Home
             </Link>
@@ -319,23 +319,23 @@ export default function DataProtectionPage() {
               <Shield size={32} className="text-chrysolite-400" />
             </div>
             <div>
-              <h1 className="text-4xl sm:text-5xl font-bold text-white mb-2">
+              <h1 className="text-4xl sm:text-5xl font-bold text-surface-900 dark:text-white mb-2">
                 Data Protection & GDPR Compliance
               </h1>
-              <p className="text-surface-400">
+              <p className="text-surface-600 dark:text-surface-400">
                 Last Updated: February 7, 2026
               </p>
             </div>
           </div>
 
-          <p className="text-lg text-surface-300 leading-relaxed mb-8">
+          <p className="text-lg text-surface-600 dark:text-surface-300 leading-relaxed mb-8">
             Your data security and privacy are our top priorities. We are fully compliant with GDPR
             and international data protection standards.
           </p>
 
           <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 mb-12">
-            <p className="text-surface-300 text-sm leading-relaxed">
-              <strong className="text-white">Compliance Note:</strong> This is a template data protection document.
+            <p className="text-surface-600 dark:text-surface-300 text-sm leading-relaxed">
+              <strong className="text-surface-900 dark:text-white">Compliance Note:</strong> This is a template data protection document.
               For production use, please have this reviewed by a qualified data protection officer and legal counsel
               to ensure full compliance with GDPR and applicable regulations.
             </p>
@@ -346,20 +346,20 @@ export default function DataProtectionPage() {
       {/* Protection Measures */}
       <section className="py-12 bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-surface-900 dark:text-white mb-8 text-center">
             How We Protect Your Data
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {protectionMeasures.map((measure) => (
               <div
                 key={measure.title}
-                className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-6 text-center hover:border-chrysolite-500/30 transition-all"
+                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-6 text-center hover:border-chrysolite-500/30 transition-all"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-chrysolite-500/20 to-gold-400/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <measure.icon size={28} className="text-chrysolite-400" />
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">{measure.title}</h3>
-                <p className="text-sm text-surface-400">{measure.description}</p>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2">{measure.title}</h3>
+                <p className="text-sm text-surface-600 dark:text-surface-400">{measure.description}</p>
               </div>
             ))}
           </div>
@@ -374,12 +374,12 @@ export default function DataProtectionPage() {
               <div
                 key={index}
                 id={`section-${index + 1}`}
-                className="bg-surface-900/30 border border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all"
+                className="bg-surface-900/30 border border-surface-300 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all"
               >
-                <h2 className="text-2xl font-bold text-white mb-4">
+                <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">
                   {section.title}
                 </h2>
-                <div className="text-surface-300 leading-relaxed whitespace-pre-line">
+                <div className="text-surface-600 dark:text-surface-300 leading-relaxed whitespace-pre-line">
                   {section.content}
                 </div>
               </div>
@@ -387,13 +387,13 @@ export default function DataProtectionPage() {
           </div>
 
           {/* Bottom Notice */}
-          <div className="mt-16 p-8 bg-surface-900/50 border border-surface-800 rounded-2xl text-center">
-            <p className="text-surface-400 mb-4">
+          <div className="mt-16 p-8 bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl text-center">
+            <p className="text-surface-600 dark:text-surface-400 mb-4">
               Need to exercise your data protection rights or have questions?
             </p>
             <Link
               href="mailto:dpo@chrysoliteai.com"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40"
             >
               Contact Our DPO
             </Link>

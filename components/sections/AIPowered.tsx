@@ -53,7 +53,7 @@ export default function AIPowered() {
   return (
     <section className="relative py-24 lg:py-32 overflow-hidden">
       {/* Animated Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-surface-950 via-surface-900 to-surface-950">
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-surface-50 to-white dark:from-surface-950 dark:via-surface-900 dark:to-surface-950">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-chrysolite-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
           <div className="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-gold-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -71,12 +71,12 @@ export default function AIPowered() {
             <Brain size={16} className="text-chrysolite-400" />
             <span className="text-sm font-medium text-chrysolite-400">Powered by AI</span>
           </div>
-          <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
             Intelligence That
             <br />
             <span className="gradient-text">Works For You</span>
           </h2>
-          <p className="text-xl text-surface-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-surface-600 dark:text-surface-300 max-w-3xl mx-auto leading-relaxed">
             Harness the power of artificial intelligence to automate workflows,
             predict trends, and make smarter decisions faster than ever before.
           </p>
@@ -98,7 +98,7 @@ export default function AIPowered() {
               )}
             >
               {/* Card */}
-              <div className="relative h-full bg-surface-900/50 backdrop-blur-xl border border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-chrysolite-500/10 hover:-translate-y-1">
+              <div className="relative h-full bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-xl border border-surface-200 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-chrysolite-500/10 hover:-translate-y-1">
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-chrysolite-500/0 to-gold-400/0 group-hover:from-chrysolite-500/5 group-hover:to-gold-400/5 rounded-2xl transition-all duration-300"></div>
 
@@ -112,10 +112,10 @@ export default function AIPowered() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-chrysolite-400 transition-colors">
+                  <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-3 group-hover:text-chrysolite-400 transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-surface-400 leading-relaxed">
+                  <p className="text-surface-600 dark:text-surface-400 leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
@@ -136,10 +136,10 @@ export default function AIPowered() {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-2xl mb-6 animate-glow">
               <Sparkles size={32} className="text-white" />
             </div>
-            <h3 className="text-3xl font-bold text-white mb-4">
+            <h3 className="text-3xl font-bold text-surface-900 dark:text-white mb-4">
               AI That <span className="gradient-text">Learns & Adapts</span>
             </h3>
-            <p className="text-lg text-surface-300 max-w-2xl mx-auto mb-8">
+            <p className="text-lg text-surface-600 dark:text-surface-300 max-w-2xl mx-auto mb-8">
               Our AI continuously learns from your business patterns and industry trends to provide
               increasingly accurate predictions and personalized recommendations over time.
             </p>
@@ -148,15 +148,15 @@ export default function AIPowered() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
               <div>
                 <div className="text-4xl font-bold gradient-text mb-2">85%</div>
-                <div className="text-sm text-surface-400">Reduction in manual tasks</div>
+                <div className="text-sm text-surface-600 dark:text-surface-400">Reduction in manual tasks</div>
               </div>
               <div>
                 <div className="text-4xl font-bold gradient-text-gold mb-2">92%</div>
-                <div className="text-sm text-surface-400">Forecast accuracy</div>
+                <div className="text-sm text-surface-600 dark:text-surface-400">Forecast accuracy</div>
               </div>
               <div>
                 <div className="text-4xl font-bold gradient-text mb-2">3x</div>
-                <div className="text-sm text-surface-400">Faster decision making</div>
+                <div className="text-sm text-surface-600 dark:text-surface-400">Faster decision making</div>
               </div>
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function AIPowered() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-12 animate-fade-in-up animation-delay-2000">
-          <p className="text-surface-400 mb-6">
+          <p className="text-surface-600 dark:text-surface-400 mb-6">
             Experience the future of business management
           </p>
           <a

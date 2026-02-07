@@ -132,7 +132,7 @@ const completedFeatures = [
 
 export default function RoadmapPage() {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
@@ -145,14 +145,14 @@ export default function RoadmapPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-2xl mb-8 shadow-lg shadow-chrysolite/30">
-              <Rocket size={40} className="text-white" />
+              <Rocket size={40} className="text-surface-900 dark:text-white" />
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
               Building the Future of ERP
             </h1>
 
-            <p className="text-xl text-surface-300 mb-8 leading-relaxed">
+            <p className="text-xl text-surface-600 dark:text-surface-300 mb-8 leading-relaxed">
               See what we're working on next. Our roadmap is driven by customer feedback
               and our vision to create the most powerful yet simple ERP platform.
             </p>
@@ -166,9 +166,9 @@ export default function RoadmapPage() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center gap-2 mb-4">
               <CheckCircle2 size={32} className="text-green-400" />
-              <h2 className="text-3xl font-bold text-white">Already Delivered</h2>
+              <h2 className="text-3xl font-bold text-surface-900 dark:text-white">Already Delivered</h2>
             </div>
-            <p className="text-lg text-surface-400">
+            <p className="text-lg text-surface-600 dark:text-surface-400">
               Features we've shipped and are available today
             </p>
           </div>
@@ -177,10 +177,10 @@ export default function RoadmapPage() {
             {completedFeatures.map((feature) => (
               <div
                 key={feature}
-                className="flex items-start gap-3 bg-surface-900/50 border border-surface-800 rounded-xl p-4"
+                className="flex items-start gap-3 bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-4"
               >
                 <CheckCircle2 size={20} className="text-green-400 flex-shrink-0 mt-0.5" />
-                <span className="text-surface-300 text-sm">{feature}</span>
+                <span className="text-surface-600 dark:text-surface-300 text-sm">{feature}</span>
               </div>
             ))}
           </div>
@@ -191,10 +191,10 @@ export default function RoadmapPage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               What's Coming Next
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               Our quarterly roadmap showing planned features and improvements.
             </p>
           </div>
@@ -206,8 +206,8 @@ export default function RoadmapPage() {
                   {/* Quarter Badge */}
                   <div className="flex-shrink-0">
                     <div className={`w-24 h-24 bg-gradient-to-br ${quarter.color} rounded-2xl flex flex-col items-center justify-center shadow-lg`}>
-                      <quarter.icon size={32} className="text-white mb-1" />
-                      <span className="text-white font-bold text-sm">{quarter.quarter}</span>
+                      <quarter.icon size={32} className="text-surface-900 dark:text-white mb-1" />
+                      <span className="text-surface-900 dark:text-white font-bold text-sm">{quarter.quarter}</span>
                     </div>
                   </div>
 
@@ -217,12 +217,12 @@ export default function RoadmapPage() {
                       {quarter.features.map((feature) => (
                         <div
                           key={feature.title}
-                          className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-6 hover:border-chrysolite-500/30 transition-all"
+                          className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-6 hover:border-chrysolite-500/30 transition-all"
                         >
-                          <h3 className="text-lg font-semibold text-white mb-2">
+                          <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2">
                             {feature.title}
                           </h3>
-                          <p className="text-surface-400 text-sm leading-relaxed">
+                          <p className="text-surface-600 dark:text-surface-400 text-sm leading-relaxed">
                             {feature.description}
                           </p>
                         </div>
@@ -239,12 +239,12 @@ export default function RoadmapPage() {
       {/* Feedback Section */}
       <section className="py-24 bg-surface-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-700 rounded-2xl p-12 shadow-2xl">
+          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-12 shadow-2xl">
             <Sparkles size={48} className="text-chrysolite-400 mx-auto mb-6" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
               Help Shape Our Roadmap
             </h2>
-            <p className="text-lg text-surface-400 mb-8">
+            <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
               Your feedback drives our product direction. Have a feature request or idea?
               We'd love to hear from you.
             </p>
@@ -252,14 +252,14 @@ export default function RoadmapPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
               >
                 Submit Feature Request
                 <ArrowRight size={20} />
               </Link>
               <Link
                 href="/community"
-                className="w-full sm:w-auto bg-surface-800 hover:bg-surface-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-700 hover:border-chrysolite-500/50"
+                className="w-full sm:w-auto bg-surface-100 dark:bg-surface-800 hover:bg-surface-700 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
               >
                 Join Community
               </Link>

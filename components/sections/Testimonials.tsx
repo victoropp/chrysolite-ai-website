@@ -32,7 +32,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="relative py-24 lg:py-32 overflow-hidden bg-surface-950">
+    <section className="relative py-24 lg:py-32 overflow-hidden bg-white dark:bg-surface-950">
       {/* Background Decoration */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/3 left-0 w-96 h-96 bg-chrysolite-500 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
@@ -48,10 +48,10 @@ export default function Testimonials() {
           <div className="inline-block bg-chrysolite-500/10 border border-chrysolite-500/30 rounded-full px-4 py-2 mb-4">
             <span className="text-sm font-medium text-chrysolite-400">Customer Stories</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-surface-900 dark:text-white mb-4">
             Loved by <span className="gradient-text">Businesses Worldwide</span>
           </h2>
-          <p className="text-xl text-surface-300 max-w-3xl mx-auto">
+          <p className="text-xl text-surface-600 dark:text-surface-300 max-w-3xl mx-auto">
             See what our customers have to say about their experience with Chrysolite AI
           </p>
         </div>
@@ -69,14 +69,14 @@ export default function Testimonials() {
               )}
             >
               {/* Card */}
-              <div className="relative h-full bg-surface-900/50 backdrop-blur-xl border border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-chrysolite-500/10 hover:-translate-y-1">
+              <div className="relative h-full bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-chrysolite-500/10 hover:-translate-y-1">
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-chrysolite-500/0 to-gold-400/0 group-hover:from-chrysolite-500/5 group-hover:to-gold-400/5 rounded-2xl transition-all duration-300"></div>
 
                 <div className="relative">
                   {/* Quote Icon */}
                   <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-chrysolite-500 to-chrysolite-600 rounded-xl flex items-center justify-center opacity-20 group-hover:opacity-100 transition-opacity duration-300">
-                    <Quote size={24} className="text-white" />
+                    <Quote size={24} className="text-surface-900 dark:text-white" />
                   </div>
 
                   {/* Stars */}
@@ -98,14 +98,14 @@ export default function Testimonials() {
                   {/* Author */}
                   <div className="flex items-center gap-4">
                     {/* Avatar Placeholder */}
-                    <div className="w-12 h-12 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-full flex items-center justify-center text-surface-900 dark:text-white font-bold text-lg">
                       {testimonial.name.split(' ').map(n => n[0]).join('')}
                     </div>
 
                     {/* Details */}
                     <div>
-                      <div className="font-semibold text-white">{testimonial.name}</div>
-                      <div className="text-sm text-surface-400">
+                      <div className="font-semibold text-surface-900 dark:text-white">{testimonial.name}</div>
+                      <div className="text-sm text-surface-600 dark:text-surface-400">
                         {testimonial.role} at {testimonial.company}
                       </div>
                     </div>
@@ -127,27 +127,27 @@ export default function Testimonials() {
 
         {/* Stats Section */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16 animate-fade-in-up animation-delay-1000">
-          <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-800 rounded-xl">
+          <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl">
             <div className="text-4xl font-bold gradient-text mb-2">500+</div>
-            <div className="text-sm text-surface-400">Happy Customers</div>
+            <div className="text-sm text-surface-600 dark:text-surface-400">Happy Customers</div>
           </div>
-          <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-800 rounded-xl">
+          <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl">
             <div className="text-4xl font-bold gradient-text-gold mb-2">4.9/5</div>
-            <div className="text-sm text-surface-400">Average Rating</div>
+            <div className="text-sm text-surface-600 dark:text-surface-400">Average Rating</div>
           </div>
-          <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-800 rounded-xl">
+          <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl">
             <div className="text-4xl font-bold gradient-text mb-2">98%</div>
-            <div className="text-sm text-surface-400">Customer Retention</div>
+            <div className="text-sm text-surface-600 dark:text-surface-400">Customer Retention</div>
           </div>
-          <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-800 rounded-xl">
+          <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl">
             <div className="text-4xl font-bold gradient-text-gold mb-2">50+</div>
-            <div className="text-sm text-surface-400">Countries Served</div>
+            <div className="text-sm text-surface-600 dark:text-surface-400">Countries Served</div>
           </div>
         </div>
 
         {/* Bottom CTA */}
         <div className="text-center mt-12 animate-fade-in-up animation-delay-2000">
-          <p className="text-surface-400">
+          <p className="text-surface-600 dark:text-surface-400">
             Join hundreds of businesses transforming their operations.{' '}
             <a href="/case-studies" className="text-chrysolite-400 hover:text-chrysolite-300 font-medium underline underline-offset-4">
               Read more success stories →

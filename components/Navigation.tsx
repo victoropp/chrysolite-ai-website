@@ -48,7 +48,7 @@ export default function Navigation() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-surface-950/95 backdrop-blur-xl border-b border-surface-800 shadow-lg'
+          ? 'bg-white/95 dark:bg-surface-950/95 backdrop-blur-xl border-b border-surface-200 dark:border-surface-800 shadow-lg'
           : 'bg-transparent'
       )}
     >
@@ -66,10 +66,10 @@ export default function Navigation() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-bold text-white">
+              <span className="text-lg font-bold text-surface-900 dark:text-white">
                 Chrysolite <span className="text-chrysolite-vivid">AI</span>
               </span>
-              <span className="text-xs text-surface-400 -mt-1">ERP</span>
+              <span className="text-xs text-surface-600 dark:text-surface-400 -mt-1">ERP</span>
             </div>
           </Link>
 
@@ -84,7 +84,7 @@ export default function Navigation() {
               >
                 {item.submenu ? (
                   <>
-                    <button className="flex items-center gap-1 text-surface-300 hover:text-white transition-colors py-2">
+                    <button className="flex items-center gap-1 text-surface-600 dark:text-surface-300 hover:text-surface-900 dark:hover:text-white transition-colors py-2">
                       {item.label}
                       <ChevronDown size={16} className={cn(
                         'transition-transform',
@@ -94,12 +94,12 @@ export default function Navigation() {
 
                     {/* Submenu */}
                     {openSubmenu === item.label && (
-                      <div className="absolute top-full left-0 mt-2 w-56 bg-surface-900/95 backdrop-blur-xl border border-surface-700 rounded-2xl shadow-2xl py-2 animate-fade-in">
+                      <div className="absolute top-full left-0 mt-2 w-56 bg-white/95 dark:bg-surface-900/95 backdrop-blur-xl border border-surface-200 dark:border-surface-700 rounded-2xl shadow-2xl py-2 animate-fade-in">
                         {item.submenu.map((subItem) => (
                           <Link
                             key={subItem.label}
                             href={subItem.href}
-                            className="block px-4 py-2.5 text-surface-300 hover:text-white hover:bg-surface-800/50 transition-colors"
+                            className="block px-4 py-2.5 text-surface-600 dark:text-surface-300 hover:text-surface-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-surface-800/50 transition-colors"
                           >
                             {subItem.label}
                           </Link>
@@ -110,7 +110,7 @@ export default function Navigation() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="text-surface-300 hover:text-white transition-colors"
+                    className="text-surface-600 dark:text-surface-300 hover:text-surface-900 dark:hover:text-white transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -124,7 +124,7 @@ export default function Navigation() {
             <ThemeToggle />
             <Link
               href="https://app.chrysoliteai.com/login"
-              className="text-surface-300 hover:text-white transition-colors"
+              className="text-surface-600 dark:text-surface-300 hover:text-surface-900 dark:hover:text-white transition-colors"
             >
               Sign In
             </Link>
@@ -139,7 +139,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-white p-2 hover:bg-surface-800 rounded-lg transition-colors"
+            className="lg:hidden text-surface-900 dark:text-white p-2 hover:bg-surface-100 dark:hover:bg-surface-800 rounded-lg transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -149,7 +149,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-surface-900/98 backdrop-blur-xl border-t border-surface-800 animate-fade-in">
+        <div className="lg:hidden bg-white/98 dark:bg-surface-900/98 backdrop-blur-xl border-t border-surface-200 dark:border-surface-800 animate-fade-in">
           <div className="max-w-7xl mx-auto px-4 py-6 space-y-4">
             {navItems.map((item) => (
               <div key={item.label}>
@@ -157,7 +157,7 @@ export default function Navigation() {
                   <>
                     <button
                       onClick={() => setOpenSubmenu(openSubmenu === item.label ? null : item.label)}
-                      className="flex items-center justify-between w-full text-surface-300 hover:text-white py-2 transition-colors"
+                      className="flex items-center justify-between w-full text-surface-600 dark:text-surface-300 hover:text-surface-900 dark:hover:text-white py-2 transition-colors"
                     >
                       {item.label}
                       <ChevronDown size={16} className={cn(
@@ -172,7 +172,7 @@ export default function Navigation() {
                           <Link
                             key={subItem.label}
                             href={subItem.href}
-                            className="block text-surface-400 hover:text-white py-2 transition-colors"
+                            className="block text-surface-500 dark:text-surface-400 hover:text-surface-900 dark:hover:text-white py-2 transition-colors"
                             onClick={() => setIsMobileMenuOpen(false)}
                           >
                             {subItem.label}
@@ -184,7 +184,7 @@ export default function Navigation() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="block text-surface-300 hover:text-white py-2 transition-colors"
+                    className="block text-surface-600 dark:text-surface-300 hover:text-surface-900 dark:hover:text-white py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -194,10 +194,10 @@ export default function Navigation() {
             ))}
 
             {/* Mobile CTA Buttons */}
-            <div className="pt-4 space-y-3 border-t border-surface-800">
+            <div className="pt-4 space-y-3 border-t border-surface-200 dark:border-surface-800">
               <Link
                 href="https://app.chrysoliteai.com/login"
-                className="block text-center text-surface-300 hover:text-white py-3 transition-colors"
+                className="block text-center text-surface-600 dark:text-surface-300 hover:text-surface-900 dark:hover:text-white py-3 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Sign In

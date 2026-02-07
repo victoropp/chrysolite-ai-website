@@ -136,7 +136,7 @@ const trustBadges = [
 
 export default function PricingPage() {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
@@ -147,10 +147,10 @@ export default function PricingPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
             Flexible Pricing for Every Business
           </h1>
-          <p className="text-xl text-surface-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-surface-600 dark:text-surface-300 mb-8 max-w-3xl mx-auto">
             Customized pricing tailored to your specific needs. Pay only for what you use,
             scale as you grow, and get enterprise-grade features at every level.
           </p>
@@ -161,10 +161,10 @@ export default function PricingPage() {
       <section className="py-16 bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               What Affects Your Pricing?
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               We consider several factors to create the perfect package for your business.
             </p>
           </div>
@@ -173,13 +173,13 @@ export default function PricingPage() {
             {pricingFactors.map((factor) => (
               <div
                 key={factor.title}
-                className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-6 text-center hover:border-chrysolite-500/30 transition-all"
+                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-6 text-center hover:border-chrysolite-500/30 transition-all"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-chrysolite-500/20 to-gold-400/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <factor.icon size={28} className="text-chrysolite-400" />
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">{factor.title}</h3>
-                <p className="text-sm text-surface-400">{factor.description}</p>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2">{factor.title}</h3>
+                <p className="text-sm text-surface-600 dark:text-surface-400">{factor.description}</p>
               </div>
             ))}
           </div>
@@ -190,10 +190,10 @@ export default function PricingPage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Example Pricing Tiers
             </h2>
-            <p className="text-lg text-surface-400 max-w-2xl mx-auto">
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               These are example configurations. Your actual pricing will be customized to your needs.
             </p>
           </div>
@@ -209,17 +209,17 @@ export default function PricingPage() {
                 }`}
               >
                 {tier.highlighted && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 text-white text-sm font-semibold px-4 py-1 rounded-full">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 text-surface-900 dark:text-white text-sm font-semibold px-4 py-1 rounded-full">
                     Most Popular
                   </div>
                 )}
 
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-white mb-2">{tier.name}</h3>
-                  <p className="text-surface-400 text-sm mb-6">{tier.description}</p>
+                  <h3 className="text-2xl font-bold text-surface-900 dark:text-white mb-2">{tier.name}</h3>
+                  <p className="text-surface-600 dark:text-surface-400 text-sm mb-6">{tier.description}</p>
                   <div className="mb-6">
-                    <div className="text-4xl font-bold text-white">{tier.startingPrice}</div>
-                    <div className="text-surface-400 text-sm mt-1">Contact for pricing</div>
+                    <div className="text-4xl font-bold text-surface-900 dark:text-white">{tier.startingPrice}</div>
+                    <div className="text-surface-600 dark:text-surface-400 text-sm mt-1">Contact for pricing</div>
                   </div>
                 </div>
 
@@ -227,7 +227,7 @@ export default function PricingPage() {
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
                       <Check size={20} className="text-chrysolite-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-surface-300 text-sm">{feature}</span>
+                      <span className="text-surface-600 dark:text-surface-300 text-sm">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -255,7 +255,7 @@ export default function PricingPage() {
             {trustBadges.map((badge) => (
               <div
                 key={badge.label}
-                className="flex items-center gap-2 px-6 py-3 bg-surface-900 border border-surface-700 rounded-xl text-surface-300"
+                className="flex items-center gap-2 px-6 py-3 bg-surface-50 dark:bg-surface-900 border border-surface-300 dark:border-surface-700 rounded-xl text-surface-600 dark:text-surface-300"
               >
                 <badge.icon size={20} className="text-chrysolite-400" />
                 <span className="font-medium">{badge.label}</span>
@@ -269,10 +269,10 @@ export default function PricingPage() {
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-surface-400">
+            <p className="text-lg text-surface-600 dark:text-surface-400">
               Everything you need to know about our pricing.
             </p>
           </div>
@@ -281,13 +281,13 @@ export default function PricingPage() {
             {faqs.map((faq) => (
               <div
                 key={faq.question}
-                className="bg-surface-900/50 backdrop-blur-sm border border-surface-800 rounded-2xl p-6 hover:border-chrysolite-500/30 transition-all"
+                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-6 hover:border-chrysolite-500/30 transition-all"
               >
                 <div className="flex items-start gap-3">
                   <HelpCircle size={24} className="text-chrysolite-400 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-2">{faq.question}</h3>
-                    <p className="text-surface-400 leading-relaxed">{faq.answer}</p>
+                    <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2">{faq.question}</h3>
+                    <p className="text-surface-600 dark:text-surface-400 leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
               </div>
@@ -299,24 +299,24 @@ export default function PricingPage() {
       {/* CTA Section */}
       <section className="py-24 bg-surface-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-lg text-surface-400 mb-12">
+          <p className="text-lg text-surface-600 dark:text-surface-400 mb-12">
             Get a custom quote tailored to your business needs, or start your free trial today.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
             >
               Get Custom Quote
               <ArrowRight size={20} />
             </Link>
             <Link
               href="https://app.chrysoliteai.com/register"
-              className="w-full sm:w-auto bg-surface-900 hover:bg-surface-800 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-700 hover:border-chrysolite-500/50"
+              className="w-full sm:w-auto bg-surface-50 dark:bg-surface-900 hover:bg-surface-100 dark:bg-surface-800 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
             >
               Start Free Trial
             </Link>
