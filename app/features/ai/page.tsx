@@ -9,8 +9,6 @@ import {
   TrendingUp,
   Zap,
   Target,
-  Users,
-  FileText,
   Eye,
   Mic,
   Database,
@@ -19,126 +17,109 @@ import {
   Lightbulb,
   CheckCircle2,
   ArrowRight,
-  Bot,
-  Network,
+  Clock,
+  FileText,
 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'AI-Powered Features | Chrysolite AI ERP',
-  description: 'Transform your business with AI. 9 specialized AI agents, predictive analytics, intelligent automation, vision capabilities, and voice assistance—all working 24/7 for your business.',
+  description: 'Transform your business with AI. Intelligent automation, predictive analytics, natural language queries, and voice assistance—working 24/7 for your business.',
 }
 
 const aiCapabilities = [
   {
-    icon: Users,
-    title: '9 Specialized AI Agents',
-    description: 'Domain-expert AI agents for Inventory, Finance, Sales, Procurement, Logistics, Operations, HR, Analytics, and Accounting—each with deep expertise in their field.',
+    icon: Brain,
+    title: 'Specialized AI Agents',
+    description: 'Domain-expert AI agents for Finance, Inventory, Sales, Procurement, HR, and more. Each agent understands its specialty deeply and collaborates to solve complex cross-functional challenges.',
     color: 'from-purple-500 to-pink-500',
   },
   {
-    icon: Bot,
-    title: 'AI Hive Intelligence',
-    description: 'Multiple AI agents collaborate to solve complex business problems, debate solutions, and reach consensus on strategic decisions.',
+    icon: Sparkles,
+    title: 'AI Orchestration',
+    description: 'Multiple AI agents work together seamlessly—one validates compliance, another optimizes inventory, while a third analyzes cash flow. Coordinated intelligence across your entire business.',
     color: 'from-blue-500 to-cyan-500',
-  },
-  {
-    icon: Brain,
-    title: 'Advanced Memory System',
-    description: '8 types of AI memory ensure your assistants remember context, learn from past interactions, and provide personalized insights based on your business patterns.',
-    color: 'from-green-500 to-teal-500',
-  },
-  {
-    icon: Database,
-    title: 'Knowledge Base (RAG)',
-    description: 'AI-powered document search across manuals, policies, procedures, and FAQs. Get instant answers grounded in your company knowledge.',
-    color: 'from-orange-500 to-red-500',
   },
   {
     icon: TrendingUp,
     title: 'Predictive Analytics',
-    description: 'Forecast demand, predict cash flow, identify customer churn risk, and anticipate inventory needs with machine learning models.',
+    description: 'ML-powered forecasting for cash flow, revenue trends, customer churn, and inventory demand. AI analyzes historical patterns and market signals to predict business outcomes with accuracy.',
+    color: 'from-green-500 to-teal-500',
+  },
+  {
+    icon: Database,
+    title: 'RAG-Powered Knowledge',
+    description: 'AI retrieves and synthesizes information from your company knowledge base, policies, contracts, and procedures. Get instant, cited answers with source references.',
+    color: 'from-orange-500 to-red-500',
+  },
+  {
+    icon: MessageSquare,
+    title: 'Natural Language Interface',
+    description: 'Ask complex business questions in plain English: "Which customers are overdue and what\'s our collection rate?" AI understands context, intent, and follows up intelligently.',
     color: 'from-indigo-500 to-purple-500',
   },
   {
     icon: Eye,
-    title: 'Computer Vision',
-    description: 'AI waybill scanner extracts data from delivery documents. Process invoices, receipts, and forms automatically with image recognition.',
+    title: 'Computer Vision & OCR',
+    description: 'Automatically extract data from invoices, receipts, delivery notes, and contracts. AI reads, validates, and posts transactions—reducing manual entry by up to 90%.',
     color: 'from-pink-500 to-rose-500',
   },
   {
     icon: Mic,
     title: 'Voice Assistant',
-    description: 'Talk to your ERP naturally. Real-time voice conversations with AI agents, text-to-speech reports, and multimodal interactions.',
+    description: 'Hands-free business intelligence through voice commands. Ask questions while driving, get spoken dashboards, dictate approvals—your ERP responds naturally with real-time data.',
     color: 'from-yellow-500 to-amber-500',
   },
   {
-    icon: MessageSquare,
-    title: 'Natural Language Processing',
-    description: 'Describe transactions in plain English and AI creates the journal entries. Ask questions in your own words and get instant answers.',
-    color: 'from-emerald-500 to-green-500',
+    icon: BarChart3,
+    title: 'Autonomous Reporting',
+    description: 'AI generates executive summaries, variance analyses, and trend reports automatically. Dashboards that highlight anomalies, opportunities, and risks without manual configuration.',
+    color: 'from-cyan-500 to-blue-500',
   },
   {
-    icon: BarChart3,
-    title: 'Business Intelligence',
-    description: 'AI-powered KPI dashboards, trend analysis, anomaly detection, and automated executive summaries of complex reports.',
-    color: 'from-cyan-500 to-blue-500',
+    icon: Shield,
+    title: 'Intelligent Monitoring',
+    description: 'AI continuously monitors transactions for fraud patterns, compliance violations, data anomalies, and operational inefficiencies. Real-time alerts with recommended actions.',
+    color: 'from-emerald-500 to-green-500',
   },
 ]
 
 const automationFeatures = [
   {
     icon: Zap,
-    title: 'Intelligent Automation',
-    description: 'Automated journal entries for sales, procurement, inventory, and asset transactions. AI handles repetitive accounting tasks 24/7.',
+    title: 'End-to-End Automation',
+    description: 'From purchase order to payment posting—AI automates the entire accounting cycle. Journal entries, bank reconciliations, period-end close, and intercompany eliminations run autonomously.',
   },
   {
     icon: FileText,
-    title: 'AI Accountant',
-    description: 'Your virtual CFO that validates IFRS compliance, calculates tax implications, suggests GL accounts, and previews financial impact before posting.',
+    title: 'AI-Powered Accounting',
+    description: 'Virtual CFO validates compliance, suggests GL accounts, calculates tax implications, and identifies posting errors before they hit your books. IFRS and GAAP expertise built-in.',
   },
   {
     icon: Target,
-    title: 'Smart Recommendations',
-    description: 'AI analyzes patterns and recommends optimal reorder points, pricing strategies, route optimizations, and workflow improvements.',
-  },
-  {
-    icon: Shield,
-    title: 'Fraud Detection',
-    description: 'Real-time anomaly detection monitors transactions for unusual patterns, duplicate entries, and suspicious activities.',
+    title: 'Intelligent Recommendations',
+    description: 'ML models recommend optimal pricing strategies, reorder quantities, cash allocation, credit limits, and discount structures based on historical performance and market conditions.',
   },
   {
     icon: Lightbulb,
-    title: 'Market Intelligence',
-    description: 'AI tracks market trends, competitor movements, regulatory changes, and supply chain developments—delivering actionable insights.',
+    title: 'Market & Supply Chain Intelligence',
+    description: 'AI monitors supplier performance, tracks commodity prices, analyzes competitor moves, and identifies supply chain risks—giving you strategic foresight.',
   },
   {
-    icon: Network,
-    title: 'Process Optimization',
-    description: 'AI analyzes your workflows, identifies bottlenecks, and suggests efficiency improvements across all business operations.',
+    icon: Clock,
+    title: 'Adaptive Learning',
+    description: 'AI learns your business rules, approval patterns, data preferences, and reporting needs. The system becomes more personalized and accurate the longer you use it.',
   },
-]
-
-const agentCapabilities = [
-  { name: 'Inventory Agent', tools: '10+ tools for stock management, reorder points, and warehouse optimization' },
-  { name: 'Finance Agent', tools: 'AR/AP aging, cash flow analysis, financial ratios, and overdue tracking' },
-  { name: 'Sales Agent', tools: 'Client intelligence, pricing optimization, target achievement, and quotation management' },
-  { name: 'Procurement Agent', tools: 'Supplier performance, price comparisons, and automated reorder suggestions' },
-  { name: 'Logistics Agent', tools: 'Route optimization, fleet tracking, delivery scheduling, and driver performance' },
-  { name: 'Operations Agent', tools: 'Production monitoring, quality control, loss analysis, and inventory reconciliation' },
-  { name: 'HR Agent', tools: 'Employee management, shift scheduling, headcount reporting, and department analytics' },
-  { name: 'Analytics Agent', tools: 'KPI tracking, sales trends, customer segmentation, and predictive forecasting' },
-  { name: 'Accountant Agent', tools: 'IFRS-compliant accounting, tax calculations, depreciation, and GL automation' },
 ]
 
 const benefits = [
-  'Reduce manual data entry by 80% with intelligent automation',
-  'Get instant answers to complex financial questions in plain English',
-  'Predict cash flow shortfalls and revenue trends weeks in advance',
-  'Detect fraud, errors, and anomalies before they impact financials',
-  '100+ AI-powered tools available for business operations',
-  'Continuous learning from your business patterns and preferences',
-  'Multi-provider AI (Anthropic Claude, OpenAI, Google Gemini)',
-  'Real-time voice and chat conversations with specialized agents',
+  'Reduce manual data entry and reconciliation by up to 90%',
+  'Get instant, accurate answers to complex multi-dimensional business questions',
+  'Predict cash flow, revenue, and demand with ML-powered accuracy',
+  'Detect fraud, anomalies, and compliance violations in real-time',
+  'Automate journal entries, approvals, reconciliations, and close processes',
+  'Natural language and voice access to your entire business intelligence',
+  'Extract and validate data from documents, invoices, and contracts automatically',
+  'Continuous learning adapts to your unique business patterns and preferences',
 ]
 
 export default function AIFeaturePage() {
@@ -160,11 +141,11 @@ export default function AIFeaturePage() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 dark:text-white mb-6">
-              The Most Advanced AI-Powered ERP
+              AI That Transforms Your Business
             </h1>
 
             <p className="text-xl text-surface-600 dark:text-surface-300 mb-12 leading-relaxed">
-              9 specialized AI agents, predictive analytics, voice assistance, computer vision, and intelligent automation—all working together to transform your business operations.
+              Experience the future of ERP with built-in artificial intelligence. Automate workflows, predict outcomes, and get expert insights—all powered by advanced AI that works 24/7.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -191,15 +172,15 @@ export default function AIFeaturePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
-              Comprehensive AI Capabilities
+              Intelligent Features That Work For You
             </h2>
             <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
-              Built-in artificial intelligence that powers every aspect of your business.
+              Built-in AI that automates, predicts, and optimizes every aspect of your business operations.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {aiCapabilities.map((capability, index) => (
+            {aiCapabilities.map((capability) => (
               <div
                 key={capability.title}
                 className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-chrysolite/10 group"
@@ -219,52 +200,19 @@ export default function AIFeaturePage() {
         </div>
       </section>
 
-      {/* Specialized Agents Section */}
+      {/* Automation Features */}
       <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
-              9 Specialized AI Agents
+              Powerful Automation & Insights
             </h2>
             <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
-              Each agent is an expert in their domain with 10+ specialized tools and deep business knowledge.
+              AI capabilities that save time, reduce errors, and deliver actionable business intelligence.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {agentCapabilities.map((agent) => (
-              <div
-                key={agent.name}
-                className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all"
-              >
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-chrysolite-500/20 to-gold-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Bot size={20} className="text-chrysolite-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-surface-900 dark:text-white mb-1">{agent.name}</h3>
-                    <p className="text-sm text-surface-600 dark:text-surface-400">{agent.tools}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Automation Features */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
-              Intelligent Automation & Insights
-            </h2>
-            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
-              AI that works 24/7 to automate tasks, detect issues, and deliver actionable insights.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {automationFeatures.map((feature) => (
               <div
                 key={feature.title}
@@ -282,11 +230,26 @@ export default function AIFeaturePage() {
               </div>
             ))}
           </div>
+
+          {/* Benefits List */}
+          <div className="bg-gradient-to-br from-surface-100 to-surface-200 dark:from-surface-900 dark:to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-8 lg:p-12">
+            <h3 className="text-2xl font-bold text-surface-900 dark:text-white mb-8 text-center">
+              Real Business Impact
+            </h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              {benefits.map((benefit) => (
+                <div key={benefit} className="flex items-start gap-3">
+                  <CheckCircle2 size={24} className="text-chrysolite-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-surface-600 dark:text-surface-300">{benefit}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
       {/* AI Assistant Demo */}
-      <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
+      <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -294,16 +257,45 @@ export default function AIFeaturePage() {
                 Your AI Assistant, Always Available
               </h2>
               <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
-                Ask questions in plain English and get instant, accurate answers. Talk to your ERP through voice or chat, and let AI handle the complex queries while you focus on strategy.
+                Ask questions in plain English and get instant, accurate answers. Talk to your ERP through voice or chat, and let AI handle the complex queries while you focus on growing your business.
               </p>
 
-              <div className="space-y-4">
-                {benefits.map((benefit) => (
-                  <div key={benefit} className="flex items-start gap-3">
-                    <CheckCircle2 size={24} className="text-chrysolite-400 flex-shrink-0 mt-0.5" />
-                    <span className="text-surface-600 dark:text-surface-300">{benefit}</span>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-chrysolite-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MessageSquare size={24} className="text-chrysolite-400" />
                   </div>
-                ))}
+                  <div>
+                    <h4 className="font-semibold text-surface-900 dark:text-white mb-2">Natural Conversations</h4>
+                    <p className="text-surface-600 dark:text-surface-400 text-sm">
+                      Ask questions like you would to your CFO. AI understands context and provides detailed, actionable answers.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-chrysolite-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Mic size={24} className="text-chrysolite-400" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-surface-900 dark:text-white mb-2">Voice Enabled</h4>
+                    <p className="text-surface-600 dark:text-surface-400 text-sm">
+                      Speak your questions and get spoken answers. Hands-free access to your entire business intelligence.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-chrysolite-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Brain size={24} className="text-chrysolite-400" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-surface-900 dark:text-white mb-2">Contextual Intelligence</h4>
+                    <p className="text-surface-600 dark:text-surface-400 text-sm">
+                      AI remembers your preferences, learns from your decisions, and adapts to your business over time.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -313,7 +305,7 @@ export default function AIFeaturePage() {
                   <div className="w-10 h-10 rounded-full bg-gradient-to-br from-chrysolite-500 to-gold-400 flex items-center justify-center">
                     <Brain size={20} className="text-white" />
                   </div>
-                  <h3 className="text-surface-900 dark:text-white font-semibold">AI Finance Agent</h3>
+                  <h3 className="text-surface-900 dark:text-white font-semibold">AI Assistant</h3>
                   <span className="ml-auto px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full">Online</span>
                 </div>
 
@@ -323,15 +315,15 @@ export default function AIFeaturePage() {
                       <span className="text-xs">👤</span>
                     </div>
                     <div className="bg-white dark:bg-surface-950/50 rounded-2xl rounded-tl-none p-4 flex-1">
-                      <p className="text-surface-600 dark:text-surface-300 text-sm">What's my current cash position and will I have enough to cover February payroll?</p>
+                      <p className="text-surface-600 dark:text-surface-300 text-sm">What's my current cash position and will I have enough for next month's payroll?</p>
                     </div>
                   </div>
 
                   <div className="flex gap-3 justify-end">
                     <div className="bg-chrysolite-500/20 border border-chrysolite-500/30 rounded-2xl rounded-tr-none p-4 flex-1">
-                      <p className="text-surface-900 dark:text-white text-sm mb-3">Current cash position: <span className="font-semibold text-chrysolite-400">GH₵ 448,017</span> across 3 accounts.</p>
-                      <p className="text-surface-600 dark:text-surface-300 text-xs mb-2">• Operating: GH₵ 234,567<br />• USD Account: $89,450 (GH₵ 88,450)<br />• Payroll: GH₵ 125,000</p>
-                      <p className="text-surface-900 dark:text-white text-sm mt-3">Forecast: Based on expected collections and February payroll of GH₵ 385,000, you'll have sufficient cash. However, there's a potential shortfall on Feb 15 if Client X payment delays. Recommend accelerating AR collection from top 3 overdue accounts (GH₵ 127,000).</p>
+                      <p className="text-surface-900 dark:text-white text-sm mb-3">Your current cash position is strong at <span className="font-semibold text-chrysolite-400">GH₵ 448,017</span> across all accounts.</p>
+                      <p className="text-surface-600 dark:text-surface-300 text-xs mb-3">Based on expected collections and upcoming payroll, you'll have sufficient cash. However, I've identified a potential shortfall mid-month if certain payments delay.</p>
+                      <p className="text-surface-900 dark:text-white text-sm">Recommendation: Accelerate collection from your top overdue accounts to maintain healthy cash reserves.</p>
                     </div>
                     <div className="w-8 h-8 rounded-full bg-gradient-to-br from-chrysolite-500 to-gold-400 flex items-center justify-center flex-shrink-0">
                       <Brain size={16} className="text-white" />
@@ -345,55 +337,50 @@ export default function AIFeaturePage() {
       </section>
 
       {/* Advanced Features Highlights */}
-      <section className="py-24">
+      <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
-              Cutting-Edge AI Technologies
+              Enterprise-Grade AI Technology
             </h2>
             <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
-              Enterprise-grade AI features that give you a competitive advantage.
+              Cutting-edge AI capabilities that give you a competitive advantage.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-surface-100 to-surface-200 dark:from-surface-900 dark:to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">Multi-Provider AI</h3>
-              <p className="text-surface-600 dark:text-surface-400 mb-6">
-                Choose from Anthropic Claude, OpenAI GPT, or Google Gemini—or let the system automatically select the best model for each task.
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8">
+              <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-4">Multi-Model AI Architecture</h3>
+              <p className="text-surface-600 dark:text-surface-400">
+                Leverages the best AI models from leading providers (OpenAI, Anthropic, Google, and more). The system automatically selects the optimal model for each task—from fast classification to complex reasoning.
               </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-purple-500/20 text-purple-400 rounded-lg text-sm font-medium">Anthropic Claude</span>
-                <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-lg text-sm font-medium">OpenAI GPT</span>
-                <span className="px-4 py-2 bg-blue-500/20 text-blue-400 rounded-lg text-sm font-medium">Google Gemini</span>
-              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-surface-100 to-surface-200 dark:from-surface-900 dark:to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">8-Type Memory System</h3>
-              <p className="text-surface-600 dark:text-surface-400 mb-6">
-                Advanced memory architecture ensures AI remembers your preferences, learns from interactions, and maintains context across conversations.
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8">
+              <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-4">Context-Aware Memory Systems</h3>
+              <p className="text-surface-600 dark:text-surface-400">
+                Advanced memory architecture maintains conversation context, user preferences, business rules, and historical decisions. AI remembers what you told it weeks ago and applies it intelligently.
               </p>
-              <div className="grid grid-cols-2 gap-2">
-                {['Core Memory', 'Semantic Memory', 'Episodic Memory', 'Procedural Memory', 'Archival Memory', 'Graph Memory', 'Working Memory', 'Resource Memory'].map((memory) => (
-                  <div key={memory} className="px-3 py-1.5 bg-chrysolite-500/10 border border-chrysolite-500/20 rounded-lg text-xs text-surface-900 dark:text-white">
-                    {memory}
-                  </div>
-                ))}
-              </div>
+            </div>
+
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8">
+              <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-4">Retrieval-Augmented Generation</h3>
+              <p className="text-surface-600 dark:text-surface-400">
+                RAG system grounds AI responses in your actual business data and documents. Every answer is accurate, up-to-date, and cites specific sources from your knowledge base.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
+      <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
-            Experience AI That Transforms Business
+            Experience AI That Works For You
           </h2>
           <p className="text-lg text-surface-600 dark:text-surface-400 mb-12">
-            Join forward-thinking companies leveraging enterprise AI to work smarter, faster, and more profitably.
+            Join forward-thinking companies using AI to work smarter, faster, and more profitably.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
