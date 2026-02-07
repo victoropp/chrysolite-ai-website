@@ -7,7 +7,7 @@ export default function FeaturesLayout({
   children: React.ReactNode
 }) {
   return (
-    <main className="bg-surface-950 min-h-screen">
+    <main className="bg-white dark:bg-surface-950 min-h-screen">
       <Navigation />
       {children}
       <Footer />

@@ -49,7 +49,7 @@ export default function DocsPage() {
       {/* Coming Soon */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-16 text-center shadow-2xl">
+          <div className="bg-gradient-to-br from-surface-100 to-surface-200 dark:from-surface-900 dark:to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-16 text-center shadow-2xl">
             <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
               Documentation Coming Soon
             </h2>

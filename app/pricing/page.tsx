@@ -158,7 +158,7 @@ export default function PricingPage() {
       </section>
 
       {/* What Affects Pricing */}
-      <section className="py-16 bg-surface-900/30">
+      <section className="py-16 bg-surface-100/30 dark:bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
@@ -202,10 +202,10 @@ export default function PricingPage() {
             {exampleTiers.map((tier) => (
               <div
                 key={tier.name}
-                className={`relative bg-surface-900/50 backdrop-blur-sm border rounded-2xl p-8 ${
+                className={`relative bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border rounded-2xl p-8 ${
                   tier.highlighted
                     ? 'border-chrysolite-500 shadow-lg shadow-chrysolite/20 scale-105'
-                    : 'border-surface-800'
+                    : 'border-surface-300 dark:border-surface-800'
                 }`}
               >
                 {tier.highlighted && (
@@ -249,7 +249,7 @@ export default function PricingPage() {
       </section>
 
       {/* Trust Badges */}
-      <section className="py-16 bg-surface-900/30">
+      <section className="py-16 bg-surface-100/30 dark:bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-8">
             {trustBadges.map((badge) => (
@@ -297,7 +297,7 @@ export default function PricingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-surface-900/30">
+      <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
             Ready to Get Started?

@@ -265,7 +265,7 @@ export default function TermsOfServicePage() {
               <div
                 key={index}
                 id={`section-${index + 1}`}
-                className="bg-surface-900/30 border border-surface-300 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all"
+                className="bg-surface-100/30 dark:bg-surface-900/30 border border-surface-300 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all"
               >
                 <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">
                   {section.title}

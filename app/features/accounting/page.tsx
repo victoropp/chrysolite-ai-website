@@ -103,7 +103,7 @@ export default function AccountingFeaturePage() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-24 bg-surface-900/30">
+      <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
@@ -159,7 +159,7 @@ export default function AccountingFeaturePage() {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-surface-900 to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-8 shadow-2xl">
+              <div className="bg-gradient-to-br from-surface-100 to-surface-200 dark:from-surface-900 dark:to-surface-800 border border-surface-300 dark:border-surface-700 rounded-2xl p-8 shadow-2xl">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between p-4 bg-white dark:bg-surface-950/50 rounded-xl">
                     <span className="text-surface-600 dark:text-surface-400">Cash in Bank</span>
@@ -188,7 +188,7 @@ export default function AccountingFeaturePage() {
       </section>
 
       {/* Integration Section */}
-      <section className="py-24 bg-surface-900/30">
+      <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
             Seamless Integration

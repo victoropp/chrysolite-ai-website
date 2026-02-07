@@ -198,9 +198,9 @@ export default function ContactPage() {
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
-                          className={`w-full px-4 py-3 bg-surface-950 border ${
-                            errors.name ? 'border-red-500' : 'border-surface-800'
-                          } rounded-xl text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors`}
+                          className={`w-full px-4 py-3 bg-white dark:bg-surface-950 border ${
+                            errors.name ? 'border-red-500' : 'border-surface-300 dark:border-surface-800'
+                          } rounded-xl text-surface-900 dark:text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors`}
                           placeholder="John Doe"
                         />
                         {errors.name && (
@@ -218,9 +218,9 @@ export default function ContactPage() {
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
-                          className={`w-full px-4 py-3 bg-surface-950 border ${
-                            errors.email ? 'border-red-500' : 'border-surface-800'
-                          } rounded-xl text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors`}
+                          className={`w-full px-4 py-3 bg-white dark:bg-surface-950 border ${
+                            errors.email ? 'border-red-500' : 'border-surface-300 dark:border-surface-800'
+                          } rounded-xl text-surface-900 dark:text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors`}
                           placeholder="john@company.com"
                         />
                         {errors.email && (
@@ -240,9 +240,9 @@ export default function ContactPage() {
                           name="company"
                           value={formData.company}
                           onChange={handleChange}
-                          className={`w-full px-4 py-3 bg-surface-950 border ${
-                            errors.company ? 'border-red-500' : 'border-surface-800'
-                          } rounded-xl text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors`}
+                          className={`w-full px-4 py-3 bg-white dark:bg-surface-950 border ${
+                            errors.company ? 'border-red-500' : 'border-surface-300 dark:border-surface-800'
+                          } rounded-xl text-surface-900 dark:text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors`}
                           placeholder="Acme Corp"
                         />
                         {errors.company && (
@@ -294,9 +294,9 @@ export default function ContactPage() {
                         value={formData.message}
                         onChange={handleChange}
                         rows={6}
-                        className={`w-full px-4 py-3 bg-surface-950 border ${
-                          errors.message ? 'border-red-500' : 'border-surface-800'
-                        } rounded-xl text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors resize-none`}
+                        className={`w-full px-4 py-3 bg-white dark:bg-surface-950 border ${
+                          errors.message ? 'border-red-500' : 'border-surface-300 dark:border-surface-800'
+                        } rounded-xl text-surface-900 dark:text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors resize-none`}
                         placeholder="Tell us about your business needs..."
                       />
                       {errors.message && (
@@ -366,7 +366,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-surface-900/30">
+      <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
