@@ -1,0 +1,55 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Faceted Gemstone Logo -->
+  <defs>
+    <!-- Gradient: Dark to Light Chrysolite -->
+    <linearGradient id="gemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b8a2a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#84a63c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a4cc3c;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gold highlight gradient -->
+    <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a847;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#e4c36e;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Gemstone Shape - Hexagonal Faceted -->
+  <g id="gemstone">
+    <!-- Top facet (gold highlight) -->
+    <polygon points="100,30 140,70 100,50 60,70" fill="url(#goldHighlight)" />
+
+    <!-- Left upper facet -->
+    <polygon points="60,70 100,50 100,100" fill="#84a63c" opacity="0.9" />
+
+    <!-- Right upper facet -->
+    <polygon points="140,70 100,50 100,100" fill="#9dbe54" opacity="0.95" />
+
+    <!-- Center facet (brightest) -->
+    <polygon points="60,70 140,70 120,120 80,120" fill="url(#gemGradient)" />
+
+    <!-- Left lower facet -->
+    <polygon points="60,70 80,120 100,170" fill="#6b8a2a" opacity="0.85" />
+
+    <!-- Right lower facet -->
+    <polygon points="140,70 120,120 100,170" fill="#84a63c" opacity="0.9" />
+
+    <!-- Bottom facet (darkest) -->
+    <polygon points="80,120 120,120 100,170" fill="#526b20" opacity="0.8" />
+
+    <!-- Outline for definition -->
+    <polygon points="100,30 140,70 120,120 100,170 80,120 60,70"
+             fill="none"
+             stroke="#3a4d17"
+             stroke-width="2"
+             stroke-linejoin="miter" />
+
+    <!-- Inner facet lines -->
+    <line x1="100" y1="50" x2="100" y2="100" stroke="#2e4530" stroke-width="1.5" opacity="0.6" />
+    <line x1="60" y1="70" x2="100" y2="100" stroke="#2e4530" stroke-width="1.5" opacity="0.6" />
+    <line x1="140" y1="70" x2="100" y2="100" stroke="#2e4530" stroke-width="1.5" opacity="0.6" />
+    <line x1="80" y1="120" x2="100" y2="100" stroke="#2e4530" stroke-width="1.5" opacity="0.6" />
+    <line x1="120" y1="120" x2="100" y2="100" stroke="#2e4530" stroke-width="1.5" opacity="0.6" />
+  </g>
+</svg>
