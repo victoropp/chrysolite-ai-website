@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { ThemeToggle } from './ThemeToggle'
 
 const navItems = [
   {
@@ -120,6 +121,7 @@ export default function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
+            <ThemeToggle />
             <Link
               href="https://app.chrysoliteai.com/login"
               className="text-surface-300 hover:text-white transition-colors"
