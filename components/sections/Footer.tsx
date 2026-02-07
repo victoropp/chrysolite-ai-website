@@ -88,11 +88,15 @@ export default function Footer() {
             <div className="space-y-3 text-sm text-surface-400">
               <div className="flex items-start gap-2">
                 <MapPin size={16} className="mt-0.5 flex-shrink-0 text-chrysolite-400" />
-                <span>123 Business Ave, San Francisco, CA 94105</span>
+                <span>London, United Kingdom</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={16} className="flex-shrink-0 text-chrysolite-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+44 7442 852675</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone size={16} className="flex-shrink-0 text-chrysolite-400" />
+                <span>+233 277 390051</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={16} className="flex-shrink-0 text-chrysolite-400" />
@@ -221,18 +225,18 @@ export default function Footer() {
             {/* Certifications/Badges */}
             <div className="flex items-center gap-3 text-xs text-surface-500">
               <span className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                SOC 2 Type II
+                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                SOC 2 Compliant
               </span>
               <span className="text-surface-700">|</span>
               <span className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                 GDPR Compliant
               </span>
               <span className="text-surface-700">|</span>
               <span className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                ISO 27001
+                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                ISO 27001 Compliant
               </span>
             </div>
           </div>

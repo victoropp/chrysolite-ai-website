@@ -24,14 +24,20 @@ const contactInfo = [
   },
   {
     icon: Phone,
-    label: 'Phone',
-    value: '+233 (0) 555 123 4567',
-    href: 'tel:+2335551234567',
+    label: 'Phone (UK)',
+    value: '+44 7442 852675',
+    href: 'tel:+447442852675',
+  },
+  {
+    icon: Phone,
+    label: 'Phone (Ghana)',
+    value: '+233 277 390051',
+    href: 'tel:+233277390051',
   },
   {
     icon: MapPin,
     label: 'Office',
-    value: 'Accra, Ghana',
+    value: 'London, United Kingdom',
     href: '#map',
   },
   {
@@ -255,7 +261,7 @@ export default function ContactPage() {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-3 bg-surface-950 border border-surface-800 rounded-xl text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors"
-                          placeholder="+233 555 123 4567"
+                          placeholder="+44 7442 852675"
                         />
                       </div>
                     </div>

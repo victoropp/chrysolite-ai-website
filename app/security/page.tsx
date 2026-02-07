@@ -55,18 +55,18 @@ const securityFeatures = [
 const certifications = [
   {
     name: 'SOC 2 Type II',
-    description: 'Audited security controls and processes',
-    status: 'Certified',
+    description: 'Security controls and processes',
+    status: 'Compliant',
   },
   {
-    name: 'GDPR Compliant',
+    name: 'GDPR',
     description: 'European data protection standards',
     status: 'Compliant',
   },
   {
     name: 'ISO 27001',
     description: 'Information security management',
-    status: 'Certified',
+    status: 'Compliant',
   },
   {
     name: 'PCI DSS',
@@ -163,13 +163,13 @@ export default function SecurityPage() {
                 key={cert.name}
                 className="bg-surface-900/50 border border-surface-800 rounded-2xl p-6 text-center hover:border-chrysolite-500/30 transition-all"
               >
-                <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle2 size={24} className="text-green-400" />
+                <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle2 size={24} className="text-blue-400" />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{cert.name}</h3>
                 <p className="text-surface-400 text-sm mb-3">{cert.description}</p>
-                <span className="inline-flex items-center gap-1 text-green-400 text-xs font-medium">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <span className="inline-flex items-center gap-1 text-blue-400 text-xs font-medium">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                   {cert.status}
                 </span>
               </div>

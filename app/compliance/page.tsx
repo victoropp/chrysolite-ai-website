@@ -13,30 +13,30 @@ const certifications = [
   {
     name: 'SOC 2 Type II',
     description: 'System and Organization Controls',
-    details: 'Annual independent audit of security, availability, and confidentiality controls.',
-    status: 'Certified',
-    year: '2025',
+    details: 'Our systems and processes are designed and operated in compliance with SOC 2 security, availability, and confidentiality standards.',
+    status: 'Compliant',
+    year: '2026',
   },
   {
     name: 'GDPR',
     description: 'General Data Protection Regulation',
-    details: 'Full compliance with European data protection standards and privacy requirements.',
+    details: 'Full compliance with European data protection standards and privacy requirements for all customer data.',
     status: 'Compliant',
     year: '2024',
   },
   {
     name: 'ISO 27001',
     description: 'Information Security Management',
-    details: 'International standard for information security management systems.',
-    status: 'Certified',
-    year: '2025',
+    details: 'Our information security management systems are built according to ISO 27001 international standards.',
+    status: 'Compliant',
+    year: '2026',
   },
   {
     name: 'PCI DSS',
     description: 'Payment Card Industry Data Security',
-    details: 'Compliance with payment card security standards for safe payment processing.',
+    details: 'Full compliance with payment card security standards for safe and secure payment processing.',
     status: 'Compliant',
-    year: '2025',
+    year: '2026',
   },
 ]
 
@@ -135,13 +135,13 @@ export default function CompliancePage() {
                     <h3 className="text-xl font-semibold text-white mb-2">{cert.name}</h3>
                     <p className="text-chrysolite-400 text-sm font-medium mb-3">{cert.description}</p>
                   </div>
-                  <div className="flex items-center gap-2 px-3 py-1 bg-green-500/20 rounded-full flex-shrink-0">
-                    <CheckCircle2 size={16} className="text-green-400" />
-                    <span className="text-green-400 text-xs font-medium">{cert.status}</span>
+                  <div className="flex items-center gap-2 px-3 py-1 bg-blue-500/20 rounded-full flex-shrink-0">
+                    <CheckCircle2 size={16} className="text-blue-400" />
+                    <span className="text-blue-400 text-xs font-medium">{cert.status}</span>
                   </div>
                 </div>
                 <p className="text-surface-400 text-sm leading-relaxed mb-4">{cert.details}</p>
-                <p className="text-surface-500 text-xs">Certified: {cert.year}</p>
+                <p className="text-surface-500 text-xs">Compliance Year: {cert.year}</p>
               </div>
             ))}
           </div>
