@@ -195,7 +195,7 @@ export default function ModuleShowcase() {
               {/* CTA */}
               <div className="pt-6">
                 <a
-                  href={`/modules/${activeModule.id}`}
+                  href={`/features/${activeModule.id}`}
                   className="inline-flex items-center gap-2 text-chrysolite-400 hover:text-chrysolite-300 font-medium group"
                 >
                   <span>Explore {activeModule.name} Module</span>
