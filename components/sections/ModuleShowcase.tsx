@@ -208,15 +208,15 @@ export default function ModuleShowcase() {
 
             {/* Right: Screenshot Placeholder */}
             <div className="relative animate-scale-in animation-delay-200">
-              <div className="relative aspect-[4/3] bg-gradient-to-br from-surface-800 to-surface-900 rounded-2xl overflow-hidden border border-surface-300 dark:border-surface-700 shadow-2xl">
+              <div className="relative aspect-[4/3] bg-gradient-to-br from-surface-100 to-surface-200 dark:from-surface-800 dark:to-surface-900 rounded-2xl overflow-hidden border border-surface-300 dark:border-surface-700 shadow-2xl">
                 {/* Mock Browser Chrome */}
-                <div className="absolute top-0 left-0 right-0 h-8 bg-surface-800/80 backdrop-blur-sm border-b border-surface-300 dark:border-surface-700 flex items-center px-4 gap-2">
+                <div className="absolute top-0 left-0 right-0 h-8 bg-surface-200/80 dark:bg-surface-800/80 backdrop-blur-sm border-b border-surface-300 dark:border-surface-700 flex items-center px-4 gap-2">
                   <div className="flex gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-full bg-surface-600"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-surface-600"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-surface-600"></div>
+                    <div className="w-2.5 h-2.5 rounded-full bg-surface-400 dark:bg-surface-600"></div>
+                    <div className="w-2.5 h-2.5 rounded-full bg-surface-400 dark:bg-surface-600"></div>
+                    <div className="w-2.5 h-2.5 rounded-full bg-surface-400 dark:bg-surface-600"></div>
                   </div>
-                  <div className="flex-1 h-4 bg-surface-700 rounded ml-4 mr-4"></div>
+                  <div className="flex-1 h-4 bg-surface-300 dark:bg-surface-700 rounded ml-4 mr-4"></div>
                 </div>
 
                 {/* Content Area */}
@@ -227,9 +227,9 @@ export default function ModuleShowcase() {
                       activeModule.gradient,
                       'shadow-xl animate-float'
                     )}>
-                      <activeModule.icon size={40} className="text-surface-900 dark:text-white" />
+                      <activeModule.icon size={40} className="text-white" />
                     </div>
-                    <p className="text-surface-600 dark:text-surface-400 text-sm">
+                    <p className="text-surface-700 dark:text-surface-400 text-sm">
                       {activeModule.name} Dashboard Preview
                     </p>
                   </div>
