@@ -165,8 +165,8 @@ export default function FeaturesOverviewPage() {
                 href={feature.href}
                 className="group bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-8 hover:border-chrysolite-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-chrysolite/10"
               >
-                <div className={`w-14 h-14 bg-gradient-to-br ${feature.color} bg-opacity-20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                  <feature.icon size={28} className="text-surface-900 dark:text-white" />
+                <div className={`w-14 h-14 bg-gradient-to-br ${feature.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
+                  <feature.icon size={28} className="text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-3 group-hover:text-chrysolite-400 transition-colors">
                   {feature.title}
