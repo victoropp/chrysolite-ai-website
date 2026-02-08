@@ -14,7 +14,7 @@ const benefits = [
 
 export default function PricingPreview() {
   return (
-    <section className="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-surface-900 to-surface-950">
+    <section className="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-surface-50 to-surface-100 dark:from-surface-900 dark:to-surface-950">
       {/* Background Decoration */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-chrysolite-500 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
@@ -70,7 +70,7 @@ export default function PricingPreview() {
                   {benefits.map((benefit) => (
                     <div key={benefit} className="flex items-start gap-3">
                       <CheckCircle2 size={20} className="text-chrysolite-400 mt-0.5 flex-shrink-0" />
-                      <span className="text-surface-200">{benefit}</span>
+                      <span className="text-surface-600 dark:text-surface-200">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -126,15 +126,15 @@ export default function PricingPreview() {
 
           {/* Bottom Features */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">
-            <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl">
+            <div className="text-center p-6 bg-white/50 dark:bg-surface-900/30 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl">
               <div className="text-3xl font-bold gradient-text mb-2">50+</div>
               <div className="text-sm text-surface-600 dark:text-surface-400">Modules & Features</div>
             </div>
-            <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl">
+            <div className="text-center p-6 bg-white/50 dark:bg-surface-900/30 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl">
               <div className="text-3xl font-bold gradient-text-gold mb-2">24/7</div>
               <div className="text-sm text-surface-600 dark:text-surface-400">Customer Support</div>
             </div>
-            <div className="text-center p-6 bg-surface-900/30 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl">
+            <div className="text-center p-6 bg-white/50 dark:bg-surface-900/30 backdrop-blur-xl border border-surface-300 dark:border-surface-800 rounded-xl">
               <div className="text-3xl font-bold gradient-text mb-2">99.9%</div>
               <div className="text-sm text-surface-600 dark:text-surface-400">Uptime SLA</div>
             </div>
