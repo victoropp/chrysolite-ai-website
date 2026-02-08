@@ -13,7 +13,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'Inventory Management | Chrysolite AI ERP',
-  description: 'Complete inventory control with real-time tracking, warehouse management, multiple costing methods, and AI-powered stock optimization.',
+  description: 'Complete inventory control with real-time tracking, warehouse management, FIFO and weighted average costing, batch tracking, and AI-powered stock optimization.',
 }
 
 const features = [
@@ -30,7 +30,7 @@ const features = [
   {
     icon: BarChart2,
     title: 'Costing Methods',
-    description: 'FIFO, LIFO, weighted average, and standard costing for accurate valuation.',
+    description: 'FIFO, weighted average, specific identification, and standard costing for accurate valuation.',
   },
   {
     icon: TrendingDown,
