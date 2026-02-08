@@ -19,18 +19,28 @@ import {
   ArrowRight,
   Clock,
   FileText,
+  GitBranch,
+  Workflow,
+  Bell,
+  Newspaper,
+  BookOpen,
+  Layers,
+  Gauge,
+  TrendingDown,
+  Calculator,
+  Activity,
 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'AI-Powered Features | Chrysolite AI ERP',
-  description: 'Transform your business with AI. Intelligent automation, predictive analytics, natural language queries, and voice assistance—working 24/7 for your business.',
+  description: 'Transform your business with AI. Specialized agents, predictive analytics, natural language queries, voice assistance, knowledge graphs, and market intelligence—working 24/7 for your business.',
 }
 
 const aiCapabilities = [
   {
     icon: Brain,
     title: 'Specialized AI Agents',
-    description: 'Domain-expert AI agents for Finance, Inventory, Sales, Procurement, HR, and more. Each agent understands its specialty deeply and collaborates to solve complex cross-functional challenges.',
+    description: 'Domain-expert AI agents for Finance, Inventory, Sales, Procurement, HR, Logistics, Operations, and Analytics. Each agent understands its specialty deeply and collaborates to solve complex cross-functional challenges.',
     color: 'from-purple-500 to-pink-500',
   },
   {
@@ -42,25 +52,25 @@ const aiCapabilities = [
   {
     icon: TrendingUp,
     title: 'Predictive Analytics',
-    description: 'ML-powered forecasting for cash flow, revenue trends, customer churn, and inventory demand. AI analyzes historical patterns and market signals to predict business outcomes with accuracy.',
+    description: 'AI-powered forecasting for cash flow, revenue trends, customer churn, inventory demand, and supplier performance. Analyzes historical patterns and market signals to predict business outcomes with accuracy.',
     color: 'from-green-500 to-teal-500',
   },
   {
     icon: Database,
-    title: 'RAG-Powered Knowledge',
-    description: 'AI retrieves and synthesizes information from your company knowledge base, policies, contracts, and procedures. Get instant, cited answers with source references.',
+    title: 'Intelligent Knowledge Search',
+    description: 'AI retrieves and synthesizes information from your company knowledge base, policies, contracts, and procedures. Get instant, cited answers with source references from your entire business library.',
     color: 'from-orange-500 to-red-500',
   },
   {
     icon: MessageSquare,
     title: 'Natural Language Interface',
-    description: 'Ask complex business questions in plain English: "Which customers are overdue and what\'s our collection rate?" AI understands context, intent, and follows up intelligently.',
+    description: 'Ask complex business questions in plain English: "Which customers are overdue and what\'s our collection rate?" AI understands context, intent, and remembers your conversation.',
     color: 'from-indigo-500 to-purple-500',
   },
   {
     icon: Eye,
     title: 'Computer Vision & OCR',
-    description: 'Automatically extract data from invoices, receipts, delivery notes, and contracts. AI reads, validates, and posts transactions—reducing manual entry by up to 90%.',
+    description: 'Automatically extract data from invoices, receipts, delivery notes, waybills, and contracts. AI reads, validates, and posts transactions—reducing manual entry by up to 90%.',
     color: 'from-pink-500 to-rose-500',
   },
   {
@@ -72,14 +82,32 @@ const aiCapabilities = [
   {
     icon: BarChart3,
     title: 'Autonomous Reporting',
-    description: 'AI generates executive summaries, variance analyses, and trend reports automatically. Dashboards that highlight anomalies, opportunities, and risks without manual configuration.',
+    description: 'AI generates executive summaries, variance analyses, financial statements, and trend reports automatically. Dashboards that highlight anomalies, opportunities, and risks without manual configuration.',
     color: 'from-cyan-500 to-blue-500',
   },
   {
     icon: Shield,
     title: 'Intelligent Monitoring',
-    description: 'AI continuously monitors transactions for fraud patterns, compliance violations, data anomalies, and operational inefficiencies. Real-time alerts with recommended actions.',
+    description: 'AI continuously monitors transactions for fraud patterns, compliance violations, data anomalies, and operational inefficiencies. Real-time alerts with recommended actions and severity classification.',
     color: 'from-emerald-500 to-green-500',
+  },
+  {
+    icon: GitBranch,
+    title: 'Knowledge Graph Intelligence',
+    description: 'AI builds interconnected knowledge structures from your business data, documents, and transactions. Discover hidden relationships, patterns, and insights that traditional systems miss.',
+    color: 'from-violet-500 to-purple-500',
+  },
+  {
+    icon: Workflow,
+    title: 'Intelligent Workflow Automation',
+    description: 'AI-driven approval routing and document workflows that adapt to your business rules. Smart delegation, escalation, and bottleneck detection ensure nothing gets stuck.',
+    color: 'from-sky-500 to-blue-500',
+  },
+  {
+    icon: Newspaper,
+    title: 'News Intelligence & Market Alerts',
+    description: 'AI monitors news sources for market trends, competitor moves, supply chain risks, and regulatory changes. Get sentiment analysis, impact assessments, and personalized alerts tailored to your business.',
+    color: 'from-amber-500 to-orange-500',
   },
 ]
 
@@ -87,39 +115,63 @@ const automationFeatures = [
   {
     icon: Zap,
     title: 'End-to-End Automation',
-    description: 'From purchase order to payment posting—AI automates the entire accounting cycle. Journal entries, bank reconciliations, period-end close, and intercompany eliminations run autonomously.',
+    description: 'From purchase order to payment posting—AI automates the entire accounting cycle. Journal entries, bank reconciliations, period-end close, depreciation runs, and tax calculations run autonomously.',
   },
   {
     icon: FileText,
     title: 'AI-Powered Accounting',
-    description: 'Virtual CFO validates compliance, suggests GL accounts, calculates tax implications, and identifies posting errors before they hit your books. IFRS and GAAP expertise built-in.',
+    description: 'Virtual CFO validates compliance, suggests GL accounts, calculates tax implications, handles prepayments and accruals, and identifies posting errors before they hit your books. IFRS and GAAP expertise built-in.',
   },
   {
     icon: Target,
     title: 'Intelligent Recommendations',
-    description: 'ML models recommend optimal pricing strategies, reorder quantities, cash allocation, credit limits, and discount structures based on historical performance and market conditions.',
+    description: 'AI recommends optimal pricing strategies, reorder quantities, cash allocation, credit limits, discount structures, and supplier selection based on historical performance and market conditions.',
   },
   {
     icon: Lightbulb,
     title: 'Market & Supply Chain Intelligence',
-    description: 'AI monitors supplier performance, tracks commodity prices, analyzes competitor moves, and identifies supply chain risks—giving you strategic foresight.',
+    description: 'AI monitors supplier performance, tracks commodity prices, analyzes competitor moves, identifies supply chain risks, and provides procurement insights—giving you strategic foresight and cost savings.',
   },
   {
     icon: Clock,
     title: 'Adaptive Learning',
-    description: 'AI learns your business rules, approval patterns, data preferences, and reporting needs. The system becomes more personalized and accurate the longer you use it.',
+    description: 'AI learns your business rules, approval patterns, data preferences, reporting needs, and accounting practices. The system becomes more personalized and accurate the longer you use it.',
+  },
+  {
+    icon: Bell,
+    title: 'Smart Notifications & Alerts',
+    description: 'AI-driven notification system learns your priorities and delivers timely alerts for critical events, overdue tasks, anomalies, and opportunities. Customizable delivery across email, SMS, and in-app channels.',
+  },
+  {
+    icon: Calculator,
+    title: 'Financial Ratio Analysis',
+    description: 'AI computes and tracks key financial ratios, identifies trends, benchmarks against industry standards, and highlights areas requiring attention. Get instant insights into liquidity, profitability, and efficiency.',
+  },
+  {
+    icon: Activity,
+    title: 'Anomaly Detection',
+    description: 'AI detects unusual patterns in transactions, inventory movements, sales trends, and financial data. Catch errors, fraud, and inefficiencies before they become costly problems.',
+  },
+  {
+    icon: Gauge,
+    title: 'Performance Forecasting',
+    description: 'Predict future performance across sales, inventory, cash flow, and operations. AI considers seasonality, market conditions, and historical patterns to deliver accurate forecasts.',
   },
 ]
 
 const benefits = [
   'Reduce manual data entry and reconciliation by up to 90%',
-  'Get instant, accurate answers to complex multi-dimensional business questions',
-  'Predict cash flow, revenue, and demand with ML-powered accuracy',
+  'Get instant, accurate answers to complex business questions',
+  'Predict cash flow, revenue, demand, and customer churn with AI-powered accuracy',
   'Detect fraud, anomalies, and compliance violations in real-time',
-  'Automate journal entries, approvals, reconciliations, and close processes',
+  'Automate journal entries, approvals, reconciliations, depreciation, and close processes',
   'Natural language and voice access to your entire business intelligence',
-  'Extract and validate data from documents, invoices, and contracts automatically',
+  'Extract and validate data from documents, invoices, waybills, and contracts automatically',
   'Continuous learning adapts to your unique business patterns and preferences',
+  'Monitor news and market signals for strategic insights and competitive intelligence',
+  'Discover hidden patterns and relationships across your business data',
+  'Automate complex workflows with intelligent routing and escalation',
+  'Generate financial statements, variance reports, and executive summaries autonomously',
 ]
 
 export default function AIFeaturePage() {
@@ -336,8 +388,141 @@ export default function AIFeaturePage() {
         </div>
       </section>
 
-      {/* Advanced Features Highlights */}
+      {/* Domain-Specific AI Agents */}
       <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
+              Specialized AI Agents, Working Together
+            </h2>
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-3xl mx-auto">
+              Each AI agent is a domain expert with specialized tools and knowledge. They collaborate seamlessly to handle complex cross-functional business challenges.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                  <Calculator size={20} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Finance Agent</h3>
+              </div>
+              <p className="text-sm text-surface-600 dark:text-surface-400">
+                Expert in GL operations, AR/AP aging, financial statements, ratios, and compliance. Handles journal entries and reconciliations autonomously.
+              </p>
+            </div>
+
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                  <Database size={20} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Inventory Agent</h3>
+              </div>
+              <p className="text-sm text-surface-600 dark:text-surface-400">
+                Monitors stock levels, predicts reorder points, tracks batch movements, analyzes aging, and optimizes inventory across multiple locations.
+              </p>
+            </div>
+
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-teal-500 rounded-lg flex items-center justify-center">
+                  <TrendingUp size={20} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Sales Agent</h3>
+              </div>
+              <p className="text-sm text-surface-600 dark:text-surface-400">
+                Analyzes sales performance, pipeline health, customer analytics, quota tracking, and revenue forecasting with actionable insights.
+              </p>
+            </div>
+
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
+                  <FileText size={20} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Procurement Agent</h3>
+              </div>
+              <p className="text-sm text-surface-600 dark:text-surface-400">
+                Evaluates supplier performance, tracks purchase orders, identifies cost savings, and provides procurement analytics and recommendations.
+              </p>
+            </div>
+
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center">
+                  <Zap size={20} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Logistics Agent</h3>
+              </div>
+              <p className="text-sm text-surface-600 dark:text-surface-400">
+                Manages fleet tracking, manifest optimization, delivery route planning, and transportation analytics for efficient distribution.
+              </p>
+            </div>
+
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-yellow-500 rounded-lg flex items-center justify-center">
+                  <Activity size={20} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Operations Agent</h3>
+              </div>
+              <p className="text-sm text-surface-600 dark:text-surface-400">
+                Monitors production operations, equipment status, maintenance schedules, quality control, and operational efficiency metrics.
+              </p>
+            </div>
+
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-rose-500 rounded-lg flex items-center justify-center">
+                  <Target size={20} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white">HR Agent</h3>
+              </div>
+              <p className="text-sm text-surface-600 dark:text-surface-400">
+                Handles payroll processing, attendance tracking, leave management, overtime calculations, and workforce analytics.
+              </p>
+            </div>
+
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                  <BarChart3 size={20} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Analytics Agent</h3>
+              </div>
+              <p className="text-sm text-surface-600 dark:text-surface-400">
+                Performs data analysis, trend identification, forecasting, and generates custom insights across all business functions.
+              </p>
+            </div>
+
+            <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-xl p-6 hover:border-chrysolite-500/30 transition-all duration-300">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-green-500 rounded-lg flex items-center justify-center">
+                  <Brain size={20} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Accountant Agent</h3>
+              </div>
+              <p className="text-sm text-surface-600 dark:text-surface-400">
+                Your virtual CFO for accounting queries, GL automation, accruals, prepayments, tax calculations, and financial close processes.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-chrysolite-500/10 border border-chrysolite-500/30 rounded-xl">
+              <Layers size={20} className="text-chrysolite-400" />
+              <span className="text-surface-900 dark:text-white font-medium">
+                All agents share knowledge and coordinate seamlessly to solve complex challenges
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advanced Features Highlights */}
+      <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
@@ -357,16 +542,16 @@ export default function AIFeaturePage() {
             </div>
 
             <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-4">Context-Aware Memory Systems</h3>
+              <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-4">Intelligent Memory</h3>
               <p className="text-surface-600 dark:text-surface-400">
-                Advanced memory architecture maintains conversation context, user preferences, business rules, and historical decisions. AI remembers what you told it weeks ago and applies it intelligently.
+                AI maintains conversation context, user preferences, business rules, and historical decisions. Remembers what you told it weeks ago and applies it intelligently to future interactions.
               </p>
             </div>
 
             <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-4">Retrieval-Augmented Generation</h3>
+              <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-4">Knowledge-Grounded Responses</h3>
               <p className="text-surface-600 dark:text-surface-400">
-                RAG system grounds AI responses in your actual business data and documents. Every answer is accurate, up-to-date, and cites specific sources from your knowledge base.
+                AI grounds every response in your actual business data and documents. Every answer is accurate, up-to-date, and cites specific sources from your knowledge base.
               </p>
             </div>
           </div>
