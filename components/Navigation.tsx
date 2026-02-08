@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils'
 import { ThemeToggle } from './ThemeToggle'
 
 const navItems = [
+  { label: 'Home', href: '/' },
   {
     label: 'Features',
     href: '#',
