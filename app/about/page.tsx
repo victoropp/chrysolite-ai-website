@@ -72,28 +72,11 @@ const milestones = [
 
 const team = [
   {
-    name: 'John Doe',
-    role: 'CEO & Co-Founder',
-    bio: 'Serial entrepreneur with 15+ years in enterprise software and AI.',
+    name: 'Victor Collins Oppon',
+    role: 'CEO & Founder',
+    bio: 'Chartered accountant (FCCA) and AI/ML engineer combining deep expertise in finance, accounting, and cutting-edge AI to revolutionize enterprise software.',
+    credentials: 'FCCA | MBA Finance | MSc Data Science | BSc Administration',
     image: '👨‍💼',
-  },
-  {
-    name: 'Jane Smith',
-    role: 'CTO & Co-Founder',
-    bio: 'Former Google engineer specializing in machine learning and distributed systems.',
-    image: '👩‍💻',
-  },
-  {
-    name: 'Michael Johnson',
-    role: 'Head of Product',
-    bio: 'Product leader with expertise in ERP systems and user experience design.',
-    image: '👨‍🎨',
-  },
-  {
-    name: 'Sarah Williams',
-    role: 'Head of Customer Success',
-    bio: 'Passionate about helping businesses succeed with the right technology.',
-    image: '👩‍💼',
   },
 ]
 
@@ -274,25 +257,26 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
-              Meet Our Team
+              Leadership
             </h2>
             <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
-              The talented people building the future of enterprise software.
+              Combining finance expertise with cutting-edge AI innovation.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="max-w-2xl mx-auto">
             {team.map((member) => (
               <div
                 key={member.name}
-                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-6 text-center hover:border-chrysolite-500/30 transition-all group"
+                className="bg-surface-50/50 dark:bg-surface-900/50 backdrop-blur-sm border border-surface-300 dark:border-surface-800 rounded-2xl p-8 text-center hover:border-chrysolite-500/30 transition-all group"
               >
-                <div className="w-24 h-24 bg-gradient-to-br from-surface-800 to-surface-700 rounded-full flex items-center justify-center text-4xl mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-32 h-32 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-full flex items-center justify-center text-5xl mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-chrysolite/30">
                   {member.image}
                 </div>
-                <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-1">{member.name}</h3>
-                <div className="text-chrysolite-400 text-sm font-medium mb-3">{member.role}</div>
-                <p className="text-surface-600 dark:text-surface-400 text-sm leading-relaxed">{member.bio}</p>
+                <h3 className="text-2xl font-bold text-surface-900 dark:text-white mb-2">{member.name}</h3>
+                <div className="text-chrysolite-400 text-base font-semibold mb-3">{member.role}</div>
+                <p className="text-surface-500 dark:text-surface-400 text-sm font-medium mb-4">{member.credentials}</p>
+                <p className="text-surface-600 dark:text-surface-300 text-base leading-relaxed max-w-xl mx-auto">{member.bio}</p>
               </div>
             ))}
           </div>
