@@ -196,6 +196,12 @@ export default function Navigation() {
 
             {/* Mobile CTA Buttons */}
             <div className="pt-4 space-y-3 border-t border-surface-200 dark:border-surface-800">
+              {/* Theme Toggle */}
+              <div className="flex items-center justify-between py-2">
+                <span className="text-surface-600 dark:text-surface-300 font-medium">Theme</span>
+                <ThemeToggle />
+              </div>
+
               <Link
                 href="https://app.chrysoliteai.com/login"
                 className="block text-center text-surface-600 dark:text-surface-300 hover:text-surface-900 dark:hover:text-white py-3 transition-colors"
@@ -204,11 +210,11 @@ export default function Navigation() {
                 Sign In
               </Link>
               <Link
-                href="/contact"
+                href="https://app.chrysoliteai.com/register"
                 className="block text-center bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-chrysolite/40"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Request Access
+                Get Started
               </Link>
             </div>
           </div>
