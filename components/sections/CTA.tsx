@@ -47,10 +47,10 @@ export default function CTA() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in-up animation-delay-300">
             <Link
-              href="https://app.chrysoliteai.com/register"
+              href="/contact"
               className="group relative bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-bold px-10 py-5 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/50 hover:shadow-chrysolite/70 hover:scale-105 flex items-center gap-3 text-lg overflow-hidden"
             >
-              <span className="relative z-10">Start Free Trial</span>
+              <span className="relative z-10">Request Access</span>
               <ArrowRight size={24} className="relative z-10 group-hover:translate-x-1 transition-transform" />
 
               {/* Shimmer Effect */}
@@ -70,15 +70,15 @@ export default function CTA() {
           <div className="flex flex-wrap items-center justify-center gap-8 text-surface-600 dark:text-surface-400 text-sm animate-fade-in-up animation-delay-400">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span>14-day free trial</span>
+              <span>Enterprise-grade platform</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-chrysolite-500 rounded-full animate-pulse animation-delay-200"></div>
-              <span>No credit card required</span>
+              <span>Invitation-based access</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse animation-delay-300"></div>
-              <span>Cancel anytime</span>
+              <span>White-glove onboarding</span>
             </div>
           </div>
 

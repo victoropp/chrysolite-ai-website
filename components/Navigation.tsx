@@ -130,10 +130,10 @@ export default function Navigation() {
               Sign In
             </Link>
             <Link
-              href="https://app.chrysoliteai.com/register"
+              href="/contact"
               className="bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105"
             >
-              Get Started
+              Request Access
             </Link>
           </div>
 
@@ -204,11 +204,11 @@ export default function Navigation() {
                 Sign In
               </Link>
               <Link
-                href="https://app.chrysoliteai.com/register"
+                href="/contact"
                 className="block text-center bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-chrysolite/40"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Get Started
+                Request Access
               </Link>
             </div>
           </div>
