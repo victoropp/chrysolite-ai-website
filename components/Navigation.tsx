@@ -68,7 +68,7 @@ export default function Navigation() {
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold text-surface-900 dark:text-white">
-                Chrysolite <span className="text-chrysolite-vivid">AI</span>
+                Chrysolite <span className="bg-gradient-to-r from-electric-cyan-400 to-electric-purple-400 bg-clip-text text-transparent">AI</span>
               </span>
               <span className="text-xs text-surface-600 dark:text-surface-400 -mt-1">ERP</span>
             </div>
@@ -131,9 +131,9 @@ export default function Navigation() {
             </Link>
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105"
+              className="bg-gradient-to-r from-electric-cyan-500 to-electric-purple-500 hover:from-electric-cyan-400 hover:to-electric-purple-400 text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-200 shadow-lg shadow-electric-cyan/40 hover:shadow-electric-purple/60 hover:scale-105"
             >
-              Request Access
+              Experience AI
             </Link>
           </div>
 
@@ -211,10 +211,10 @@ export default function Navigation() {
               </Link>
               <Link
                 href="https://app.chrysoliteai.com/register"
-                className="block text-center bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-chrysolite/40"
+                className="block text-center bg-gradient-to-r from-electric-cyan-500 to-electric-purple-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-electric-cyan/40"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Get Started
+                Experience AI
               </Link>
             </div>
           </div>
