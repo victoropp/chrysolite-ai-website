@@ -52,7 +52,7 @@ const aiCapabilities = [
   {
     icon: Zap,
     title: 'Lightning-Fast Context Caching',
-    description: 'Advanced context caching delivers near-instant AI responses for follow-up questions—up to 90% faster than traditional systems. Continue conversations seamlessly without repeating context.',
+    description: 'Advanced context caching delivers near-instant AI responses for follow-up questions—dramatically faster than traditional systems. Continue conversations seamlessly without repeating context.',
     color: 'from-yellow-400 to-orange-500',
   },
   {
@@ -76,7 +76,7 @@ const aiCapabilities = [
   {
     icon: Eye,
     title: 'Computer Vision & OCR',
-    description: 'Automatically extract data from invoices, receipts, delivery notes, waybills, and contracts. AI reads, validates, and posts transactions—reducing manual entry by up to 90%.',
+    description: 'Automatically extract data from invoices, receipts, delivery notes, waybills, and contracts. AI reads, validates, and posts transactions—dramatically reducing manual entry.',
     color: 'from-pink-500 to-rose-500',
   },
   {
@@ -166,7 +166,7 @@ const automationFeatures = [
 ]
 
 const benefits = [
-  'Reduce manual data entry and reconciliation by up to 90%',
+  'Dramatically reduce manual data entry and reconciliation',
   'Get instant, accurate answers to complex business questions',
   'Predict cash flow, revenue, demand, and customer churn with AI-powered accuracy',
   'Detect fraud, anomalies, and compliance violations in real-time',

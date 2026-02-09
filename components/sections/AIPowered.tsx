@@ -147,15 +147,15 @@ export default function AIPowered() {
             {/* Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
               <div>
-                <div className="text-4xl font-bold gradient-text mb-2">92%</div>
-                <div className="text-sm text-surface-600 dark:text-surface-400">Forecast accuracy</div>
+                <div className="text-3xl font-bold gradient-text mb-2">Highly Accurate</div>
+                <div className="text-sm text-surface-600 dark:text-surface-400">Predictive forecasting</div>
               </div>
               <div>
-                <div className="text-4xl font-bold gradient-text-gold mb-2">90%</div>
-                <div className="text-sm text-surface-600 dark:text-surface-400">Faster with context caching</div>
+                <div className="text-3xl font-bold gradient-text-gold mb-2">Lightning Fast</div>
+                <div className="text-sm text-surface-600 dark:text-surface-400">Context caching</div>
               </div>
               <div>
-                <div className="text-4xl font-bold gradient-text mb-2">24/7</div>
+                <div className="text-3xl font-bold gradient-text mb-2">Always On</div>
                 <div className="text-sm text-surface-600 dark:text-surface-400">AI agents working for you</div>
               </div>
             </div>
