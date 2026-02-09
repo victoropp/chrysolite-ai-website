@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   Github,
   Twitter,
@@ -68,14 +69,23 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            {/* Logo */}
-            <Link href="/" className="inline-flex items-center gap-2 mb-6 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-chrysolite-500 to-gold-400 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-chrysolite-500/30 transition-shadow">
-                <span className="text-white font-bold text-xl">C</span>
+            {/* Logo - Matching Navigation */}
+            <Link href="/" className="inline-flex items-center gap-3 mb-6 group">
+              <div className="relative w-10 h-10">
+                <Image
+                  src="/logo-mark.svg"
+                  alt="Chrysolite AI"
+                  width={40}
+                  height={40}
+                  className="group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
-              <span className="text-xl font-bold text-surface-900 dark:text-white group-hover:text-chrysolite-400 transition-colors">
-                Chrysolite AI
-              </span>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold text-surface-900 dark:text-white">
+                  Chrysolite <span className="bg-gradient-to-r from-electric-cyan-400 to-electric-purple-400 bg-clip-text text-transparent">AI</span>
+                </span>
+                <span className="text-xs text-surface-600 dark:text-surface-400 -mt-1">ERP</span>
+              </div>
             </Link>
 
             {/* Tagline */}
