@@ -151,12 +151,12 @@ export default function AIPowered() {
                 <div className="text-sm text-surface-600 dark:text-surface-400">Reduction in manual tasks</div>
               </div>
               <div>
-                <div className="text-4xl font-bold gradient-text-gold mb-2">92%</div>
-                <div className="text-sm text-surface-600 dark:text-surface-400">Forecast accuracy</div>
+                <div className="text-4xl font-bold gradient-text-gold mb-2">90%</div>
+                <div className="text-sm text-surface-600 dark:text-surface-400">Faster with context caching</div>
               </div>
               <div>
-                <div className="text-4xl font-bold gradient-text mb-2">3x</div>
-                <div className="text-sm text-surface-600 dark:text-surface-400">Faster decision making</div>
+                <div className="text-4xl font-bold gradient-text mb-2">24/7</div>
+                <div className="text-sm text-surface-600 dark:text-surface-400">AI agents working for you</div>
               </div>
             </div>
           </div>

@@ -45,9 +45,15 @@ const aiCapabilities = [
   },
   {
     icon: Sparkles,
-    title: 'AI Orchestration',
-    description: 'Multiple AI agents work together seamlessly—one validates compliance, another optimizes inventory, while a third analyzes cash flow. Coordinated intelligence across your entire business.',
+    title: 'Multi-Agent Orchestration',
+    description: 'Specialized AI agents collaborate across all business functions—from finance and operations to sales and logistics. They coordinate autonomously to handle complex, cross-functional challenges that span your entire enterprise.',
     color: 'from-blue-500 to-cyan-500',
+  },
+  {
+    icon: Zap,
+    title: 'Lightning-Fast Context Caching',
+    description: 'Advanced context caching delivers near-instant AI responses for follow-up questions—up to 90% faster than traditional systems. Continue conversations seamlessly without repeating context.',
+    color: 'from-yellow-400 to-orange-500',
   },
   {
     icon: TrendingUp,
@@ -514,7 +520,7 @@ export default function AIFeaturePage() {
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-chrysolite-500/10 border border-chrysolite-500/30 rounded-xl">
               <Layers size={20} className="text-chrysolite-400" />
               <span className="text-surface-900 dark:text-white font-medium">
-                All agents share knowledge and coordinate seamlessly to solve complex challenges
+                Specialized agents across all business domains share knowledge and coordinate seamlessly
               </span>
             </div>
           </div>
@@ -535,9 +541,9 @@ export default function AIFeaturePage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-4">Multi-Model AI Architecture</h3>
+              <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-4">Enterprise-Grade AI Architecture</h3>
               <p className="text-surface-600 dark:text-surface-400">
-                Leverages the best AI models from leading providers (OpenAI, Anthropic, Google, and more). The system automatically selects the optimal model for each task—from fast classification to complex reasoning.
+                Built on cutting-edge language models with advanced reasoning capabilities. The system intelligently handles everything from fast classification to complex multi-step analysis—automatically optimizing performance for each task.
               </p>
             </div>
 
