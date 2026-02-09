@@ -15,44 +15,46 @@ import {
   Package,
   FileCheck,
   DollarSign,
+  Sparkles,
+  Brain,
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Oil & Gas ERP for Ghana | Transform Your Petroleum Operations | Chrysolite AI',
-  description: 'Purpose-built ERP for Ghana\'s petroleum industry. Eliminate revenue leakage, automate compliance, and scale operations—from LPG distribution to filling station management. Trusted by leading petroleum companies.',
-  keywords: 'oil and gas ERP Ghana, petroleum management software, LPG distribution software, filling station management system, petroleum compliance NPA, oil marketing company ERP, LPG cylinder tracking Ghana',
+  title: 'AI-Powered Oil & Gas ERP for Ghana | Transform Petroleum Operations | Chrysolite AI',
+  description: 'AI-powered ERP for Ghana\'s petroleum industry. Intelligent cylinder tracking, automated compliance, predictive analytics—from LPG distribution to filling station management. Let AI eliminate revenue leakage and catch anomalies before they cost you.',
+  keywords: 'AI oil and gas ERP Ghana, petroleum management software, LPG distribution software, filling station management system, petroleum compliance NPA, oil marketing company ERP, LPG cylinder tracking Ghana, AI petroleum software',
 }
 
 const capabilities = [
   {
     icon: Package,
-    title: 'End Inventory Leakage',
-    description: 'Know exactly where every cylinder is, at every moment. Track from depot to customer and back with pinpoint accuracy. Recover thousands monthly from improved asset accountability.',
+    title: 'End Inventory Leakage with AI',
+    description: 'Know exactly where every cylinder is, at every moment. AI-powered tracking detects unusual patterns and alerts you to potential losses before they happen. Recover thousands monthly from improved asset accountability and predictive insights.',
   },
   {
     icon: Zap,
-    title: 'Streamline Operations',
-    description: 'Automate daily tasks that waste hours of your team\'s time. From pump readings to cash reconciliation—let intelligent automation handle the busywork while your team focuses on growth.',
+    title: 'Streamline Operations Intelligently',
+    description: 'Automate daily tasks that waste hours of your team\'s time. From pump readings to cash reconciliation—intelligent automation learns your patterns, catches anomalies, and handles the busywork while your team focuses on growth.',
   },
   {
     icon: Shield,
     title: 'Stay Compliant, Stress-Free',
-    description: 'Never worry about NPA audits or tax penalties again. Automatic levy calculations, transport claims, and regulatory reporting keep you audit-ready 24/7 without the headaches.',
+    description: 'Never worry about NPA audits or tax penalties again. AI monitors regulatory changes and automatically updates levy calculations, transport claims, and reporting—keeping you audit-ready 24/7 without manual updates.',
   },
   {
     icon: Eye,
-    title: 'See Your Entire Business in Real-Time',
-    description: 'One dashboard. Every location. Every metric that matters. Make confident decisions with instant visibility across all operations—no more flying blind or waiting for reports.',
+    title: 'AI-Powered Business Intelligence',
+    description: 'One dashboard. Every location. Every metric that matters—with AI highlighting what needs your attention. Natural language queries let you ask questions like "Which stations have unusual variance this week?" and get instant answers.',
   },
   {
     icon: TrendingUp,
-    title: 'Maximize Production Efficiency',
-    description: 'Identify bottlenecks and optimize every step of your operation. From bottling throughput to delivery routes—eliminate waste and increase margins with data-driven insights.',
+    title: 'Maximize Efficiency with Predictive Analytics',
+    description: 'AI identifies bottlenecks before they impact operations and predicts demand patterns to optimize inventory. From bottling throughput to delivery routes—eliminate waste, prevent stockouts, and increase margins with intelligent forecasting.',
   },
   {
     icon: BarChart3,
-    title: 'Scale Without Chaos',
-    description: 'Grow from 5 to 50 locations without adding complexity. Infrastructure that adapts as you expand—add sites, users, and products without slowing down or losing control.',
+    title: 'Scale Intelligently, Not Chaotically',
+    description: 'Grow from 5 to 50 locations without adding complexity. AI adapts workflows as you expand, automatically detecting and suggesting optimizations. Add sites, users, and products while the system gets smarter, not slower.',
   },
 ]
 
@@ -72,24 +74,24 @@ const industrySegments = [
     icon: Droplet,
     title: 'LPG Marketing Companies',
     challenge: 'Losing cylinders? Revenue slipping through the cracks?',
-    solution: 'Track every cylinder from depot to customer and back—with pinpoint accuracy. Know exactly which customer has which cylinder, when it needs refilling, and where your assets are at all times.',
-    outcome: 'Companies like yours recover thousands monthly from improved cylinder accountability.',
+    solution: 'AI-powered cylinder tracking from depot to customer and back—with pinpoint accuracy. The system learns normal patterns and alerts you to unusual movements or delays. Know exactly which customer has which cylinder, predict refilling needs, and catch potential losses before they happen.',
+    outcome: 'Companies like yours recover thousands monthly from AI-driven asset accountability and anomaly detection.',
     stats: '98% Asset Visibility',
   },
   {
     icon: Gauge,
     title: 'Filling Station Owners',
     challenge: 'Spending hours on daily reports and reconciliations?',
-    solution: 'Automate pump readings, cash management, and variance tracking. Generate NPA-compliant reports in seconds, not hours. Catch discrepancies before they become losses.',
-    outcome: 'Run your station in half the time with complete control.',
-    stats: '60% Faster Reconciliation',
+    solution: 'Intelligent automation handles pump readings, cash management, and variance tracking. AI flags unusual patterns instantly—suspicious transactions, unexpected shrinkage, or pump calibration issues. Generate NPA-compliant reports in seconds with confidence.',
+    outcome: 'Run your station in half the time while AI watches for anomalies 24/7.',
+    stats: '60% Faster + AI Monitoring',
   },
   {
     icon: FileCheck,
     title: 'Oil Marketing Companies',
     challenge: 'Struggling with transport claims and levy calculations?',
-    solution: 'Automate UPPF transport claims and NPA-compliant levy reporting. Track every liter from depot to retail, calculate levies automatically, and stay audit-ready without manual spreadsheets.',
-    outcome: 'Get reimbursed faster and never miss a compliance deadline.',
+    solution: 'AI automates UPPF transport claims and NPA-compliant levy reporting. Track every liter from depot to retail with predictive analytics for demand planning. The system calculates levies automatically and adapts to regulatory changes without manual updates.',
+    outcome: 'Get reimbursed faster, predict demand accurately, and never miss a compliance deadline.',
     stats: '100% Audit Ready',
   },
 ]
@@ -107,10 +109,10 @@ export default function OilAndGasPage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-chrysolite-500/10 to-gold-400/10 border border-chrysolite-500/30 rounded-full mb-8 animate-fade-in">
-              <Droplet size={20} className="text-chrysolite-500" />
-              <span className="text-sm font-semibold bg-gradient-to-r from-chrysolite-500 to-gold-400 bg-clip-text text-transparent">
-                Purpose-Built for Ghana's Petroleum Industry
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-electric-cyan-500/10 to-electric-purple-500/10 border border-electric-cyan-500/30 rounded-full mb-8 animate-fade-in">
+              <Droplet size={20} className="text-electric-cyan-500" />
+              <span className="text-sm font-semibold bg-gradient-to-r from-electric-cyan-500 to-electric-purple-500 bg-clip-text text-transparent">
+                AI-Powered for Ghana's Petroleum Industry
               </span>
             </div>
 
@@ -119,12 +121,13 @@ export default function OilAndGasPage() {
             </h1>
 
             <p className="text-xl text-surface-600 dark:text-surface-300 mb-8 leading-relaxed animate-fade-in-up animation-delay-200">
-              The only ERP purpose-built for Ghana's oil & gas industry. From LPG distribution to
-              filling station management—run your entire operation on one intelligent platform.
+              AI-powered ERP designed specifically for Ghana's petroleum industry. From LPG cylinder tracking
+              to filling station automation—combine industry expertise with intelligent automation on one platform.
             </p>
 
             <p className="text-lg text-surface-700 dark:text-surface-400 mb-12 font-medium animate-fade-in-up animation-delay-400">
-              Stop losing revenue to inefficiencies. Start making data-driven decisions.
+              Stop losing revenue to inefficiencies. Let AI handle compliance, predict demand, and catch anomalies
+              before they cost you money.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-600">
@@ -206,10 +209,11 @@ export default function OilAndGasPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
-              One Platform. Complete Control.
+              One AI Platform. Complete Control.
             </h2>
             <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
-              Everything you need to eliminate inefficiencies, recover lost revenue, and scale with confidence.
+              Combine petroleum industry expertise with artificial intelligence. Eliminate inefficiencies,
+              recover lost revenue, and let AI handle the complexity while you scale with confidence.
             </p>
           </div>
 
@@ -244,7 +248,7 @@ export default function OilAndGasPage() {
             </h2>
             <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
               Whether you distribute LPG, operate filling stations, or manage depot operations—
-              we speak your language and solve your specific problems.
+              AI learns your business patterns and solves your specific problems intelligently.
             </p>
           </div>
 
@@ -314,8 +318,73 @@ export default function OilAndGasPage() {
         </div>
       </section>
 
-      {/* Benefits & Trust Section */}
+      {/* AI-Powered Intelligence Section */}
       <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-electric-cyan-500/10 to-electric-purple-500/10 border border-electric-cyan-500/30 rounded-full mb-6">
+              <Sparkles size={20} className="text-electric-cyan-500" />
+              <span className="text-sm font-semibold bg-gradient-to-r from-electric-cyan-500 to-electric-purple-500 bg-clip-text text-transparent">
+                AI That Understands Petroleum
+              </span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-4">
+              Intelligence Built In, Not Bolted On
+            </h2>
+            <p className="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto">
+              Unlike generic ERPs with basic automation, Chrysolite AI was designed from the ground up
+              with petroleum-specific intelligence that learns and adapts to your operations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-electric-cyan-500/5 to-electric-purple-500/5 border border-electric-cyan-500/20 rounded-2xl p-8">
+              <div className="w-14 h-14 bg-gradient-to-br from-electric-cyan-500/20 to-electric-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+                <Brain size={28} className="text-electric-cyan-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-3">
+                Anomaly Detection
+              </h3>
+              <p className="text-surface-600 dark:text-surface-400 leading-relaxed">
+                AI continuously monitors your operations and instantly flags unusual patterns—suspicious
+                transactions, unexpected shrinkage, delivery delays, or inventory discrepancies—before
+                they become costly problems.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-electric-cyan-500/5 to-electric-purple-500/5 border border-electric-cyan-500/20 rounded-2xl p-8">
+              <div className="w-14 h-14 bg-gradient-to-br from-electric-cyan-500/20 to-electric-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+                <TrendingUp size={28} className="text-electric-cyan-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-3">
+                Predictive Analytics
+              </h3>
+              <p className="text-surface-600 dark:text-surface-400 leading-relaxed">
+                Forecast demand patterns, predict maintenance needs, and anticipate bottlenecks before
+                they happen. AI learns from historical data to help you stock the right products at the
+                right locations at the right time.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-electric-cyan-500/5 to-electric-purple-500/5 border border-electric-cyan-500/20 rounded-2xl p-8">
+              <div className="w-14 h-14 bg-gradient-to-br from-electric-cyan-500/20 to-electric-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+                <Sparkles size={28} className="text-electric-cyan-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-surface-900 dark:text-white mb-3">
+                Natural Language Queries
+              </h3>
+              <p className="text-surface-600 dark:text-surface-400 leading-relaxed">
+                Ask questions in plain English: "Which stations had unusual cash variances this week?"
+                or "Show me cylinder return rates by customer." AI understands context and delivers
+                instant, accurate answers without complex reports.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits & Trust Section */}
+      <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -323,8 +392,9 @@ export default function OilAndGasPage() {
                 Why Petroleum Companies Choose Chrysolite AI
               </h2>
               <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
-                Built specifically for Ghana's petroleum industry—not a generic solution forced to fit.
-                Experience the difference when your ERP truly understands your business.
+                Built specifically for Ghana's petroleum industry with AI that learns your operations.
+                Not a generic solution forced to fit—experience intelligent automation that understands
+                your business and gets smarter every day.
               </p>
 
               <div className="space-y-4">
