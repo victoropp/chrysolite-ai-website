@@ -1,6 +1,6 @@
 'use client'
 
-import { UserPlus, Settings, Rocket } from 'lucide-react'
+import { UserPlus, Settings, Rocket, Sparkles } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const steps = [
