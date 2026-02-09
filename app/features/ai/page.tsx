@@ -543,7 +543,7 @@ export default function AIFeaturePage() {
             <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8">
               <h3 className="text-xl font-bold text-surface-900 dark:text-white mb-4">Enterprise-Grade AI Architecture</h3>
               <p className="text-surface-600 dark:text-surface-400">
-                Built on cutting-edge language models with advanced reasoning capabilities. The system intelligently handles everything from fast classification to complex multi-step analysis—automatically optimizing performance for each task.
+                Advanced AI that understands your business context, learns from your data patterns, and delivers intelligent automation across all operations—from fast classification to complex multi-step reasoning and strategic recommendations.
               </p>
             </div>
 
