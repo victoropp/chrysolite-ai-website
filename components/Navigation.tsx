@@ -25,6 +25,13 @@ const navItems = [
       { label: 'Reporting', href: '/features/reporting' },
     ],
   },
+  {
+    label: 'Industries',
+    href: '#',
+    submenu: [
+      { label: 'Oil & Gas', href: '/industries/oil-and-gas' },
+    ],
+  },
   { label: 'Pricing', href: '/pricing' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
