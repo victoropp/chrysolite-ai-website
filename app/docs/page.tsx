@@ -94,7 +94,7 @@ export default function DocsPage() {
                 href="https://app.chrysoliteai.com/register"
                 className="w-full sm:w-auto bg-surface-100 dark:bg-surface-800 hover:bg-surface-700 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
               >
-                Start Free Trial
+                Request Access
               </Link>
             </div>
           </div>

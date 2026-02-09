@@ -136,10 +136,11 @@ export default function HowItWorks() {
         {/* Bottom CTA */}
         <div className="text-center mt-16 animate-fade-in-up animation-delay-1000">
           <a
-            href="https://app.chrysoliteai.com/register"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 group"
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-electric-cyan-500 to-electric-purple-500 hover:from-electric-cyan-400 hover:to-electric-purple-400 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-electric-cyan/40 hover:shadow-electric-purple/60 hover:scale-105 group"
           >
-            <span>Start Your Free Trial</span>
+            <Sparkles size={20} />
+            <span>Request Access</span>
             <Rocket size={20} className="group-hover:translate-x-1 transition-transform" />
           </a>
         </div>

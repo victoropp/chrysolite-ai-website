@@ -169,10 +169,10 @@ export default function AIPowered() {
           </p>
           <a
             href="https://app.chrysoliteai.com/register"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 group"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-electric-cyan-500 to-electric-purple-500 hover:from-electric-cyan-400 hover:to-electric-purple-400 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-electric-cyan/40 hover:shadow-electric-purple/60 hover:scale-105 group"
           >
-            <span>Start Free Trial</span>
             <Sparkles size={20} className="group-hover:rotate-12 transition-transform" />
+            <span>Get Started Now</span>
           </a>
         </div>
       </div>

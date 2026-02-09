@@ -110,8 +110,8 @@ const faqs = [
     answer: 'Key factors include number of users, modules selected, transaction volume, support level, and any custom requirements. We work with you to find the optimal configuration for your budget.',
   },
   {
-    question: 'Is there a free trial?',
-    answer: 'Yes! We offer a 14-day free trial with full access to all features. No credit card required to start your trial.',
+    question: 'How does onboarding work?',
+    answer: 'We provide white-glove onboarding with dedicated support. Our team works closely with you to configure the system, migrate your data, and train your staff for a smooth launch.',
   },
   {
     question: 'Can I change my plan later?',
@@ -300,25 +300,26 @@ export default function PricingPage() {
       <section className="py-24 bg-surface-100/30 dark:bg-surface-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-surface-900 dark:text-white mb-6">
-            Ready to Get Started?
+            Ready to Experience AI-Powered ERP?
           </h2>
           <p className="text-lg text-surface-600 dark:text-surface-400 mb-12">
-            Get a custom quote tailored to your business needs, or start your free trial today.
+            Get a custom quote tailored to your business needs and start your AI transformation.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-gradient-to-r from-electric-cyan-500 to-electric-purple-500 hover:from-electric-cyan-400 hover:to-electric-purple-400 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-electric-cyan/40 hover:shadow-electric-purple/60 hover:scale-105 flex items-center justify-center gap-2"
             >
-              Get Custom Quote
+              <Sparkles size={20} />
+              Request Access
               <ArrowRight size={20} />
             </Link>
             <Link
-              href="https://app.chrysoliteai.com/register"
-              className="w-full sm:w-auto bg-surface-50 dark:bg-surface-900 hover:bg-surface-100 dark:bg-surface-800 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50"
+              href="/contact"
+              className="w-full sm:w-auto bg-surface-50 dark:bg-surface-900 hover:bg-surface-100 dark:hover:bg-surface-800 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-electric-cyan-500/50"
             >
-              Start Free Trial
+              Schedule Demo
             </Link>
           </div>
         </div>

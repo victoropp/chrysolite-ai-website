@@ -109,15 +109,15 @@ export default function PricingPreview() {
 
                     <Link
                       href="https://app.chrysoliteai.com/register"
-                      className="group bg-surface-100/50 dark:bg-surface-800/50 backdrop-blur-xl hover:bg-surface-100 dark:bg-surface-800 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-chrysolite-500/50 flex items-center justify-center gap-2"
+                      className="group bg-surface-100/50 dark:bg-surface-800/50 backdrop-blur-xl hover:bg-surface-100 dark:hover:bg-surface-800 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 border border-surface-300 dark:border-surface-700 hover:border-electric-cyan-500/50 flex items-center justify-center gap-2"
                     >
-                      <span>Start Free Trial</span>
-                      <Sparkles size={20} className="group-hover:text-chrysolite-400 transition-colors" />
+                      <Sparkles size={20} className="group-hover:text-electric-cyan-400 transition-colors" />
+                      <span>Get Started</span>
                     </Link>
                   </div>
 
                   <p className="text-sm text-surface-500 mt-4">
-                    14-day free trial • No credit card required
+                    Invitation-based access • White-glove onboarding
                   </p>
                 </div>
               </div>

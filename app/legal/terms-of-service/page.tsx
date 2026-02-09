@@ -14,7 +14,7 @@ const sections = [
     title: '1. Acceptance of Terms',
     content: `By accessing or using Chrysolite AI's ERP platform ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not use the Service.
 
-These Terms apply to all users, including free trial users, paid subscribers, and administrators. By creating an account, you represent that you are at least 18 years old and have the authority to enter into this agreement on behalf of your organization.`,
+These Terms apply to all users, including paid subscribers and administrators. By creating an account, you represent that you are at least 18 years old and have the authority to enter into this agreement on behalf of your organization.`,
   },
   {
     title: '2. Service Description',
@@ -58,15 +58,15 @@ Accepted Payment Methods:
 • All payments are processed securely through third-party payment processors`,
   },
   {
-    title: '5. Free Trial',
-    content: `Free trial terms:
-• 14-day trial period with full feature access
-• No credit card required to start trial
-• Trial converts to paid subscription unless cancelled
-• One trial per organization
-• We may suspend or terminate trial accounts showing abuse
+    title: '5. Access and Onboarding',
+    content: `Account activation and onboarding:
+• Access is invitation-based or by request through our website
+• We provide white-glove onboarding for new organizations
+• Dedicated support during setup and configuration
+• Data migration assistance available
+• Training provided for your team
 
-You may cancel your trial at any time without charge.`,
+Once approved, you will receive credentials to access the platform.`,
   },
   {
     title: '6. Data Ownership and Use',

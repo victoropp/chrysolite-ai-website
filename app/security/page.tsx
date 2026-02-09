@@ -265,7 +265,7 @@ export default function SecurityPage() {
               Your Data is Safe With Us
             </h2>
             <p className="text-lg text-surface-600 dark:text-surface-400 mb-8">
-              Start your free trial with confidence. Enterprise-grade security included in every plan.
+              Request access with confidence. Enterprise-grade security included in every plan.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -273,7 +273,7 @@ export default function SecurityPage() {
                 href="https://app.chrysoliteai.com/register"
                 className="w-full sm:w-auto bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-surface-900 dark:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/40 hover:shadow-chrysolite/60 hover:scale-105 flex items-center justify-center gap-2"
               >
-                Start Free Trial
+                Request Access
                 <ArrowRight size={20} />
               </Link>
               <Link
