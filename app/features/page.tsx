@@ -15,6 +15,7 @@ import {
   BarChart3,
   ArrowRight,
   Check,
+  Sparkles,
 } from 'lucide-react'
 
 export const metadata: Metadata = {
