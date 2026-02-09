@@ -86,9 +86,7 @@ export default function Navigation() {
             {navItems.map((item) => (
               <div
                 key={item.label}
-                className="relative"
-                onMouseEnter={() => item.submenu && setOpenSubmenu(item.label)}
-                onMouseLeave={() => setOpenSubmenu(null)}
+                className="relative group"
               >
                 {item.submenu ? (
                   <>
@@ -96,13 +94,13 @@ export default function Navigation() {
                       {item.label}
                       <ChevronDown size={16} className={cn(
                         'transition-transform',
-                        openSubmenu === item.label && 'rotate-180'
+                        'group-hover:rotate-180'
                       )} />
                     </button>
 
-                    {/* Submenu */}
-                    {openSubmenu === item.label && (
-                      <div className="absolute top-full left-0 mt-2 w-56 bg-white/95 dark:bg-surface-900/95 backdrop-blur-xl border border-surface-200 dark:border-surface-700 rounded-2xl shadow-2xl py-2 animate-fade-in">
+                    {/* Submenu - appears on group hover with no gap */}
+                    <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                      <div className="w-56 bg-white/95 dark:bg-surface-900/95 backdrop-blur-xl border border-surface-200 dark:border-surface-700 rounded-2xl shadow-2xl py-2">
                         {item.submenu.map((subItem) => (
                           <Link
                             key={subItem.label}
@@ -113,7 +111,7 @@ export default function Navigation() {
                           </Link>
                         ))}
                       </div>
-                    )}
+                    </div>
                   </>
                 ) : (
                   <Link
