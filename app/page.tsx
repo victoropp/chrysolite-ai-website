@@ -3,6 +3,7 @@ import Features from '@/components/sections/Features'
 import HowItWorks from '@/components/sections/HowItWorks'
 import ModuleShowcase from '@/components/sections/ModuleShowcase'
 import AIPowered from '@/components/sections/AIPowered'
+import AgenticAI from '@/components/sections/AgenticAI'
 import PricingPreview from '@/components/sections/PricingPreview'
 import Testimonials from '@/components/sections/Testimonials'
 import CTA from '@/components/sections/CTA'
@@ -18,6 +19,7 @@ export default function Home() {
       <HowItWorks />
       <ModuleShowcase />
       <AIPowered />
+      <AgenticAI />
       <PricingPreview />
       <Testimonials />
       <CTA />
