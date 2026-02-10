@@ -18,7 +18,8 @@ import {
   Brain,
   Droplet,
   Settings,
-  Globe
+  Globe,
+  Fuel
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -172,16 +173,32 @@ const modules = [
     icon: Droplet,
     name: 'Petroleum Operations',
     tagline: 'Industry-specific excellence',
-    description: 'Specialized for oil & gas: LPG cylinder tracking, levy automation, UPPF claims, depot operations, and NPA compliance.',
+    description: 'Specialized for oil & gas midstream: LPG cylinder tracking, levy automation, UPPF claims, depot operations, and NPA compliance.',
     features: [
       'LPG Cylinder Tracking',
-      'Automated Petroleum Levies',
-      'UPPF Transport Claims',
-      'Depot & Retail Operations',
+      'Automated Petroleum Levies (UPPF, BOST, EPRF)',
+      'UPPF Transport Claims & Automation',
+      'Depot Operations Management',
       'NPA Compliance Reporting',
-      'Bottling Operations Management',
+      'LPG Bottling Operations',
     ],
     gradient: 'from-electric-cyan-500 to-electric-purple-500',
+  },
+  {
+    id: 'filling-station',
+    icon: Fuel,
+    name: 'Filling Station Operations',
+    tagline: 'Complete forecourt management',
+    description: 'Purpose-built for fuel retail with pump/tank monitoring, shift-based sales reconciliation, attendant accountability, and automated GL posting.',
+    features: [
+      'Pump & Tank Real-Time Monitoring',
+      'Shift-Based Daily Sales & Reconciliation',
+      'Individual Attendant Accountability',
+      'Temperature-Corrected Volume Tracking',
+      'Automated Loss Detection & GL Posting',
+      'Petty Cash & Station Expense Management',
+    ],
+    gradient: 'from-amber-500 to-orange-500',
   },
   {
     id: 'analytics',
@@ -315,7 +332,7 @@ export default function ModuleShowcase() {
             Complete <span className="gradient-text">Business Suite</span>
           </h2>
           <p className="text-xl text-surface-600 dark:text-surface-300 max-w-3xl mx-auto">
-            17+ integrated modules covering every aspect of your business—from finance to operations, all with AI built in
+            18+ integrated modules covering every aspect of your business—from finance to operations, all with AI built in
           </p>
         </div>
 
