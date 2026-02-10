@@ -6,7 +6,7 @@ import CompanyLogo from '@/components/ui/CompanyLogo'
 
 const testimonials = [
   {
-    name: 'Sarah Mitchell',
+    name: 'Marcus Holloway',
     role: 'CEO',
     company: 'TechFlow Solutions',
     industry: 'Software Development',
@@ -15,7 +15,7 @@ const testimonials = [
     quote: 'Chrysolite AI transformed our financial operations. The AI-powered anomaly detection caught billing errors we never knew existed, saving us £45K in the first quarter alone. The real-time dashboards give our investors confidence in our numbers.',
   },
   {
-    name: 'David Chen',
+    name: 'Kenji Tanaka',
     role: 'CFO',
     company: 'GlobalTrade Enterprises',
     industry: 'International Trade',
@@ -24,7 +24,7 @@ const testimonials = [
     quote: 'Managing multi-currency transactions across 15 countries was a nightmare. Chrysolite\'s automated reconciliation and exchange rate handling cut our month-end close from 10 days to 2 days. The compliance reporting alone is worth the investment.',
   },
   {
-    name: 'Maria Rodriguez',
+    name: 'Elena Volkov',
     role: 'Operations Director',
     company: 'Horizon Manufacturing',
     industry: 'Industrial Manufacturing',
@@ -33,7 +33,7 @@ const testimonials = [
     quote: 'We manufacture industrial equipment with 2,500+ SKUs. Chrysolite\'s AI demand forecasting reduced our inventory holding costs by 38% while preventing stockouts. The production planning integration is seamless—everything just works.',
   },
   {
-    name: 'James Wilson',
+    name: 'Callum Fitzgerald',
     role: 'Project Director',
     company: 'Apex Construction Group',
     industry: 'Construction',
@@ -42,7 +42,7 @@ const testimonials = [
     quote: 'Construction projects are complex with multiple cost centers, subcontractors, and compliance requirements. Chrysolite\'s project accounting and automated approval workflows have cut our administrative overhead by 50%. Game-changing.',
   },
   {
-    name: 'Priya Sharma',
+    name: 'Amara Okafor',
     role: 'General Manager',
     company: 'Evergreen Hospitality',
     industry: 'Hotel Management',
@@ -51,7 +51,7 @@ const testimonials = [
     quote: 'Operating 12 hotel properties means managing inventory, payroll, revenue management, and guest services simultaneously. Chrysolite unified everything into one platform. The AI revenue optimization alone increased our RevPAR by 18%.',
   },
   {
-    name: 'Dr. Robert Thompson',
+    name: 'Dr. Lena Bergström',
     role: 'Chief Operating Officer',
     company: 'MedCore Healthcare',
     industry: 'Healthcare Services',
