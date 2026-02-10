@@ -1,0 +1,19 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="evergreen-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Leaf shape (hospitality/nature) -->
+  <path d="M 100 50 Q 130 70, 140 100 Q 130 130, 100 150 Q 70 130, 60 100 Q 70 70, 100 50 Z" fill="url(#evergreen-gradient)"/>
+  <!-- Leaf vein -->
+  <path d="M 100 50 L 100 150" stroke="#f0fdf4" stroke-width="3" opacity="0.4"/>
+  <path d="M 100 80 Q 115 85, 120 95" stroke="#f0fdf4" stroke-width="2" opacity="0.3" fill="none"/>
+  <path d="M 100 80 Q 85 85, 80 95" stroke="#f0fdf4" stroke-width="2" opacity="0.3" fill="none"/>
+  <path d="M 100 110 Q 115 115, 120 125" stroke="#f0fdf4" stroke-width="2" opacity="0.3" fill="none"/>
+  <path d="M 100 110 Q 85 115, 80 125" stroke="#f0fdf4" stroke-width="2" opacity="0.3" fill="none"/>
+  <!-- Door/welcome element -->
+  <rect x="95" y="130" width="10" height="20" fill="#059669" opacity="0.6"/>
+  <circle cx="100" cy="140" r="2" fill="#f0fdf4"/>
+</svg>

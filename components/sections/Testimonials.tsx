@@ -2,31 +2,62 @@
 
 import { Star, Quote } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import CompanyLogo from '@/components/ui/CompanyLogo'
 
 const testimonials = [
   {
     name: 'Sarah Mitchell',
     role: 'CEO',
     company: 'TechFlow Solutions',
-    image: null, // Placeholder for avatar
+    industry: 'Software Development',
+    image: null,
     rating: 5,
-    quote: 'Chrysolite AI transformed how we manage our operations. The AI-powered insights have helped us reduce costs by 30% while improving efficiency across all departments. It\'s like having a team of expert consultants working 24/7.',
+    quote: 'Chrysolite AI transformed our financial operations. The AI-powered anomaly detection caught billing errors we never knew existed, saving us £45K in the first quarter alone. The real-time dashboards give our investors confidence in our numbers.',
   },
   {
     name: 'David Chen',
     role: 'CFO',
     company: 'GlobalTrade Enterprises',
+    industry: 'International Trade',
     image: null,
     rating: 5,
-    quote: 'The financial management module is exceptional. Real-time reporting and automated reconciliation have saved our team countless hours. The customizable pricing model meant we only paid for what we needed.',
+    quote: 'Managing multi-currency transactions across 15 countries was a nightmare. Chrysolite\'s automated reconciliation and exchange rate handling cut our month-end close from 10 days to 2 days. The compliance reporting alone is worth the investment.',
   },
   {
     name: 'Maria Rodriguez',
     role: 'Operations Director',
     company: 'Horizon Manufacturing',
+    industry: 'Industrial Manufacturing',
     image: null,
     rating: 5,
-    quote: 'We\'ve tried multiple ERP systems, but Chrysolite AI stands out with its intuitive design and powerful automation. The inventory forecasting alone has prevented stockouts and reduced excess inventory by 45%.',
+    quote: 'We manufacture industrial equipment with 2,500+ SKUs. Chrysolite\'s AI demand forecasting reduced our inventory holding costs by 38% while preventing stockouts. The production planning integration is seamless—everything just works.',
+  },
+  {
+    name: 'James Wilson',
+    role: 'Project Director',
+    company: 'Apex Construction Group',
+    industry: 'Construction',
+    image: null,
+    rating: 5,
+    quote: 'Construction projects are complex with multiple cost centers, subcontractors, and compliance requirements. Chrysolite\'s project accounting and automated approval workflows have cut our administrative overhead by 50%. Game-changing.',
+  },
+  {
+    name: 'Priya Sharma',
+    role: 'General Manager',
+    company: 'Evergreen Hospitality',
+    industry: 'Hotel Management',
+    image: null,
+    rating: 5,
+    quote: 'Operating 12 hotel properties means managing inventory, payroll, revenue management, and guest services simultaneously. Chrysolite unified everything into one platform. The AI revenue optimization alone increased our RevPAR by 18%.',
+  },
+  {
+    name: 'Dr. Robert Thompson',
+    role: 'Chief Operating Officer',
+    company: 'MedCore Healthcare',
+    industry: 'Healthcare Services',
+    image: null,
+    rating: 5,
+    quote: 'Healthcare compliance is non-negotiable. Chrysolite\'s audit trails, automated regulatory reporting, and HIPAA-compliant workflows gave us peace of mind. The payroll integration with our shift scheduling saved our HR team 20 hours per week.',
   },
 ]
 
@@ -56,8 +87,29 @@ export default function Testimonials() {
           </p>
         </div>
 
+        {/* Trusted By Logo Strip */}
+        <div className="mb-16 animate-fade-in">
+          <div className="relative overflow-hidden bg-surface-50/50 dark:bg-surface-900/30 backdrop-blur-sm border-y border-surface-200 dark:border-surface-800 py-8">
+            <p className="text-center text-sm font-medium text-surface-600 dark:text-surface-400 mb-6 uppercase tracking-wider">
+              Trusted by leading companies across industries
+            </p>
+            <div className="flex flex-wrap justify-center items-center gap-12 px-4">
+              {testimonials.map((testimonial) => (
+                <div key={testimonial.company} className="animate-fade-in-up">
+                  <CompanyLogo
+                    company={testimonial.company}
+                    size="lg"
+                    grayscale
+                    className="transition-transform hover:scale-110"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.name}
@@ -103,21 +155,25 @@ export default function Testimonials() {
                     </div>
 
                     {/* Details */}
-                    <div>
+                    <div className="flex-1">
                       <div className="font-semibold text-surface-900 dark:text-white">{testimonial.name}</div>
                       <div className="text-sm text-surface-600 dark:text-surface-400">
-                        {testimonial.role} at {testimonial.company}
+                        {testimonial.role}
+                      </div>
+                      <div className="text-xs text-surface-500 dark:text-surface-500 mt-0.5">
+                        {testimonial.company}
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Decorative Corner */}
-                <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="flex gap-1">
-                    <div className="w-1 h-1 bg-chrysolite-500 rounded-full"></div>
-                    <div className="w-1 h-1 bg-gold-400 rounded-full"></div>
-                    <div className="w-1 h-1 bg-chrysolite-500 rounded-full"></div>
+                {/* Company Logo Badge */}
+                <div className="absolute bottom-4 right-4 opacity-60 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110">
+                  <div className="bg-white dark:bg-surface-900 rounded-lg p-2 shadow-lg">
+                    <CompanyLogo
+                      company={testimonial.company}
+                      size="sm"
+                    />
                   </div>
                 </div>
               </div>
