@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { ArrowRight, Sparkles, Shield, Zap, TrendingUp } from 'lucide-react'
+import CompanyLogo from '@/components/ui/CompanyLogo'
 
 export default function Hero() {
   return (
@@ -82,13 +83,14 @@ export default function Hero() {
 
         {/* Social Proof */}
         <div className="mt-16 animate-fade-in-up animation-delay-500">
-          <p className="text-sm text-surface-500 mb-4">Trusted by businesses worldwide</p>
-          <div className="flex items-center justify-center gap-8 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all">
-            {/* Placeholder for company logos */}
-            <div className="text-surface-600 dark:text-surface-600 text-sm">Logo 1</div>
-            <div className="text-surface-600 dark:text-surface-600 text-sm">Logo 2</div>
-            <div className="text-surface-600 dark:text-surface-600 text-sm">Logo 3</div>
-            <div className="text-surface-600 dark:text-surface-600 text-sm">Logo 4</div>
+          <p className="text-sm text-surface-500 mb-6">Trusted by businesses worldwide</p>
+          <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+            <CompanyLogo company="TechFlow Solutions" size="md" grayscale />
+            <CompanyLogo company="GlobalTrade Enterprises" size="md" grayscale />
+            <CompanyLogo company="Horizon Manufacturing" size="md" grayscale />
+            <CompanyLogo company="Apex Construction Group" size="md" grayscale />
+            <CompanyLogo company="Evergreen Hospitality" size="md" grayscale />
+            <CompanyLogo company="MedCore Healthcare" size="md" grayscale />
           </div>
         </div>
       </div>
