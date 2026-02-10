@@ -189,7 +189,7 @@ const modules = [
     icon: Fuel,
     name: 'Filling Station Operations',
     tagline: 'Complete forecourt management',
-    description: 'Purpose-built for fuel retail with pump/tank monitoring, shift-based sales reconciliation, attendant accountability, and automated GL posting.',
+    description: 'Eliminate manual reconciliation errors and fuel losses. Know exactly what every pump dispensed, every shift sold, and every attendant handled—all with automatic accounting.',
     features: [
       'Pump & Tank Real-Time Monitoring',
       'Shift-Based Daily Sales & Reconciliation',
