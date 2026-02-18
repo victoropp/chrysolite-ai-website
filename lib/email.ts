@@ -1,6 +1,8 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY)
+}
 
 function esc(str: string): string {
   return str
@@ -97,6 +99,7 @@ function contactConfirmationHtml(data: ContactData): string {
 export async function sendContactEmails(data: ContactData): Promise<void> {
   const adminTo = process.env.CONTACT_EMAIL_TO ?? 'hello@chrysoliteai.com'
 
+  const resend = getResend()
   const [adminResult, userResult] = await Promise.all([
     resend.emails.send({
       from: 'Chrysolite AI <noreply@chrysoliteai.com>',
@@ -122,6 +125,7 @@ export async function sendContactEmails(data: ContactData): Promise<void> {
 export async function sendNewsletterNotification(email: string): Promise<void> {
   const adminTo = process.env.CONTACT_EMAIL_TO ?? 'hello@chrysoliteai.com'
 
+  const resend = getResend()
   const result = await resend.emails.send({
     from: 'Chrysolite AI <noreply@chrysoliteai.com>',
     to: adminTo,
