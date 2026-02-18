@@ -1,10 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Eye, EyeOff, Lock, Loader2 } from 'lucide-react'
 
-export default function AdminLoginPage() {
+function LoginForm() {
   const router       = useRouter()
   const searchParams = useSearchParams()
   const from         = searchParams.get('from') ?? '/admin/contacts'
@@ -102,5 +102,13 @@ export default function AdminLoginPage() {
         </p>
       </div>
     </main>
+  )
+}
+
+export default function AdminLoginPage() {
+  return (
+    <Suspense>
+      <LoginForm />
+    </Suspense>
   )
 }
