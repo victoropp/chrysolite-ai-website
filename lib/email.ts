@@ -1,7 +1,7 @@
 import { Resend } from 'resend'
 
 function getResend() {
-  return new Resend(process.env.RESEND_API_KEY)
+  return new Resend((process.env.RESEND_API_KEY ?? '').trim() || undefined)
 }
 
 function esc(str: string): string {
