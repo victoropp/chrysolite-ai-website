@@ -97,7 +97,7 @@ function contactConfirmationHtml(data: ContactData): string {
 }
 
 export async function sendContactEmails(data: ContactData): Promise<void> {
-  const adminTo = process.env.CONTACT_EMAIL_TO ?? 'hello@chrysoliteai.com'
+  const adminTo = (process.env.CONTACT_EMAIL_TO ?? 'hello@chrysoliteai.com').trim()
 
   const resend = getResend()
   const [adminResult, userResult] = await Promise.all([
@@ -123,7 +123,7 @@ export async function sendContactEmails(data: ContactData): Promise<void> {
 // ─── Newsletter ───────────────────────────────────────────────────────────────
 
 export async function sendNewsletterNotification(email: string): Promise<void> {
-  const adminTo = process.env.CONTACT_EMAIL_TO ?? 'hello@chrysoliteai.com'
+  const adminTo = (process.env.CONTACT_EMAIL_TO ?? 'hello@chrysoliteai.com').trim()
 
   const resend = getResend()
   const result = await resend.emails.send({

@@ -31,9 +31,8 @@ export async function POST(req: NextRequest) {
   try {
     await sendContactEmails(data)
   } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err)
     console.error('Failed to send contact emails:', err)
-    return NextResponse.json({ error: msg }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to send message. Please try again.' }, { status: 500 })
   }
 
   return NextResponse.json({ success: true })
