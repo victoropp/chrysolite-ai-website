@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { sendContactEmails, type ContactData } from '@/lib/email'
+import { insertContact } from '@/lib/db'
 
 export async function POST(req: NextRequest) {
   let body: unknown
@@ -34,6 +35,9 @@ export async function POST(req: NextRequest) {
     console.error('Failed to send contact emails:', err)
     return NextResponse.json({ error: 'Failed to send message. Please try again.' }, { status: 500 })
   }
+
+  // Save to DB — non-blocking so a DB issue doesn't break form submission
+  insertContact(data).catch((err) => console.error('Failed to save contact to DB:', err))
 
   return NextResponse.json({ success: true })
 }
