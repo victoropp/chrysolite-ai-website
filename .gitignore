@@ -5,3 +5,4 @@ out/
 .vercel
 .claude/
 nul
+.env.vercel.tmp
