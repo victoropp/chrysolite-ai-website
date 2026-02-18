@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import {
@@ -8,7 +9,9 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Phone
+  Phone,
+  CheckCircle,
+  Loader2,
 } from 'lucide-react'
 
 const footerLinks = {
@@ -55,6 +58,24 @@ const socialLinks = [
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const [email, setEmail] = useState('')
+  const [newsletterState, setNewsletterState] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+
+  async function handleNewsletter(e: React.FormEvent) {
+    e.preventDefault()
+    if (!email.trim()) return
+    setNewsletterState('loading')
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      })
+      setNewsletterState(res.ok ? 'success' : 'error')
+    } catch {
+      setNewsletterState('error')
+    }
+  }
 
   return (
     <footer className="relative bg-surface-50 dark:bg-surface-950 border-t border-surface-200 dark:border-surface-900">
@@ -195,16 +216,30 @@ export default function Footer() {
                 Get the latest product updates and industry insights
               </p>
             </div>
-            <div className="flex gap-3 w-full md:w-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 md:w-64 px-4 py-3 bg-white dark:bg-surface-900 border border-surface-300 dark:border-surface-800 rounded-xl text-surface-900 dark:text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors"
-              />
-              <button className="px-6 py-3 bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/30 hover:shadow-chrysolite/50">
-                Subscribe
-              </button>
-            </div>
+            {newsletterState === 'success' ? (
+              <div className="flex items-center gap-2 text-chrysolite-400 font-medium">
+                <CheckCircle size={18} /> You&apos;re subscribed — thank you!
+              </div>
+            ) : (
+              <form onSubmit={handleNewsletter} className="flex gap-3 w-full md:w-auto">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  required
+                  className="flex-1 md:w-64 px-4 py-3 bg-white dark:bg-surface-900 border border-surface-300 dark:border-surface-800 rounded-xl text-surface-900 dark:text-white placeholder:text-surface-500 focus:outline-none focus:border-chrysolite-500/50 transition-colors"
+                />
+                <button
+                  type="submit"
+                  disabled={newsletterState === 'loading'}
+                  className="px-6 py-3 bg-gradient-to-r from-chrysolite-500 to-chrysolite-600 hover:from-chrysolite-400 hover:to-chrysolite-500 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-chrysolite/30 hover:shadow-chrysolite/50 disabled:opacity-60 flex items-center gap-2"
+                >
+                  {newsletterState === 'loading' ? <Loader2 size={16} className="animate-spin" /> : null}
+                  Subscribe
+                </button>
+              </form>
+            )}
           </div>
         </div>
 
