@@ -80,11 +80,11 @@ function Trend({ current, previous }: { current: number; previous: number }) {
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 interface Props {
-  searchParams: Promise<{ q?: string; subject?: string }>
+  searchParams: Promise<{ q?: string; subject?: string; from_date?: string; to_date?: string; sort?: string }>
 }
 
 export default async function ContactsAdminPage({ searchParams }: Props) {
-  const { q = '', subject = '' } = await searchParams
+  const { q = '', subject = '', from_date = '', to_date = '', sort = '' } = await searchParams
 
   let allRows: ContactRow[] = []
   let dbError: string | null = null
@@ -112,7 +112,20 @@ export default async function ContactsAdminPage({ searchParams }: Props) {
     )
   }
   if (subject) displayRows = displayRows.filter((r) => r.subject === subject)
-  const isFiltered = !!(q || subject)
+  if (from_date) {
+    const from = new Date(from_date)
+    displayRows = displayRows.filter((r) => new Date(r.created_at) >= from)
+  }
+  if (to_date) {
+    const to = new Date(to_date)
+    to.setHours(23, 59, 59, 999)
+    displayRows = displayRows.filter((r) => new Date(r.created_at) <= to)
+  }
+  displayRows = [...displayRows].sort((a, b) => {
+    const diff = new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+    return sort === 'asc' ? -diff : diff
+  })
+  const isFiltered = !!(q || subject || from_date || to_date || sort === 'asc')
 
   return (
     <div className="min-h-screen bg-surface-50 dark:bg-surface-950 text-surface-900 dark:text-white">
@@ -262,7 +275,7 @@ export default async function ContactsAdminPage({ searchParams }: Props) {
         {/* ── Search & filter ── */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
           <Suspense>
-            <SearchBar q={q} subject={subject} />
+            <SearchBar q={q} subject={subject} from_date={from_date} to_date={to_date} sort={sort} />
           </Suspense>
           <p className="text-xs text-surface-400 shrink-0">
             {isFiltered
@@ -346,7 +359,7 @@ export default async function ContactsAdminPage({ searchParams }: Props) {
         )}
 
         <p className="mt-5 text-xs text-surface-400 text-right">
-          Chrysolite AI · Admin · Newest first
+          Chrysolite AI · Admin · {sort === 'asc' ? 'Oldest first' : 'Newest first'}
         </p>
       </div>
     </div>
