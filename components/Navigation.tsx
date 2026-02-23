@@ -129,12 +129,6 @@ export default function Navigation() {
           <div className="hidden lg:flex items-center gap-4">
             <ThemeToggle />
             <Link
-              href="https://app.chrysoliteai.com/login"
-              className="text-surface-600 dark:text-surface-300 hover:text-surface-900 dark:hover:text-white transition-colors"
-            >
-              Sign In
-            </Link>
-            <Link
               href="/contact"
               className="bg-gradient-to-r from-electric-cyan-500 to-electric-purple-500 hover:from-electric-cyan-400 hover:to-electric-purple-400 text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-200 shadow-lg shadow-electric-cyan/40 hover:shadow-electric-purple/60 hover:scale-105"
             >
@@ -207,13 +201,6 @@ export default function Navigation() {
                 <ThemeToggle />
               </div>
 
-              <Link
-                href="https://app.chrysoliteai.com/login"
-                className="block text-center text-surface-600 dark:text-surface-300 hover:text-surface-900 dark:hover:text-white py-3 transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Sign In
-              </Link>
               <Link
                 href="https://app.chrysoliteai.com/register"
                 className="block text-center bg-gradient-to-r from-electric-cyan-500 to-electric-purple-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-electric-cyan/40"
