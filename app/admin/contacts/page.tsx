@@ -114,12 +114,16 @@ export default async function ContactsAdminPage({ searchParams }: Props) {
   if (subject) displayRows = displayRows.filter((r) => r.subject === subject)
   if (from_date) {
     const from = new Date(from_date)
-    displayRows = displayRows.filter((r) => new Date(r.created_at) >= from)
+    if (!isNaN(from.getTime())) {
+      displayRows = displayRows.filter((r) => new Date(r.created_at) >= from)
+    }
   }
   if (to_date) {
     const to = new Date(to_date)
-    to.setHours(23, 59, 59, 999)
-    displayRows = displayRows.filter((r) => new Date(r.created_at) <= to)
+    if (!isNaN(to.getTime())) {
+      to.setHours(23, 59, 59, 999)
+      displayRows = displayRows.filter((r) => new Date(r.created_at) <= to)
+    }
   }
   displayRows = [...displayRows].sort((a, b) => {
     const diff = new Date(b.created_at).getTime() - new Date(a.created_at).getTime()

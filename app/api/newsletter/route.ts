@@ -7,7 +7,14 @@ const RATE_WINDOW_MS = 60 * 60 * 1000 // 1 hour
 const MAX_SIGNUPS = 3
 
 function getClientIP(req: NextRequest): string {
-  return req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'unknown'
+  // x-real-ip is injected by Vercel's edge and cannot be spoofed by clients.
+  // Fall back to the rightmost entry of x-forwarded-for (most trusted in a
+  // reverse-proxy chain where Vercel is the outermost layer).
+  return (
+    req.headers.get('x-real-ip') ??
+    req.headers.get('x-forwarded-for')?.split(',').at(-1)?.trim() ??
+    'unknown'
+  )
 }
 
 function isRateLimited(ip: string): boolean {

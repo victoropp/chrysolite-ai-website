@@ -2,6 +2,19 @@ import { NextRequest, NextResponse } from 'next/server'
 import { deriveSessionToken } from '@/lib/session'
 
 export async function POST(req: NextRequest) {
+  // CSRF: reject requests from foreign origins (defense-in-depth alongside SameSite=strict)
+  const origin = req.headers.get('origin')
+  const host   = req.headers.get('host') ?? ''
+  if (origin) {
+    try {
+      if (new URL(origin).host !== host) {
+        return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
+      }
+    } catch {
+      return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
+    }
+  }
+
   const { password } = await req.json() as { password?: string }
   const expected = (process.env.ADMIN_PASSWORD ?? '').trim()
 
@@ -9,7 +22,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Admin not configured' }, { status: 500 })
   }
 
-  if (!password || password !== expected) {
+  // Reject obviously invalid inputs before password comparison
+  if (!password || typeof password !== 'string' || password.length > 1000) {
+    return NextResponse.json({ error: 'Invalid password' }, { status: 401 })
+  }
+
+  if (password !== expected) {
     return NextResponse.json({ error: 'Invalid password' }, { status: 401 })
   }
 

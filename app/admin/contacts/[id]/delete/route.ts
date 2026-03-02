@@ -21,6 +21,12 @@ export async function DELETE(
 
   try {
     await deleteContact(id)
+    // Audit log — GDPR Article 17 requires accountability for erasure requests.
+    console.log(JSON.stringify({
+      event:     'gdpr.erasure',
+      contactId: id,
+      timestamp: new Date().toISOString(),
+    }))
     return new NextResponse(null, { status: 204 })
   } catch (err) {
     console.error('Failed to delete contact:', err)

@@ -12,7 +12,26 @@ const securityHeaders = [
   // Disables browser features not used by this app
   {
     key: 'Permissions-Policy',
-    value: 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), serial=()',
+    value: [
+      'camera=()',
+      'microphone=()',
+      'geolocation=()',
+      'payment=()',
+      'usb=()',
+      'serial=()',
+      'accelerometer=()',
+      'ambient-light-sensor=()',
+      'autoplay=()',
+      'battery=()',
+      'display-capture=()',
+      'document-domain=()',
+      'fullscreen=()',
+      'magnetometer=()',
+      'midi=()',
+      'screen-wake-lock=()',
+      'sync-xhr=()',
+      'xr-spatial-tracking=()',
+    ].join(', '),
   },
   // HSTS — force HTTPS for 1 year including subdomains (submit for preload once stable)
   {
@@ -35,6 +54,7 @@ const securityHeaders = [
       "base-uri 'self'",
       "form-action 'self'",
       "object-src 'none'",
+      "upgrade-insecure-requests",
     ].join('; '),
   },
 ]
