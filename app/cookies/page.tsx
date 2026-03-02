@@ -3,10 +3,11 @@ import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/sections/Footer'
 import { Cookie, ArrowRight } from 'lucide-react'
+import ManageCookiesButton from './ManageCookiesButton'
 
 export const metadata: Metadata = {
   title: 'Cookie Policy | Chrysolite AI',
-  description: 'Learn about how Chrysolite AI uses cookies and similar technologies on our website and platform.',
+  description: 'Learn about how Chrysolite AI uses cookies and similar technologies on our website.',
 }
 
 export default function CookiePolicyPage() {
@@ -23,111 +24,175 @@ export default function CookiePolicyPage() {
             <h1 className="text-4xl sm:text-5xl font-bold text-surface-900 dark:text-white mb-4">
               Cookie Policy
             </h1>
-            <p className="text-surface-600 dark:text-surface-400">Last Updated: February 2026</p>
+            <p className="text-surface-600 dark:text-surface-400 mb-6">Last Updated: March 2026</p>
+            <ManageCookiesButton />
           </div>
 
-          <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8 md:p-12 space-y-8">
+          <div className="bg-surface-50/50 dark:bg-surface-900/50 border border-surface-300 dark:border-surface-800 rounded-2xl p-8 md:p-12 space-y-10">
+
             <section>
               <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">What Are Cookies?</h2>
-              <p className="text-surface-600 dark:text-surface-300 leading-relaxed mb-4">
-                Cookies are small text files that are stored on your device when you visit our website.
-                They help us provide you with a better experience by remembering your preferences and
-                understanding how you use our platform.
+              <p className="text-surface-600 dark:text-surface-300 leading-relaxed">
+                Cookies are small text files placed on your device when you visit a website. Similar technologies
+                include localStorage — a browser feature that stores data locally without sending it to any server.
+                We use both, and this policy covers all such storage. We only set non-essential storage after you
+                have given your consent.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">Types of Cookies We Use</h2>
+              <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-6">Cookies We Use</h2>
 
-              <div className="space-y-6">
+              <div className="space-y-8">
+
+                {/* Essential */}
                 <div>
-                  <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2">Essential Cookies</h3>
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Essential</h3>
+                    <span className="text-xs font-bold uppercase tracking-wide text-chrysolite-600 bg-chrysolite-500/10 border border-chrysolite-500/20 rounded-full px-2 py-0.5">
+                      Always active
+                    </span>
+                  </div>
+                  <p className="text-surface-600 dark:text-surface-300 leading-relaxed mb-4">
+                    Strictly necessary for the website to function. They do not store any personally
+                    identifiable information beyond what is required for the operation of the feature
+                    they support, and cannot be disabled.
+                  </p>
+                  <div className="overflow-x-auto rounded-xl border border-surface-200 dark:border-surface-800">
+                    <table className="w-full text-sm">
+                      <thead className="bg-surface-100 dark:bg-surface-800/60">
+                        <tr>
+                          {['Name', 'Purpose', 'Type', 'Duration'].map((h) => (
+                            <th key={h} className="px-4 py-3 text-left text-xs font-semibold text-surface-500 uppercase tracking-wider whitespace-nowrap">{h}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-surface-100 dark:divide-surface-800">
+                        <tr className="bg-white dark:bg-surface-900/40">
+                          <td className="px-4 py-3 font-mono text-xs text-chrysolite-600 dark:text-chrysolite-400 whitespace-nowrap">chrysolite_erp_admin</td>
+                          <td className="px-4 py-3 text-surface-600 dark:text-surface-300">Admin session token. Set only when an administrator logs in. Marked httpOnly and Secure — never readable by JavaScript.</td>
+                          <td className="px-4 py-3 text-surface-500 whitespace-nowrap">HTTP Cookie</td>
+                          <td className="px-4 py-3 text-surface-500 whitespace-nowrap">8 hours</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Functionality */}
+                <div>
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Functionality</h3>
+                    <span className="text-xs font-medium text-surface-500 bg-surface-100 dark:bg-surface-800 border border-surface-200 dark:border-surface-700 rounded-full px-2 py-0.5">
+                      Consent required
+                    </span>
+                  </div>
+                  <p className="text-surface-600 dark:text-surface-300 leading-relaxed mb-4">
+                    Remember your preferences to give you a consistent experience. Stored locally on your
+                    device only — never transmitted to our servers or any third party.
+                  </p>
+                  <div className="overflow-x-auto rounded-xl border border-surface-200 dark:border-surface-800">
+                    <table className="w-full text-sm">
+                      <thead className="bg-surface-100 dark:bg-surface-800/60">
+                        <tr>
+                          {['Name', 'Purpose', 'Type', 'Duration'].map((h) => (
+                            <th key={h} className="px-4 py-3 text-left text-xs font-semibold text-surface-500 uppercase tracking-wider whitespace-nowrap">{h}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-surface-100 dark:divide-surface-800">
+                        <tr className="bg-white dark:bg-surface-900/40">
+                          <td className="px-4 py-3 font-mono text-xs text-chrysolite-600 dark:text-chrysolite-400 whitespace-nowrap">chrysolite-theme</td>
+                          <td className="px-4 py-3 text-surface-600 dark:text-surface-300">Stores your dark or light mode preference so the correct theme loads on your next visit.</td>
+                          <td className="px-4 py-3 text-surface-500 whitespace-nowrap">localStorage</td>
+                          <td className="px-4 py-3 text-surface-500 whitespace-nowrap">Persistent</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Analytics */}
+                <div>
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Analytics</h3>
+                    <span className="text-xs font-medium text-surface-500 bg-surface-100 dark:bg-surface-800 border border-surface-200 dark:border-surface-700 rounded-full px-2 py-0.5">
+                      Consent required
+                    </span>
+                  </div>
                   <p className="text-surface-600 dark:text-surface-300 leading-relaxed">
-                    Required for the platform to function properly. These cookies enable core functionality
-                    such as security, authentication, and session management. They cannot be disabled.
+                    We do not currently use any analytics cookies or tracking scripts. If we introduce
+                    privacy-first analytics in the future, this policy will be updated and your consent
+                    will be requested before any data is collected.
                   </p>
                 </div>
 
+                {/* Marketing */}
                 <div>
-                  <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2">Analytics Cookies</h3>
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-lg font-semibold text-surface-900 dark:text-white">Marketing</h3>
+                    <span className="text-xs font-medium text-surface-500 bg-surface-100 dark:bg-surface-800 border border-surface-200 dark:border-surface-700 rounded-full px-2 py-0.5">
+                      Consent required
+                    </span>
+                  </div>
                   <p className="text-surface-600 dark:text-surface-300 leading-relaxed">
-                    Help us understand how visitors interact with our website by collecting and reporting
-                    information anonymously. We use this data to improve our platform.
+                    We do not currently use any marketing or advertising cookies. This section is reserved
+                    for future use and will only become active after your explicit consent.
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2">Functionality Cookies</h3>
-                  <p className="text-surface-600 dark:text-surface-300 leading-relaxed">
-                    Remember your preferences and settings, such as language preferences, timezone,
-                    and customization options to provide a personalized experience.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold text-surface-900 dark:text-white mb-2">Marketing Cookies</h3>
-                  <p className="text-surface-600 dark:text-surface-300 leading-relaxed">
-                    Track your browsing activity to show you relevant advertisements and measure
-                    campaign effectiveness. These cookies may be set by third-party advertising partners.
-                  </p>
-                </div>
               </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">Managing Cookies</h2>
+              <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">Your Choices</h2>
               <p className="text-surface-600 dark:text-surface-300 leading-relaxed mb-4">
-                You can control and manage cookies through your browser settings. Most browsers allow you to:
+                When you first visit this site a consent banner appears at the bottom of the screen.
+                You may accept all cookies, accept essential cookies only, or customise your preferences
+                by category. Your choices are saved to your browser and respected on all subsequent visits.
+              </p>
+              <p className="text-surface-600 dark:text-surface-300 leading-relaxed mb-6">
+                You may change your preferences at any time using the button below, the
+                &ldquo;Cookie Preferences&rdquo; link in the site footer, or by clearing your browser
+                storage (which resets your choices to &ldquo;not yet decided&rdquo;).
+              </p>
+              <ManageCookiesButton />
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">Browser Controls</h2>
+              <p className="text-surface-600 dark:text-surface-300 leading-relaxed mb-4">
+                You can also manage storage directly through your browser settings:
               </p>
               <ul className="list-disc list-inside space-y-2 text-surface-600 dark:text-surface-300">
-                <li>View what cookies are stored and delete them individually</li>
+                <li>View and delete individual cookies</li>
                 <li>Block third-party cookies</li>
-                <li>Block cookies from specific sites</li>
-                <li>Block all cookies</li>
-                <li>Delete all cookies when you close your browser</li>
+                <li>Block cookies from specific sites or globally</li>
+                <li>Clear localStorage and session storage</li>
+                <li>Delete all site data when you close the browser</li>
               </ul>
               <p className="text-surface-600 dark:text-surface-300 leading-relaxed mt-4">
-                Please note that blocking or deleting cookies may impact your experience and some
-                features may not function properly.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">Third-Party Cookies</h2>
-              <p className="text-surface-600 dark:text-surface-300 leading-relaxed">
-                We use third-party services that may set cookies on your device. These include:
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-surface-600 dark:text-surface-300 mt-4">
-                <li>Google Analytics for website analytics</li>
-                <li>Payment processors for secure transactions</li>
-                <li>Customer support tools for help desk functionality</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">Your Consent</h2>
-              <p className="text-surface-600 dark:text-surface-300 leading-relaxed">
-                By continuing to use our website, you consent to our use of cookies as described in this policy.
-                You can withdraw your consent at any time by managing your cookie preferences in your browser
-                or contacting us.
+                Blocking essential cookies may prevent some parts of the site from working correctly.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">Updates to This Policy</h2>
               <p className="text-surface-600 dark:text-surface-300 leading-relaxed">
-                We may update this Cookie Policy from time to time. Any changes will be posted on this page
-                with an updated revision date.
+                We may update this policy when we introduce new features or cookies. When we make
+                material changes — such as adding a new cookie category — we will increment the policy
+                version and prompt you to review and re-confirm your preferences.
               </p>
             </section>
 
             <section className="pt-6 border-t border-surface-300 dark:border-surface-800">
               <h2 className="text-2xl font-bold text-surface-900 dark:text-white mb-4">Contact Us</h2>
               <p className="text-surface-600 dark:text-surface-300 leading-relaxed mb-4">
-                If you have questions about our use of cookies, please contact us:
+                Questions about our use of cookies? Contact our privacy team:
               </p>
               <p className="text-chrysolite-400">privacy@chrysoliteai.com</p>
             </section>
+
           </div>
 
           <div className="mt-12 text-center">

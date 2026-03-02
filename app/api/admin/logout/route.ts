@@ -3,8 +3,8 @@ import { NextResponse } from 'next/server'
 export async function POST() {
   const res = NextResponse.json({ success: true })
   res.cookies.set('chrysolite_erp_admin', '', {
-    httpOnly: false,
-    secure: process.env.NODE_ENV === 'production',
+    httpOnly: true,
+    secure: true,
     sameSite: 'strict',
     maxAge: 0,
     path: '/',

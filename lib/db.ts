@@ -50,3 +50,9 @@ export async function getContacts(): Promise<ContactRow[]> {
   const rows = await db`SELECT * FROM contacts ORDER BY created_at DESC`
   return rows as ContactRow[]
 }
+
+/** GDPR Article 17 — right to erasure */
+export async function deleteContact(id: number): Promise<void> {
+  const db = sql()
+  await db`DELETE FROM contacts WHERE id = ${id}`
+}

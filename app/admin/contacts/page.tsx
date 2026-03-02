@@ -162,9 +162,9 @@ export default async function ContactsAdminPage({ searchParams }: Props) {
         {/* ── DB error ── */}
         {dbError && (
           <div className="mb-8 rounded-xl border border-red-500/30 bg-red-50 dark:bg-red-500/10 p-5 text-sm text-red-600 dark:text-red-400">
-            <strong className="font-semibold">Database error:</strong> {dbError}
+            <strong className="font-semibold">Unable to load contacts.</strong>
             <p className="mt-1 text-xs text-red-500/70">
-              Ensure DATABASE_URL is set in Vercel and the contacts table exists. See lib/db.ts for the CREATE TABLE statement.
+              Check server logs for details.
             </p>
           </div>
         )}

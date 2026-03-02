@@ -12,7 +12,9 @@ import {
   Phone,
   CheckCircle,
   Loader2,
+  SlidersHorizontal,
 } from 'lucide-react'
+import { openCookieSettings } from '@/components/CookieConsentBanner'
 
 const footerLinks = {
   product: [
@@ -203,6 +205,15 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <button
+                  onClick={openCookieSettings}
+                  className="flex items-center gap-1.5 text-surface-600 dark:text-surface-400 hover:text-chrysolite-400 transition-colors text-sm"
+                >
+                  <SlidersHorizontal size={13} />
+                  Cookie Preferences
+                </button>
+              </li>
             </ul>
           </div>
         </div>
